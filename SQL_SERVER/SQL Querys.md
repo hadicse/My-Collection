@@ -123,7 +123,7 @@ Into #Todate From #FDateTimeYear
 --DateMonthYear
 SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
 SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
-
+```
 
 
 
@@ -152,8 +152,9 @@ SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
 
 --For Hyperlink
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-```
 ---->
+```
+
 
 
 
