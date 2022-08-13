@@ -7,6 +7,15 @@
 Select * from tblProduct
 ```
 
+# The most useful website for SQL and Others
+- https://www.w3schools.com/sql/sql_intro.asp
+- https://sqlskull.com/2020/03/15/sql-server-lead-function/
+- https://devsonket.com/
+- https://www.db-book.com/db6/practice-exer-dir/index.html
+	  --You Can Download SOme Book From Here
+- https://www.w3resource.com/sql-exercises/
+
+
 ## Find empty tables in SQL Server database
 ```
 Select	schema_name(tab.schema_id) + '.' + tab.name as [table]
@@ -49,11 +58,6 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 		--Password=''
 ```
 
-# The most useful website for SQL and Others
-- https://sqlskull.com/2020/03/15/sql-server-lead-function/
-- https://devsonket.com/
-- https://www.db-book.com/db6/practice-exer-dir/index.html
-	  --You Can Download SOme Book From Here
 
 
 
