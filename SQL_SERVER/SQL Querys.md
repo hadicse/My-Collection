@@ -205,6 +205,17 @@ ELSE
 
 # Bulk Insert From Excel to SQL Using Query
 ```
+###### Before Bulk Insert Need to Install 
+EXEC sp_configure 'show advanced options', 1
+RECONFIGURE
+GO
+EXEC sp_configure 'ad hoc distributed queries', 1
+RECONFIGURE
+GO
+-----------------------------------------------------------------------------
+"C:\Users\abluhadi\Documents\Downloade\AccessDatabaseEngine_x64.exe" /passive
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255
+```
 --Bulk Insert From Excel to SQL Using Query
 Create table tblemployees
 (ID int primary key identity(1,1),
@@ -266,7 +277,7 @@ GO 20
 Select * from LoopTest
 ```
 
-# Tabel------------
+# Multiple Date & Time Formate 
 
 | SerialNo | Query | Format | Sample |
 | --- | --- | --- | --- |
@@ -315,6 +326,57 @@ select replace(convert(varchar, getdate(),101),'/','')
 select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':','')		
 ```
 
+
+# plan_cursor or FETCH
+```
+DECLARE @id varchar(50) ,@maxDayQty numeric(14,2), @startDate numeric(14), @raminingQty numeric(14)
+DECLARE @tempDate numeric(14)
+
+DECLARE plan_cursor CURSOR FOR
+SELECT ID, MaxDayQty, StartDate, RemainingQty FROM tblPlan where RemainingQty > 0 --AND  ID = '103'
+order by ID;
+
+OPEN plan_cursor
+
+FETCH NEXT FROM plan_cursor
+INTO @id,@maxDayQty,@startDate,@raminingQty
+
+SET @tempDate = @startDate
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	
+	WHILE (@raminingQty >0)
+		BEGIN
+				IF((@raminingQty - @maxDayQty) > 0)
+					BEGIN
+						Insert into tblDateWiseQuantity
+						Select @id AS ID ,@tempDate as ProductionDate, @maxDayQty AS MaxDayQty 
+
+						update tblPlan set RemainingQty = RemainingQty - @maxDayQty,EndDate = @tempDate
+						where ID = @id
+					END
+				ELSE
+					BEGIN
+						Insert into tblDateWiseQuantity
+						Select @id AS ID ,@tempDate as ProductionDate, @raminingQty AS MaxDayQty
+						update tblPlan set RemainingQty = 0,EndDate = @tempDate  
+						where ID = @id
+					END
+
+				SET @tempDate = @tempDate + 1;
+				SET @raminingQty = (select RemainingQty from tblPlan where ID = @id)
+
+		END
+	
+
+    FETCH NEXT FROM plan_cursor
+	INTO @id,@maxDayQty,@startDate,@raminingQty
+	SET @tempDate = @startDate
+END
+CLOSE plan_cursor;
+DEALLOCATE plan_cursor;
+```
 
 
 
