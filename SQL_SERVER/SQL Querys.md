@@ -200,8 +200,73 @@ ELSE
 		BEGIN
 		PRINT	'NotFound'	--IF not Found Then Inser LastDateOFPreviousMonth
 		END
-			
 ```
+
+
+# Bulk Insert From Excel to SQL Using Query
+```
+--Bulk Insert From Excel to SQL Using Query
+Create table tblemployees
+(ID int primary key identity(1,1),
+Name varchar (500),
+Type varchar (500),
+F_Name varchar (500),
+M_Name varchar (500),
+S_Name varchar (500),
+District varchar (500),
+Country varchar (500),
+Thana varchar (500),
+Roll varchar (500),
+Salary decimal)
+
+Select * from tblemployees
+
+BULK INSERT tblemployees
+FROM 'C:\DATA\PERSONAL\TESTWORK\TBLEMPLOYEES.CSV'
+WITH	(ROWTERMINATOR ='\n',
+		FIELDTERMINATOR=',',
+		FIRSTROW=2		)
+
+Delete from tblemployees
+Drop table tblemployees
+
+--Bulk Insert From Excel to SQL Using Query
+```
+
+
+# Query Execute or Run from Table Data
+```
+--Query Execute Run from Table Data
+
+DECLARE     @query		nVARCHAR(MAX) = '';
+
+SET @query =(SELECT LastName FROM   Persons)
+
+-- execute dynamic query
+EXECUTE sp_executesql @query;
+
+SELECT LastName FROM   Persons
+```
+
+
+
+# Quickest Way to Run the Same Query Multiple Times in SQL Server
+
+```
+--Quickest Way to Run the Same Query Multiple Times in SQL Server
+
+CREATE TABLE LoopTest
+(    LoopTestId uniqueidentifier NOT NULL DEFAULT NEWID(),
+    InsertDate datetime2(7) NOT NULL DEFAULT GETDATE() );
+GO
+INSERT LoopTest (LoopTestId, InsertDate)
+VALUES (DEFAULT, DEFAULT);
+GO 20
+
+Select * from LoopTest
+```
+
+
 
 
 
