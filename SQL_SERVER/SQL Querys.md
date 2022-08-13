@@ -65,6 +65,68 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 
 
 
+# SQL User disable or user sleep 
+```
+Select Session_id
+From Sys.dm.exec_session where login_name='prince'
+```
+
+# To get total number of columns in a table in sql
+```
+SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns where TABLE_NAME = 'YourTableName'
+```
+# Current Month Last Last Date and To get the last day of the previous month:
+```
+--Current Month Last Last Date
+DECLARE @test DATETIME
+SET @test = GETDATE()  -- or any other date
+SELECT DATEADD(month, ((YEAR(@test) - 1900) * 12) + MONTH(@test), -1)
+
+--To get the last day of the previous month:
+SELECT DATEADD(DAY, -(DAY(GETDATE())), GETDATE())
+
+```
+
+# Create Indexing or index
+```
+--For Indexing or index
+Create INDEX IX_SalesReceiptNO
+ON [dbo].[tblSalesTransactionDetails]
+([ReceiptNo] ASC)
+```
+
+
+
+# Find Date Month year 
+```
+--Find Date Month year 
+Select FDate, FMonth, FYear from #FDateTimeYear
+
+CREATE TABLE #FDateTimeYear
+( [FDate] [varchar](2) NOT NULL,
+[FMonth] [varchar](3) NULL,
+[FYear] [varchar](4) NULL )
+
+Insert Into #FDateTimeYear
+SELECT DATENAME(D,GETDATE()) 'FDate',
+Convert(char(3), GetDate(), 0) as FMonth , DATENAME(YEAR,GETDATE()) 'FYear'
+
+Select FDate + '-' + FMonth + '-' as PDateMonth,Fyear into #FromDate From #FDateTimeYear
+Select PDateMonth+FYear from #FromDate
+Select PDateMonth+PYear from #Todate
+
+Select FDate + '-' + FMonth + '-' as PDateMonth,
+Case When Fyear >0 Then Fyear-1 END AS PYear
+Into #Todate From #FDateTimeYear
+
+# DateMonthYear
+--DateMonthYear
+SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
+SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
+
+
+
+
 
 
 
@@ -91,5 +153,9 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 --For Hyperlink
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 ```
--->
+---->
+
+
+
+
 
