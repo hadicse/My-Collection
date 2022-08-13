@@ -125,6 +125,107 @@ SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
 SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
 ```
 
+# how to display space first letter capital in sql server
+# After Space Letter Capital First Letter in capital, Upper and Lower font style
+```
+Select stuff((
+       select ' '+upper(left(T3.V, 1))+lower(stuff(T3.V, 1, 1, ''))
+       from (select cast(replace((select CustomerName as '*' for xml path('')), ' ', '<X/>') as xml).query('.')) as T1(X)
+         cross apply T1.X.nodes('text()') as T2(X)
+         cross apply (select T2.X.value('.', 'varchar(30)')) as T3(V)
+       for xml path(''), type
+       ).value('text()[1]', 'varchar(30)'), 1, 1, '')  from #CustomerBalance_2020 
+```
+
+# Auto Row Count Row Number
+```
+--Auto Row Count Row Number
+Select ROW_NUMBER () Over(Order by UserID ) as SLN, UserID from tblUsers
+```
+# Varchar Date Month Year
+```
+--Varchar Date Month Year
+SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY 
+SELECT CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH 
+SELECT CONVERT(VARCHAR(19), (SELECT YEAR(GETDATE())), 103) as YEAR
+Create Table #DayMonthYear
+(Day varchar (20), Month varchar (20), Year varchar (20), LastYear varchar (20))
+Insert Into #DayMonthYear
+SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY ,
+CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH ,
+CONVERT(VARCHAR(19), (SELECT YEAR(GETDATE())), 103) as YEAR,
+Year(Getdate())- 1 as LastYear
+--------------------------------------------------------------------------------------------
+Select Day + '-' + Month + '-' + Year as FromDate into #FromDate from #DayMonthYear
+Select Day + '-' + Month + '-' + LastYear as ToDate Into #ToDate from #DayMonthYear
+
+Drop table #FromDate
+Drop table #DayMonthYear
+```
+
+
+# IF EXISTS
+
+```
+Declare @Return as Varchar (MAX)
+	IF EXISTS (Select * from tblUsers where UserID='ADMN2')
+	
+		Begin
+		Select @Return		=	'FOUND'
+		END
+			ELSE
+			BEGIN
+			Select @Return	=	'NotFound'	--IF not Found Then Insert LastDateOFPreviousMonth
+			END
+			
+			Select @Return as Result   --Forhad Bhai KKHO
+---------------------------------------------------------------------------------------------------------
+IF EXISTS (Select * from #Result where Prod_CodeInsert_OK_To_tblRequisition like '01%')
+
+BEGIN
+        PRINT 'Found'
+END
+ELSE
+		BEGIN
+		PRINT	'NotFound'	--IF not Found Then Inser LastDateOFPreviousMonth
+		END
+			
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
