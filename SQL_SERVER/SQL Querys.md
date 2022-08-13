@@ -7,6 +7,18 @@
 Select * from tblProduct
 ```
 
+## Find empty tables in SQL Server database
+```
+Select	schema_name(tab.schema_id) + '.' + tab.name as [table]
+		From sys.tables tab
+		Inner join sys.partitions part
+		On tab.object_id = part.object_id
+
+Where		part.index_id IN (1, 0)	-- 0 - table without PK, 1 table with PK
+Group By	schema_name(tab.schema_id) + '.' + tab.name
+Having		sum(part.rows) = 0
+Order By	[table]
+```
 # Row to Colomn SQL Pivot
 ```
 SELECT   ShopCOde, Pro_Code, 1 as AreaCode_1, 2 as AreaCode_2 FROM   [dbo].[tblPvot] 
@@ -28,10 +40,10 @@ ALTER TABLE tableName WITH CHECK CHECK CONSTRAINT ALL
 # RESTORE DATABASE DBNAME
 ```
 From Disk='G:\25-06-2020\Backup\Backup.bak'
-WITH	Move 'POS_data'		to 'G:\POS32_AUDIT.mdf',
-		Move 'POS32_data2'	to 'G:\POS32_AUDIT_2.mdf',
-		Move 'POS32_data1'	to 'G:\POS32_AUDIT_1.mdf',
-		Move 'POS_log'		to 'G:\POS32_AUDIT_Log.ldf',
+WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
+		Move 'POS_data2'	to 'G:\POS_AUDIT_2.mdf',
+		Move 'POS_data1'	to 'G:\POS_AUDIT_1.mdf',
+		Move 'POS_log'		to 'G:\POS_AUDIT_Log.ldf',
 		Password='abc'
 		--Password='',
 		--Password=''
@@ -40,6 +52,8 @@ WITH	Move 'POS_data'		to 'G:\POS32_AUDIT.mdf',
 # The most useful website for SQL and Others
 - https://sqlskull.com/2020/03/15/sql-server-lead-function/
 - https://devsonket.com/
+- https://www.db-book.com/db6/practice-exer-dir/index.html
+	  --You Can Download SOme Book From Here
 
 
 
