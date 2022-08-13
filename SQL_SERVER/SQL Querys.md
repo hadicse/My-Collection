@@ -396,6 +396,35 @@ DEALLOCATE plan_cursor;
 ```
 
 
+# Database Repair or DBCC CheckDB
+```	
+--1st Step  Delete All Temp Table
+USE [master]
+
+Alter Database [DBNAME] Set Single_USer 
+OR
+Alter Database [DBNAME] Set Single_USer with no_Wait
+Go
+		Select * from  sys.sysprocesses where dbid=DB_ID('DBNAME')
+		Kill 52 --(request_Session)
+
+DBCC CheckDB ('DBNAME', Repair_Rebuild)
+
+Alter Database [DBNAME] Set Multi_USer
+
+DBCC CHECKDB('DBNAME')
+
+--2nd Step Table Check
+	DBCC CHECKTable('tblProduct')
+	DBCC CHECKTable('tblProductdetails')
+	-- Need All Table al Slow Tables
+
+--3rd Step Log File or may be Data Shrink
+
+--4th Step Indexing  by Start a Task Weserd
+```
+
+
 
 
 
