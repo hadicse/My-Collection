@@ -17,6 +17,8 @@ Select * from tblProduct
 - https://www.db-book.com/db6/practice-exer-dir/index.html
 ###### TOP-70 MOST IMPORTANT SQL QUERIES IN 2022
 - https://bytescout.com/blog/20-important-sql-queries.html?utm_referer=https%3A%2F%2Fwww.google.com%2F#35
+###### Join over 16 million developers in solving code challenges on (Best Practice Site for SQL)
+- https://www.hackerrank.com/domains/sql
 
 
 ## Find empty tables in SQL Server database
