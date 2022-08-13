@@ -266,6 +266,56 @@ GO 20
 Select * from LoopTest
 ```
 
+# Tabel------------
+
+| SerialNo | Query | Format | Sample |
+| --- | --- | --- | --- |
+| 01 | select convert(varchar, getdate(), 1) | mm/dd/yy | 12/30/06 |
+| 02 | select convert(varchar, getdate(), 2) | yy.mm.dd | 06.12.30 |
+| 03 | select convert(varchar, getdate(), 3) | dd/mm/yy | 30/12/06 |
+| 04 | select convert(varchar, getdate(), 4) | dd.mm.yy | 30.12.06 |
+| 05| select convert(varchar, getdate(), 5) | dd-mm-yy | 39081 |
+| 06| select convert(varchar, getdate(), 6) | dd-Mon-yy | 39081 |
+| 07| select convert(varchar, getdate(), 7) | Mon dd, yy | 39081 |
+| 08| select convert(varchar, getdate(), 10) | mm-dd-yy | 12-30-06 |
+| 09| select convert(varchar, getdate(), 11) | yy/mm/dd | 11298 |
+| 10| select convert(varchar, getdate(), 12) | yymmdd | 61230 |
+| 11| select convert(varchar, getdate(), 23) | yyyy-mm-dd | 39081 |
+| 12| select convert(varchar, getdate(), 101) | mm/dd/yyyy | 12/30/2006 |
+| 13| select convert(varchar, getdate(), 102) | yyyy.mm.dd | 2006.12.30 |
+| 14| select convert(varchar, getdate(), 103) | dd/mm/yyyy | 39081 |
+| 15| select convert(varchar, getdate(), 104) | dd.mm.yyyy | 30.12.2006 |
+| 16| select convert(varchar, getdate(), 105) | dd-mm-yyyy | 39081 |
+| 17| select convert(varchar, getdate(), 106) | dd Mon yyyy | 39081 |
+| 18| select convert(varchar, getdate(), 107) | Mon dd, yyyy | 39081 |
+| 19| select convert(varchar, getdate(), 110) | mm-dd-yyyy | 12-30-2006 |
+| 20| select convert(varchar, getdate(), 111) | yyyy/mm/dd | 39081 |
+| 21| select convert(varchar, getdate(), 112) | yyyymmdd | 20061230 |
+| 22| select convert(varchar, getdate(), 8) | hh:mm:ss | 0.0270138888888889 |
+| 23| select convert(varchar, getdate(), 14) | hh:mm:ss:nnn | 00:38:54:840 |
+| 24| select convert(varchar, getdate(), 24) | hh:mm:ss | 0.0270138888888889 |
+| 25| select convert(varchar, getdate(), 108) | hh:mm:ss | 0.0270138888888889 |
+| 26| select convert(varchar, getdate(), 114) | hh:mm:ss:nnn | 00:38:54:840 |
+| 27| select convert(varchar, getdate(), 0) | Mon dd yyyy hh:mm AM/PM | Dec 30 2006 12:38AM |
+| 28| select convert(varchar, getdate(), 9) | Mon dd yyyy hh:mm:ss:nnn AM/PM | Dec 30 2006 12:38:54:840AM |
+| 29| select convert(varchar, getdate(), 13) | dd Mon yyyy hh:mm:ss:nnn AM/PM | 30 Dec 2006 00:38:54:840AM |
+| 30| select convert(varchar, getdate(), 20) | yyyy-mm-dd hh:mm:ss | 39081.0270138889 |
+| 31| select convert(varchar, getdate(), 21) | yyyy-mm-dd hh:mm:ss:nnn | 39081.0270236111 |
+| 32| select convert(varchar, getdate(), 22) | mm/dd/yy hh:mm:ss AM/PM | 12/30/06 12:38:54 AM |
+| 33| select convert(varchar, getdate(), 25) | yyyy-mm-dd hh:mm:ss:nnn | 39081.0270236111 |
+| 34| select convert(varchar, getdate(), 100) | Mon dd yyyy hh:mm AM/PM | Dec 30 2006 12:38AM |
+| 35| select convert(varchar, getdate(), 109) | Mon dd yyyy hh:mm:ss:nnn AM/PM | Dec 30 2006 12:38:54:840AM |
+| 36| select convert(varchar, getdate(), 113) | dd Mon yyyy hh:mm:ss:nnn | 30 Dec 2006 00:38:54:840 |
+| 37| select convert(varchar, getdate(), 120) | yyyy-mm-dd hh:mm:ss | 39081.0270138889 |
+| 38| select convert(varchar, getdate(), 121) | yyyy-mm-dd hh:mm:ss:nnn | 39081.0270236111 |
+
+###### Convert Date time to Number
+```
+select replace(convert(varchar, getdate(),101),'/','')		
+select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':','')		
+```
+
+
 
 
 
