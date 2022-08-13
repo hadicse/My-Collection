@@ -93,6 +93,17 @@ SELECT DATEADD(DAY, -(DAY(GETDATE())), GETDATE())
 Create INDEX IX_SalesReceiptNO
 ON [dbo].[tblSalesTransactionDetails]
 ([ReceiptNo] ASC)
+
+###### 2 (two) Cloumn Indexing or index
+--For Indexing or index
+Create INDEX IX_SalesReceiptNO
+ON [dbo].[tblSalesTransactionDetails]
+([ReceiptNo] ASC)
+or
+Create INDEX IX_SalesReceiptNO
+ON [dbo].[tblSalesTransactionDetails]
+(ReceiptNo ASC, Barcode asc)
+
 ```
 
 
