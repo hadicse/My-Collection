@@ -2,9 +2,22 @@
 - Here I will collect all types of complex queries.
 - which was used for my work purposes.
 
+## My SQL GURU
+```
+- Khan Mohammad Sohel Zaman Bhai
+- Nazir Ali Bhai
+- Shahadat Bhai
+- Forhad Bhai
+- Rubel Bhai
+- Rahat Bhai
+- Omar Faruk Shamim Bhai
+- Ahsan Kabir
+```
+
 ## My First Qyery
 ```
 Select * from tblProduct
+Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ```
 
 # The most useful website for SQL and Others
@@ -204,8 +217,10 @@ ELSE
 
 
 # Bulk Insert From Excel to SQL Using Query
+###### Before Bulk Insert Need to Install and Run the Below Query
 ```
-###### Before Bulk Insert Need to Install 
+---------------------------
+--SQL Ad Hoc Access to OLE DB
 EXEC sp_configure 'show advanced options', 1
 RECONFIGURE
 GO
@@ -215,6 +230,8 @@ GO
 -----------------------------------------------------------------------------
 "C:\Users\abluhadi\Documents\Downloade\AccessDatabaseEngine_x64.exe" /passive
 https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255
+```
+###### Bulk Insert From Excel to SQL Using Query
 ```
 --Bulk Insert From Excel to SQL Using Query
 Create table tblemployees
@@ -327,7 +344,7 @@ select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar
 ```
 
 
-# plan_cursor or FETCH
+# Plan_Cursor or FETCH
 ```
 DECLARE @id varchar(50) ,@maxDayQty numeric(14,2), @startDate numeric(14), @raminingQty numeric(14)
 DECLARE @tempDate numeric(14)
