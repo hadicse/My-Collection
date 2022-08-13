@@ -9,11 +9,14 @@ Select * from tblProduct
 
 # The most useful website for SQL and Others
 - https://www.w3schools.com/sql/sql_intro.asp
+- https://www.w3resource.com/sql-exercises/
 - https://sqlskull.com/2020/03/15/sql-server-lead-function/
 - https://devsonket.com/
+- 
+###### You Can Download Some Book From Here
 - https://www.db-book.com/db6/practice-exer-dir/index.html
-	  --You Can Download SOme Book From Here
-- https://www.w3resource.com/sql-exercises/
+###### TOP-70 MOST IMPORTANT SQL QUERIES IN 2022
+- https://bytescout.com/blog/20-important-sql-queries.html?utm_referer=https%3A%2F%2Fwww.google.com%2F#35
 
 
 ## Find empty tables in SQL Server database
