@@ -10,18 +10,4 @@ I'm Hadiuzzaman, working as a software support engineer at iBOS Limited, a conce
 
 :coffee: &emsp;Connect with me!
 
-[![Facebook kkkkk] <a href="https://www.WordPress.com" target="_blank">WordPress Homepage</a>
-
-
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/fb.hadi) 
-
-
-
-
-
-:hearts: &emsp;I enjoy programming and sharing knowledge <br/>
-:computer: &emsp;Most used line of code `console.log("hello world")` <br/>
-🤔 &emsp;I’m looking for people who can help me with Outstanding Video ideas and executions.<br/>
-:e-mail: &emsp;How to reach me: sayhitorainmaker@gmail.com.<br/>
-⚡ &emsp;Fun fact: I co-founded my country's first ever and largest digital marketing agency Analyzen.
-
