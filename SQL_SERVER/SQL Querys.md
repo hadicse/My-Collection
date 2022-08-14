@@ -498,14 +498,40 @@ EXEC dbo.usp_Dyna_Pivot
    @leadColPivot    = 'courseName'			-- order results by column
 GO  
 --------------------------------------------------------------------------------------------------------------------------------------------
+```
 
+# CAST Date
+```
+CAST(ROUND(SUM(Rd.UnitPrice), 2) as numeric (36,2)) as TotalSale 
 ```
 # Round
+```
 Select ReceiptNo, CAST(ROUND(ReceivedAmount,2) as Numeric (36,2) as TotalAmount
 Select SUM(CAST(ROUND(ColumnName+ColumnName,2) as Numeric (36,2))) as TotalAmount
+```
 
 # Len Reducer
+```
 Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
+```
+
+# Case Wen
+```
+Select FirstName, CustomerCode
+Case When 
+	--1st Condition
+	CustomerCode > =5000005
+	then 'BIG'
+	
+	--2nd Condition
+When 	CustomerCode < 5000005
+	Then 'Small'
+Else 'NA'
+
+End ResultsAsColumnName
+
+from tblcustomer
+```
 
 
 
