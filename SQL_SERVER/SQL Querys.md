@@ -594,7 +594,9 @@ BACKUP DATABASE testDB
 TO DISK = 'D:\backups\testDB.bak'
 ```
 
+# SQL Server Functions
 
+- https://www.w3schools.com/sql/sql_ref_sqlserver.asp
 
 
 
