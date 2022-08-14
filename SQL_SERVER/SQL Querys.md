@@ -501,7 +501,8 @@ GO
 
 ```
 # Round
-Select ReceiptNo, CAST(
+Select ReceiptNo, CAST(ROUND(ReceivedAmount,2) as Numeric (36,2) as TotalAmount
+Select SUM(CAST(ROUND(ColumnName+ColumnName,2) as Numeric (36,2))) as TotalAmount
 
 # Len Reducer
 Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
