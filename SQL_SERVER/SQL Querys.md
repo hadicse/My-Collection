@@ -151,15 +151,7 @@ SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
 
 # how to display space first letter capital in sql server
 # After Space Letter Capital First Letter in capital, Upper and Lower font style
-```
-Select stuff((
-       select ' '+upper(left(T3.V, 1))+lower(stuff(T3.V, 1, 1, ''))
-       from (select cast(replace((select CustomerName as '*' for xml path('')), ' ', '<X/>') as xml).query('.')) as T1(X)
-         cross apply T1.X.nodes('text()') as T2(X)
-         cross apply (select T2.X.value('.', 'varchar(30)')) as T3(V)
-       for xml path(''), type
-       ).value('text()[1]', 'varchar(30)'), 1, 1, '')  from #CustomerBalance_2020 
-```
+- https://www.sqlshack.com/overview-of-sql-lower-and-sql-upper-functions/#:~:text=We%20use%20SQL%20UPPER%20function,all%20characters%20into%20capital%20letters.
 
 # Auto Row Count Row Number
 ```
