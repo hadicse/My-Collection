@@ -615,6 +615,30 @@ SELECT  substring('abcde', 2, 3)
 # SQL WHILE loop with simple examples
 - https://www.sqlshack.com/sql-while-loop-with-simple-examples/
 
+# SQL Print
+```
+DECLARE @Msg VARCHAR(300)= 'My Name is Rajendra Gupta';
+PRINT @Msg
+
+or 
+
+DECLARE @Msg VARCHAR(300)
+Set @Msg = 'My Name is Rajendra Gupta';
+PRINT @Msg
+```
+
+# 
+```
+SELECT Studentname, 
+       Subject, 
+       Marks, 
+       RANK() OVER(PARTITION BY Studentname ORDER BY Marks DESC) Rank
+FROM ExamResult
+ORDER BY Studentname, 
+         Rank;
+```
+- https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png
+
 
 
 
