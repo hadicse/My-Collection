@@ -598,6 +598,15 @@ TO DISK = 'D:\backups\testDB.bak'
 
 - https://www.w3schools.com/sql/sql_ref_sqlserver.asp
 
+# Update with Inner Join
+```
+UPDATE C
+SET IsActive = 1
+FROM [dbo].[DimCustomer] C
+JOIN [dbo].[FactInternetSales]  S ON C.[CustomerKey] = S.[CustomerKey]
+WHERE S.[OrderDate] >= DATEADD(MONTH,-3,GETDATE());
+```
+
 
 
 
