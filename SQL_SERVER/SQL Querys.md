@@ -521,10 +521,12 @@ Select FirstName, CustomerCode
 Case When 
 	--1st Condition
 	CustomerCode > =5000005
+	--Result
 	then 'BIG'
 	
 	--2nd Condition
 When 	CustomerCode < 5000005
+	-- Result
 	Then 'Small'
 Else 'NA'
 
