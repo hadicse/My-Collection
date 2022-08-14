@@ -588,6 +588,12 @@ Z	NULL
 
 ```
 
+# SQL BACKUP DATABASE Statement
+```
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak'
+```
+
 
 
 
