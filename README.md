@@ -11,3 +11,7 @@ I'm Hadiuzzaman, working as a software support engineer at iBOS Limited, a conce
 :coffee: &emsp;Connect with me! 
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/fb.hadi) 
 
+
+</br> </br> 
+ ### Profile Visitor Count
+ <img align="left" alt="" width="35%" src="https://profile-counter.glitch.me/hadicse/count.svg" />
