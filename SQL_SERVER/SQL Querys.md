@@ -565,10 +565,8 @@ GO
 EXEC procedure_name
 ```
 
-# 
-```
-[https://www.w3schools.com/sql/sql_datatypes.asp](https://www.w3schools.com/sql/sql_datatypes.asp)
-```
+# SQL Data Types
+- https://www.w3schools.com/sql/sql_datatypes.asp
 
 
 
