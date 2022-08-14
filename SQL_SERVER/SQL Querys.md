@@ -500,7 +500,11 @@ GO
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ```
+# Round
+Select ReceiptNo, CAST(
 
+# Len Reducer
+Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
 
 
 
