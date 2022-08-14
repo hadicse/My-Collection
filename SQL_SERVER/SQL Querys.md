@@ -627,7 +627,9 @@ Set @Msg = 'My Name is Rajendra Gupta';
 PRINT @Msg
 ```
 
-# 
+# Overview of SQL RANK functions
+###### Click Here For Details of RANK functions
+- https://www.sqlshack.com/overview-of-sql-rank-functions/
 ```
 SELECT Studentname, 
        Subject, 
