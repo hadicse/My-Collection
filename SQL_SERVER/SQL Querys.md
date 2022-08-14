@@ -149,8 +149,9 @@ SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
 SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
 ```
 
-# how to display space first letter capital in sql server
-# After Space Letter Capital First Letter in capital, Upper and Lower font style
+# Upper and Lower Font Style in SQL
+###### how to display space first letter capital in sql server
+###### After Space Letter Capital First Letter in capital, Upper and Lower font style
 - https://www.sqlshack.com/overview-of-sql-lower-and-sql-upper-functions/#:~:text=We%20use%20SQL%20UPPER%20function,all%20characters%20into%20capital%20letters.
 
 # Auto Row Count Row Number
