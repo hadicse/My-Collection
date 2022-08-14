@@ -607,6 +607,13 @@ JOIN [dbo].[FactInternetSales]  S ON C.[CustomerKey] = S.[CustomerKey]
 WHERE S.[OrderDate] >= DATEADD(MONTH,-3,GETDATE());
 ```
 
+# How To Select only Substring
+```
+SELECT  substring('abcde', 2, 3)
+```
+
+# SQL WHILE loop with simple examples
+- https://www.sqlshack.com/sql-while-loop-with-simple-examples/
 
 
 
