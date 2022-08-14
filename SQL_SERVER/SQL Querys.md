@@ -643,6 +643,10 @@ ORDER BY Studentname,
 ![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
 
 
+# Different ways to SQL delete duplicate rows from a SQL Table
+-https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
+
+
 
 
 
