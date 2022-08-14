@@ -344,7 +344,7 @@ select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar
 ```
 
 
-# Plan_Cursor or FETCH
+# Plan_Cursor and FETCH
 ```
 DECLARE @id varchar(50) ,@maxDayQty numeric(14,2), @startDate numeric(14), @raminingQty numeric(14)
 DECLARE @tempDate numeric(14)
@@ -422,6 +422,83 @@ DBCC CHECKDB('DBNAME')
 --3rd Step Log File or may be Data Shrink
 
 --4th Step Indexing  by Start a Task Weserd
+```
+
+# Script to create dynamic PIVOT queries in SQL Server
+```
+--If You Ned to Drop or Delete
+--Delete  tblStudentGrades
+--Drop table tblStudentGrades
+--Drop PROCEDURE dbo.usp_Dyna_Pivot
+
+
+--CREATE PROCEDURE
+CREATE PROCEDURE dbo.usp_Dyna_Pivot (
+   @unknownValsCol NVARCHAR (100),
+   @objNameToPivot NVARCHAR (100),
+   @aggFuncOfPivot NVARCHAR (3),
+   @aggColOfPivot NVARCHAR (100),
+   @leadColPivot NVARCHAR (100))
+AS
+BEGIN
+   DECLARE @columns NVARCHAR (2000),
+      @tsql NVARCHAR (2000)
+   DECLARE @distinctVals TABLE (val NVARCHAR (50))
+
+   SET NOCOUNT ON
+   SET @columns = N'';
+   SET @tsql = CONCAT ('SELECT DISTINCT ', @unknownValsCol,' FROM ',@objNameToPivot)
+   INSERT @distinctVals EXEC (@tsql)
+
+   SELECT @columns += CONCAT ('[', Val,']',',')
+   FROM @distinctVals
+
+   SET @columns = LEFT (@columns, LEN (@columns) - 1)
+   SET @tsql = CONCAT ( 'SELECT ', @leadColPivot,   ',', @columns,' FROM ',' ( SELECT ',@leadColPivot,',',
+         @aggColOfPivot,',',   @unknownValsCol,   ' FROM ',   @objNameToPivot,   ') as t ',
+         ' PIVOT (', @aggFuncOfPivot,   '(', @aggColOfPivot,   ')',' FOR ',   @unknownValsCol,
+         '   IN (', @columns,')) as pvt ',' ORDER BY ',   @leadColPivot)
+   EXEC (@tsql)
+   SET NOCOUNT OFF
+END
+GO
+
+
+
+--CREATE TABLE
+CREATE TABLE [dbo].[tblStudentGrades]
+   ([studentName] [varchar](40) NULL, [courseName] [varchar](40) NULL, [year_study] [int] NULL, 
+    [Grade] [int] NULL) ON [PRIMARY] 
+GO 
+
+--Date Insert
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'oracle', 2017, 90) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'oracle', 2018, 96) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'oracle', 2019, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r ', N'oracle', 2017, 95) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'oracle', 2018, 96) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'oracle', 2019, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2017, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2018, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2019, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2017, 99) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2018, 89) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2019, 90) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r ', N'sql', 2017, 76) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'sql', 2018, 80) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'sql', 2019, 100) 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--For Final Result
+EXEC dbo.usp_Dyna_Pivot  
+   @unknownValsCol  = 'year_study',			-- get list of unique values
+   @objNameToPivot  = 'tblStudentGrades',	-- table that holds data
+   @aggFuncOfPivot  = 'AVG',				-- type of operation to perform
+   @aggColOfPivot   = 'grade',				-- column value for pivot operation
+   @leadColPivot    = 'courseName'			-- order results by column
+GO  
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 ```
 
 
