@@ -569,6 +569,26 @@ EXEC procedure_name
 - https://www.w3schools.com/sql/sql_datatypes.asp
 
 
+# UNION ALL
+```
+SELECT City, Name FROM Customers
+UNION ALL
+SELECT City,Name FROM Suppliers
+ORDER BY City
+
+--Result
+City	Name
+A	Hadi
+B	Sumon
+C	NULL
+D	NULL
+X	Siam
+Y	Sami
+Z	NULL
+
+```
+
+
 
 
 
