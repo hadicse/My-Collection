@@ -517,22 +517,39 @@ Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
 
 # Case Wen
 ```
-Select FirstName, CustomerCode
-Case When 
-	--1st Condition
-	CustomerCode > =5000005
-	--Result
-	then 'BIG'
-	
-	--2nd Condition
-When 	CustomerCode < 5000005
-	-- Result
-	Then 'Small'
-Else 'NA'
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END
 
-End ResultsAsColumnName
+SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails
+```
 
-from tblcustomer
+
+# Having
+
+```
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s)
+----------------------------
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5
+ORDER BY COUNT(CustomerID) DESC;
+
 ```
 
 
