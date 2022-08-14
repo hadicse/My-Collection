@@ -537,19 +537,32 @@ FROM OrderDetails
 # Having
 
 ```
-SELECT column_name(s)
-FROM table_name
+SELECT column_name(s) FROM table_name
 WHERE condition
 GROUP BY column_name(s)
 HAVING condition
 ORDER BY column_name(s)
 ----------------------------
-SELECT COUNT(CustomerID), Country
-FROM Customers
+SELECT COUNT(CustomerID), Country FROM Customers
 GROUP BY Country
 HAVING COUNT(CustomerID) > 5
 ORDER BY COUNT(CustomerID) DESC;
+```
 
+# IIF Function
+```
+SELECT IIF(3<2, 5, 10)
+--Result as 10
+```
+
+# PROCEDURE
+```
+CREATE PROCEDURE procedure_name
+AS
+sql_statement
+GO
+
+EXEC procedure_name
 ```
 
 
