@@ -643,12 +643,20 @@ https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85
 ```
 SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[0-9]%'
 SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[A-Z]%'
-
--- Onlu Numeric
+```
+###### Onlu Numeric
+```
 SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^0-9]%' --and ITEM != ''
+```
 
--- Onlu Varchar
+###### Onlu Varchar
+```
 SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != ''
+```
+
+###### Only Mixed
+```
+SELECT ITEM FROM tblProductDetails WHERE ITEM  like '%[^0-9]%[^A-Z]%' 
 ```
 
 
