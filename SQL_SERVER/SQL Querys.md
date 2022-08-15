@@ -639,7 +639,7 @@ https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85
 
 
 
-# How to select only numeric values from a column if it has both numeric and varchar
+# Get Only numeric or Only Varchar or Mixed (Numeric & Varchar Mixed) from a column
 ```
 SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[0-9]%'
 SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[A-Z]%'
