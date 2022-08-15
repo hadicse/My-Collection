@@ -652,8 +652,7 @@ SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != 
 
 ###### Only Mixed
 ```
-SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%'
-SELECT ITEM FROM tblProductDetails WHERE ITEM  not like '%[^0-9]%[^A-Z]%'
+SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item like  '%[0-9]%[A-Z]%'
 ```
 
 
