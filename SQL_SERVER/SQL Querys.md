@@ -618,7 +618,23 @@ ORDER BY Studentname,
 ![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
 
+# Creating a Relationship Between Two Tables Using Query
+```
+Create Database POSDB
 
+Use POSDB
+
+CREATE TABLE tblProduct(
+ProductCode int PRIMARY KEY NOT NULL,
+ProductName Varchar (50),
+CosePrice Numeric (8,2))
+
+CREATE TABLE tblProductDetails(
+ID INT PRIMARY KEY NOT NULL,
+ProductCode INT FOREIGN KEY REFERENCES tblProduct (ProductCode),
+Item Varchar (50),
+Quantity Numeric (8,2))
+```
 
 
 
