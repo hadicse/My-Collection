@@ -141,246 +141,6 @@ ON [dbo].[tblSalesTransactionDetails]
 ```
 
 
-
-# Find Date Month year 
-```
---Find Date Month year 
-Select FDate, FMonth, FYear from #FDateTimeYear
-
-CREATE TABLE #FDateTimeYear
-( [FDate] [varchar](2) NOT NULL,
-[FMonth] [varchar](3) NULL,
-[FYear] [varchar](4) NULL )
-
-Insert Into #FDateTimeYear
-SELECT DATENAME(D,GETDATE()) 'FDate',
-Convert(char(3), GetDate(), 0) as FMonth , DATENAME(YEAR,GETDATE()) 'FYear'
-
-Select FDate + '-' + FMonth + '-' as PDateMonth,Fyear into #FromDate From #FDateTimeYear
-Select PDateMonth+FYear from #FromDate
-Select PDateMonth+PYear from #Todate
-
-Select FDate + '-' + FMonth + '-' as PDateMonth,
-Case When Fyear >0 Then Fyear-1 END AS PYear
-Into #Todate From #FDateTimeYear
-
-# DateMonthYear
---DateMonthYear
-SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
-SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
-```
-
-# Upper and Lower Font Style in SQL
-###### how to display space first letter capital in sql server
-###### After Space Letter Capital First Letter in capital, Upper and Lower font style
-- https://www.sqlshack.com/overview-of-sql-lower-and-sql-upper-functions/#:~:text=We%20use%20SQL%20UPPER%20function,all%20characters%20into%20capital%20letters.
-
-# Auto Row Count Row Number
-```
---Auto Row Count Row Number
-Select ROW_NUMBER () Over(Order by UserID ) as SLN, UserID from tblUsers
-```
-# Varchar Date Month Year
-```
---Varchar Date Month Year
-SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY 
-SELECT CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH 
-SELECT CONVERT(VARCHAR(19), (SELECT YEAR(GETDATE())), 103) as YEAR
-Create Table #DayMonthYear
-(Day varchar (20), Month varchar (20), Year varchar (20), LastYear varchar (20))
-Insert Into #DayMonthYear
-SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY ,
-CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH ,
-CONVERT(VARCHAR(19), (SELECT YEAR(GETDATE())), 103) as YEAR,
-Year(Getdate())- 1 as LastYear
---------------------------------------------------------------------------------------------
-Select Day + '-' + Month + '-' + Year as FromDate into #FromDate from #DayMonthYear
-Select Day + '-' + Month + '-' + LastYear as ToDate Into #ToDate from #DayMonthYear
-
-Drop table #FromDate
-Drop table #DayMonthYear
-```
-
-
-# IF EXISTS
-
-```
-Declare @Return as Varchar (MAX)
-	IF EXISTS (Select * from tblUsers where UserID='ADMN2')
-	
-		Begin
-		Select @Return		=	'FOUND'
-		END
-			ELSE
-			BEGIN
-			Select @Return	=	'NotFound'	--IF not Found Then Insert LastDateOFPreviousMonth
-			END
-			
-			Select @Return as Result   --Forhad Bhai KKHO
----------------------------------------------------------------------------------------------------------
-IF EXISTS (Select * from #Result where Prod_CodeInsert_OK_To_tblRequisition like '01%')
-
-BEGIN
-        PRINT 'Found'
-END
-ELSE
-		BEGIN
-		PRINT	'NotFound'	--IF not Found Then Inser LastDateOFPreviousMonth
-		END
-```
-
-
-# Bulk Insert From Excel to SQL Using Query
-###### Before Bulk Insert Need to Install and Run the Below Query
-```
----------------------------
---SQL Ad Hoc Access to OLE DB
-EXEC sp_configure 'show advanced options', 1
-RECONFIGURE
-GO
-EXEC sp_configure 'ad hoc distributed queries', 1
-RECONFIGURE
-GO
------------------------------------------------------------------------------
-"C:\Users\abluhadi\Documents\Downloade\AccessDatabaseEngine_x64.exe" /passive
-https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255
-```
-###### Bulk Insert From Excel to SQL Using Query
-```
---Bulk Insert From Excel to SQL Using Query
-Create table tblemployees
-(ID int primary key identity(1,1),
-Name varchar (500),
-Type varchar (500),
-F_Name varchar (500),
-M_Name varchar (500),
-S_Name varchar (500),
-District varchar (500),
-Country varchar (500),
-Thana varchar (500),
-Roll varchar (500),
-Salary decimal)
-
-Select * from tblemployees
-
-BULK INSERT tblemployees
-FROM 'C:\DATA\PERSONAL\TESTWORK\TBLEMPLOYEES.CSV'
-WITH	(ROWTERMINATOR ='\n',
-		FIELDTERMINATOR=',',
-		FIRSTROW=2		)
-
-Delete from tblemployees
-Drop table tblemployees
-
---Bulk Insert From Excel to SQL Using Query
-```
-
-
-# Query Execute or Run from Table Data
-```
---Query Execute Run from Table Data
-
-DECLARE     @query		nVARCHAR(MAX) = '';
-
-SET @query =(SELECT LastName FROM   Persons)
-
--- execute dynamic query
-EXECUTE sp_executesql @query;
-
-SELECT LastName FROM   Persons
-```
-
-
-
-# Quickest Way to Run the Same Query Multiple Times in SQL Server
-
-```
---Quickest Way to Run the Same Query Multiple Times in SQL Server
-
-CREATE TABLE LoopTest
-(    LoopTestId uniqueidentifier NOT NULL DEFAULT NEWID(),
-    InsertDate datetime2(7) NOT NULL DEFAULT GETDATE() );
-GO
-INSERT LoopTest (LoopTestId, InsertDate)
-VALUES (DEFAULT, DEFAULT);
-GO 20
-
-Select * from LoopTest
-```
-
-# Multiple Date & Time Formate 
-##### You can try by using 1,2,3,4,5,6,7,... 103. The following is just one example.
-##### Click on below link for details
-
-| SerialNo | Query | Format | Sample |
-| --- | --- | --- | --- |
-| 01 | select convert(varchar, getdate(), 1) | mm/dd/yy | 12/30/06 |
-| 02 | select convert(varchar, getdate(), 2) | yy.mm.dd | 06.12.30 |
-| 03 | select convert(varchar, getdate(), 3) | dd/mm/yy | 30/12/06 |
-| 04 | select convert(varchar, getdate(), 4) | dd.mm.yy | 30.12.06 |
-| 05| select convert(varchar, getdate(), 5) | dd-mm-yy | 39081 |
-
-- https://www.sqlshack.com/sql-convert-date-functions-and-formats/
-
-###### Convert Date time to Number
-```
-select replace(convert(varchar, getdate(),101),'/','')		
-select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':','')		
-```
-
-
-# Plan_Cursor and FETCH
-```
-DECLARE @id varchar(50) ,@maxDayQty numeric(14,2), @startDate numeric(14), @raminingQty numeric(14)
-DECLARE @tempDate numeric(14)
-
-DECLARE plan_cursor CURSOR FOR
-SELECT ID, MaxDayQty, StartDate, RemainingQty FROM tblPlan where RemainingQty > 0 --AND  ID = '103'
-order by ID;
-
-OPEN plan_cursor
-
-FETCH NEXT FROM plan_cursor
-INTO @id,@maxDayQty,@startDate,@raminingQty
-
-SET @tempDate = @startDate
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
-	
-	WHILE (@raminingQty >0)
-		BEGIN
-				IF((@raminingQty - @maxDayQty) > 0)
-					BEGIN
-						Insert into tblDateWiseQuantity
-						Select @id AS ID ,@tempDate as ProductionDate, @maxDayQty AS MaxDayQty 
-
-						update tblPlan set RemainingQty = RemainingQty - @maxDayQty,EndDate = @tempDate
-						where ID = @id
-					END
-				ELSE
-					BEGIN
-						Insert into tblDateWiseQuantity
-						Select @id AS ID ,@tempDate as ProductionDate, @raminingQty AS MaxDayQty
-						update tblPlan set RemainingQty = 0,EndDate = @tempDate  
-						where ID = @id
-					END
-
-				SET @tempDate = @tempDate + 1;
-				SET @raminingQty = (select RemainingQty from tblPlan where ID = @id)
-
-		END
-	
-
-    FETCH NEXT FROM plan_cursor
-	INTO @id,@maxDayQty,@startDate,@raminingQty
-	SET @tempDate = @startDate
-END
-CLOSE plan_cursor;
-DEALLOCATE plan_cursor;
-```
-
-
 # Database Repair or DBCC CheckDB
 ```	
 --1st Step  Delete All Temp Table
@@ -407,82 +167,6 @@ DBCC CHECKDB('DBNAME')
 --3rd Step Log File or may be Data Shrink
 
 --4th Step Indexing  by Start a Task Weserd
-```
-
-# Script to create dynamic PIVOT queries in SQL Server
-```
---If You Ned to Drop or Delete
---Delete  tblStudentGrades
---Drop table tblStudentGrades
---Drop PROCEDURE dbo.usp_Dyna_Pivot
-
-
---CREATE PROCEDURE
-CREATE PROCEDURE dbo.usp_Dyna_Pivot (
-   @unknownValsCol NVARCHAR (100),
-   @objNameToPivot NVARCHAR (100),
-   @aggFuncOfPivot NVARCHAR (3),
-   @aggColOfPivot NVARCHAR (100),
-   @leadColPivot NVARCHAR (100))
-AS
-BEGIN
-   DECLARE @columns NVARCHAR (2000),
-      @tsql NVARCHAR (2000)
-   DECLARE @distinctVals TABLE (val NVARCHAR (50))
-
-   SET NOCOUNT ON
-   SET @columns = N'';
-   SET @tsql = CONCAT ('SELECT DISTINCT ', @unknownValsCol,' FROM ',@objNameToPivot)
-   INSERT @distinctVals EXEC (@tsql)
-
-   SELECT @columns += CONCAT ('[', Val,']',',')
-   FROM @distinctVals
-
-   SET @columns = LEFT (@columns, LEN (@columns) - 1)
-   SET @tsql = CONCAT ( 'SELECT ', @leadColPivot,   ',', @columns,' FROM ',' ( SELECT ',@leadColPivot,',',
-         @aggColOfPivot,',',   @unknownValsCol,   ' FROM ',   @objNameToPivot,   ') as t ',
-         ' PIVOT (', @aggFuncOfPivot,   '(', @aggColOfPivot,   ')',' FOR ',   @unknownValsCol,
-         '   IN (', @columns,')) as pvt ',' ORDER BY ',   @leadColPivot)
-   EXEC (@tsql)
-   SET NOCOUNT OFF
-END
-GO
-
-
-
---CREATE TABLE
-CREATE TABLE [dbo].[tblStudentGrades]
-   ([studentName] [varchar](40) NULL, [courseName] [varchar](40) NULL, [year_study] [int] NULL, 
-    [Grade] [int] NULL) ON [PRIMARY] 
-GO 
-
---Date Insert
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'oracle', 2017, 90) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'oracle', 2018, 96) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'oracle', 2019, 100) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r ', N'oracle', 2017, 95) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'oracle', 2018, 96) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'oracle', 2019, 100) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2017, 100) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2018, 100) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2019, 100) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2017, 99) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2018, 89) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2019, 90) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r ', N'sql', 2017, 76) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'sql', 2018, 80) 
-INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'sql', 2019, 100) 
-
---------------------------------------------------------------------------------------------------------------------------------------------
---For Final Result
-EXEC dbo.usp_Dyna_Pivot  
-   @unknownValsCol  = 'year_study',			-- get list of unique values
-   @objNameToPivot  = 'tblStudentGrades',	-- table that holds data
-   @aggFuncOfPivot  = 'AVG',				-- type of operation to perform
-   @aggColOfPivot   = 'grade',				-- column value for pivot operation
-   @leadColPivot    = 'courseName'			-- order results by column
-GO  
---------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
 # CAST Date
@@ -676,6 +360,324 @@ SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item l
 ```
 
 
+# Find Date Month year 
+```
+--Find Date Month year 
+Select FDate, FMonth, FYear from #FDateTimeYear
+
+CREATE TABLE #FDateTimeYear
+( [FDate] [varchar](2) NOT NULL,
+[FMonth] [varchar](3) NULL,
+[FYear] [varchar](4) NULL )
+
+Insert Into #FDateTimeYear
+SELECT DATENAME(D,GETDATE()) 'FDate',
+Convert(char(3), GetDate(), 0) as FMonth , DATENAME(YEAR,GETDATE()) 'FYear'
+
+Select FDate + '-' + FMonth + '-' as PDateMonth,Fyear into #FromDate From #FDateTimeYear
+Select PDateMonth+FYear from #FromDate
+Select PDateMonth+PYear from #Todate
+
+Select FDate + '-' + FMonth + '-' as PDateMonth,
+Case When Fyear >0 Then Fyear-1 END AS PYear
+Into #Todate From #FDateTimeYear
+
+# DateMonthYear
+--DateMonthYear
+SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
+SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
+```
+
+# Upper and Lower Font Style in SQL
+###### how to display space first letter capital in sql server
+###### After Space Letter Capital First Letter in capital, Upper and Lower font style
+- https://www.sqlshack.com/overview-of-sql-lower-and-sql-upper-functions/#:~:text=We%20use%20SQL%20UPPER%20function,all%20characters%20into%20capital%20letters.
+
+# Auto Row Count Row Number
+```
+--Auto Row Count Row Number
+Select ROW_NUMBER () Over(Order by UserID ) as SLN, UserID from tblUsers
+```
+
+
+# Varchar Date Month Year
+```
+--Varchar Date Month Year
+SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY 
+SELECT CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH 
+SELECT CONVERT(VARCHAR(19), (SELECT YEAR(GETDATE())), 103) as YEAR
+Create Table #DayMonthYear
+(Day varchar (20), Month varchar (20), Year varchar (20), LastYear varchar (20))
+Insert Into #DayMonthYear
+SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY ,
+CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH ,
+CONVERT(VARCHAR(19), (SELECT YEAR(GETDATE())), 103) as YEAR,
+Year(Getdate())- 1 as LastYear
+--------------------------------------------------------------------------------------------
+Select Day + '-' + Month + '-' + Year as FromDate into #FromDate from #DayMonthYear
+Select Day + '-' + Month + '-' + LastYear as ToDate Into #ToDate from #DayMonthYear
+
+Drop table #FromDate
+Drop table #DayMonthYear
+```
+
+
+# IF EXISTS
+
+```
+Declare @Return as Varchar (MAX)
+	IF EXISTS (Select * from tblUsers where UserID='ADMN2')
+	
+		Begin
+		Select @Return		=	'FOUND'
+		END
+			ELSE
+			BEGIN
+			Select @Return	=	'NotFound'	--IF not Found Then Insert LastDateOFPreviousMonth
+			END
+			
+			Select @Return as Result   --Forhad Bhai KKHO
+---------------------------------------------------------------------------------------------------------
+IF EXISTS (Select * from #Result where Prod_CodeInsert_OK_To_tblRequisition like '01%')
+
+BEGIN
+        PRINT 'Found'
+END
+ELSE
+		BEGIN
+		PRINT	'NotFound'	--IF not Found Then Inser LastDateOFPreviousMonth
+		END
+```
+
+
+# Bulk Insert From Excel to SQL Using Query
+###### Before Bulk Insert Need to Install and Run the Below Query
+```
+---------------------------
+--SQL Ad Hoc Access to OLE DB
+EXEC sp_configure 'show advanced options', 1
+RECONFIGURE
+GO
+EXEC sp_configure 'ad hoc distributed queries', 1
+RECONFIGURE
+GO
+-----------------------------------------------------------------------------
+"C:\Users\abluhadi\Documents\Downloade\AccessDatabaseEngine_x64.exe" /passive
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255
+```
+###### Bulk Insert From Excel to SQL Using Query
+```
+--Bulk Insert From Excel to SQL Using Query
+Create table tblemployees
+(ID int primary key identity(1,1),
+Name varchar (500),
+Type varchar (500),
+F_Name varchar (500),
+M_Name varchar (500),
+S_Name varchar (500),
+District varchar (500),
+Country varchar (500),
+Thana varchar (500),
+Roll varchar (500),
+Salary decimal)
+
+Select * from tblemployees
+
+BULK INSERT tblemployees
+FROM 'C:\DATA\PERSONAL\TESTWORK\TBLEMPLOYEES.CSV'
+WITH	(ROWTERMINATOR ='\n',
+		FIELDTERMINATOR=',',
+		FIRSTROW=2		)
+
+Delete from tblemployees
+Drop table tblemployees
+
+--Bulk Insert From Excel to SQL Using Query
+```
+
+
+# Query Execute or Run from Table Data
+```
+--Query Execute Run from Table Data
+
+DECLARE     @query		nVARCHAR(MAX) = '';
+
+SET @query =(SELECT LastName FROM   Persons)
+
+-- execute dynamic query
+EXECUTE sp_executesql @query;
+
+SELECT LastName FROM   Persons
+```
+
+
+
+# Quickest Way to Run the Same Query Multiple Times in SQL Server
+
+```
+--Quickest Way to Run the Same Query Multiple Times in SQL Server
+
+CREATE TABLE LoopTest
+(    LoopTestId uniqueidentifier NOT NULL DEFAULT NEWID(),
+    InsertDate datetime2(7) NOT NULL DEFAULT GETDATE() );
+GO
+INSERT LoopTest (LoopTestId, InsertDate)
+VALUES (DEFAULT, DEFAULT);
+GO 20
+-- GO 20 means This will run 20 times.
+Select * from LoopTest
+```
+
+# Multiple Date & Time Formate 
+##### You can try by using 1,2,3,4,5,6,7,... 103. The following is just one example.
+##### Click on below link for details
+
+| SerialNo | Query | Format | Sample |
+| --- | --- | --- | --- |
+| 01 | select convert(varchar, getdate(), 1) | mm/dd/yy | 12/30/06 |
+| 02 | select convert(varchar, getdate(), 2) | yy.mm.dd | 06.12.30 |
+| 03 | select convert(varchar, getdate(), 3) | dd/mm/yy | 30/12/06 |
+| 04 | select convert(varchar, getdate(), 4) | dd.mm.yy | 30.12.06 |
+| 05| select convert(varchar, getdate(), 5) | dd-mm-yy | 39081 |
+
+- https://www.sqlshack.com/sql-convert-date-functions-and-formats/
+
+###### Convert Date time to Number
+```
+select replace(convert(varchar, getdate(),101),'/','')		
+select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':','')		
+```
+
+
+# Plan_Cursor and FETCH
+```
+DECLARE @id varchar(50) ,@maxDayQty numeric(14,2), @startDate numeric(14), @raminingQty numeric(14)
+DECLARE @tempDate numeric(14)
+
+DECLARE plan_cursor CURSOR FOR
+SELECT ID, MaxDayQty, StartDate, RemainingQty FROM tblPlan where RemainingQty > 0 --AND  ID = '103'
+order by ID;
+
+OPEN plan_cursor
+
+FETCH NEXT FROM plan_cursor
+INTO @id,@maxDayQty,@startDate,@raminingQty
+
+SET @tempDate = @startDate
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	
+	WHILE (@raminingQty >0)
+		BEGIN
+				IF((@raminingQty - @maxDayQty) > 0)
+					BEGIN
+						Insert into tblDateWiseQuantity
+						Select @id AS ID ,@tempDate as ProductionDate, @maxDayQty AS MaxDayQty 
+
+						update tblPlan set RemainingQty = RemainingQty - @maxDayQty,EndDate = @tempDate
+						where ID = @id
+					END
+				ELSE
+					BEGIN
+						Insert into tblDateWiseQuantity
+						Select @id AS ID ,@tempDate as ProductionDate, @raminingQty AS MaxDayQty
+						update tblPlan set RemainingQty = 0,EndDate = @tempDate  
+						where ID = @id
+					END
+
+				SET @tempDate = @tempDate + 1;
+				SET @raminingQty = (select RemainingQty from tblPlan where ID = @id)
+
+		END
+	
+
+    FETCH NEXT FROM plan_cursor
+	INTO @id,@maxDayQty,@startDate,@raminingQty
+	SET @tempDate = @startDate
+END
+CLOSE plan_cursor;
+DEALLOCATE plan_cursor;
+```
+
+
+
+
+# Script to create dynamic PIVOT queries in SQL Server
+```
+--If You Ned to Drop or Delete
+--Delete  tblStudentGrades
+--Drop table tblStudentGrades
+--Drop PROCEDURE dbo.usp_Dyna_Pivot
+
+
+--CREATE PROCEDURE
+CREATE PROCEDURE dbo.usp_Dyna_Pivot (
+   @unknownValsCol NVARCHAR (100),
+   @objNameToPivot NVARCHAR (100),
+   @aggFuncOfPivot NVARCHAR (3),
+   @aggColOfPivot NVARCHAR (100),
+   @leadColPivot NVARCHAR (100))
+AS
+BEGIN
+   DECLARE @columns NVARCHAR (2000),
+      @tsql NVARCHAR (2000)
+   DECLARE @distinctVals TABLE (val NVARCHAR (50))
+
+   SET NOCOUNT ON
+   SET @columns = N'';
+   SET @tsql = CONCAT ('SELECT DISTINCT ', @unknownValsCol,' FROM ',@objNameToPivot)
+   INSERT @distinctVals EXEC (@tsql)
+
+   SELECT @columns += CONCAT ('[', Val,']',',')
+   FROM @distinctVals
+
+   SET @columns = LEFT (@columns, LEN (@columns) - 1)
+   SET @tsql = CONCAT ( 'SELECT ', @leadColPivot,   ',', @columns,' FROM ',' ( SELECT ',@leadColPivot,',',
+         @aggColOfPivot,',',   @unknownValsCol,   ' FROM ',   @objNameToPivot,   ') as t ',
+         ' PIVOT (', @aggFuncOfPivot,   '(', @aggColOfPivot,   ')',' FOR ',   @unknownValsCol,
+         '   IN (', @columns,')) as pvt ',' ORDER BY ',   @leadColPivot)
+   EXEC (@tsql)
+   SET NOCOUNT OFF
+END
+GO
+
+
+
+--CREATE TABLE
+CREATE TABLE [dbo].[tblStudentGrades]
+   ([studentName] [varchar](40) NULL, [courseName] [varchar](40) NULL, [year_study] [int] NULL, 
+    [Grade] [int] NULL) ON [PRIMARY] 
+GO 
+
+--Date Insert
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'oracle', 2017, 90) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'oracle', 2018, 96) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'oracle', 2019, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r ', N'oracle', 2017, 95) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'oracle', 2018, 96) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'oracle', 2019, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2017, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2018, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'adir s', N'sql', 2019, 100) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2017, 99) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2018, 89) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'anat a', N'sql', 2019, 90) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r ', N'sql', 2017, 76) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'sql', 2018, 80) 
+INSERT [dbo].[tblStudentGrades] ([studentName], [courseName], [year_study], [grade]) VALUES (N'ofir r', N'sql', 2019, 100) 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--For Final Result
+EXEC dbo.usp_Dyna_Pivot  
+   @unknownValsCol  = 'year_study',			-- get list of unique values
+   @objNameToPivot  = 'tblStudentGrades',	-- table that holds data
+   @aggFuncOfPivot  = 'AVG',				-- type of operation to perform
+   @aggColOfPivot   = 'grade',				-- column value for pivot operation
+   @leadColPivot    = 'courseName'			-- order results by column
+GO  
+--------------------------------------------------------------------------------------------------------------------------------------------
+```
 
 
 
