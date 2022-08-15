@@ -103,6 +103,7 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 ```
 CREATE SCHEMA customer_services;
 GO
+Select * from sys.schemas
 ```
 - **Example**
 
