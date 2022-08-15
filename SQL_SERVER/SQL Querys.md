@@ -99,6 +99,17 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 ```
 
 
+# SQL Server CREATE SCHEMA
+```
+CREATE SCHEMA customer_services;
+GO
+```
+- **Example**
+
+![GoogleImage](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-CREATE-SCHEMA.png)
+
+
+
 
 # SQL User disable or user sleep 
 ```
