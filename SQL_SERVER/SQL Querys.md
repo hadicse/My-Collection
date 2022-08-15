@@ -20,6 +20,7 @@
 Select * from tblProduct
 Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ```
+
 # Basic Structure of SQL Queries:
 The fundamental structure of SQL queries includes three clauses that are select, from, and where clause. What we want in the final result relation is specified in the select clause. Which relations we need to access to get the result is specified in from clause. How the relation must be operated to get the result is specified in the where clause.
 
