@@ -640,10 +640,6 @@ https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85
 
 
 # Get Only numeric or Only Varchar or Mixed (Numeric & Varchar Mixed) from a column
-```
-SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[0-9]%'
-SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[A-Z]%'
-```
 ###### Onlu Numeric
 ```
 SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^0-9]%' --and ITEM != ''
