@@ -611,6 +611,15 @@ ORDER BY Studentname,
 # Different ways to SQL delete duplicate rows from a SQL Table
 -https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
 
+# How to Delete SQL User History
+- Click on Login and Select the User which you need to Delete.
+- Then you need to press the delete button.
+
+![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
+
+
+
+
 
 
 
