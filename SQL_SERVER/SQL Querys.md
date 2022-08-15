@@ -41,11 +41,8 @@ Group By ID
 Having COUNT(Quantity) =1
 Order By ID DESC
 ```
-
-
-![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184685625-61a4911e-f30e-4d0e-8049-4fc7f359dd71.jpg)
-
-
+###### Basic example of SQL
+![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
 
 
 # The most useful website for SQL and Others
@@ -53,7 +50,12 @@ Order By ID DESC
 - https://www.w3resource.com/sql-exercises/
 - https://sqlskull.com/2020/03/15/sql-server-lead-function/
 - https://devsonket.com/
-- 
+
+
+![MY_FAVORITE_FREE_LEARNING_RESOURCES](https://user-images.githubusercontent.com/110928130/184687321-08948d09-1bc1-41c3-a8c5-0b005126d142.jpg)
+
+
+
 ###### You Can Download Some Book From Here
 - https://www.db-book.com/db6/practice-exer-dir/index.html
 ###### TOP-70 MOST IMPORTANT SQL QUERIES IN 2022
