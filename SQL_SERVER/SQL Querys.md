@@ -617,17 +617,6 @@ ORDER BY Studentname,
 
 ![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
-- https://github.com/hadicse/My-Collection/blob/main/Source%20Image/CreatetableRelationship.mp4
-
-## Hi there my gorgeous friend <img src="SourceFile/Delete%SQL%User%Login%History.jpg" width="28px" alt="hi">
-
-<video width="320" height="240" controls>
-  <source src="SourceFile/CreatetableRelationship.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
-
 # Creating a Relationship Between Two Tables Using Query
 ```
 Create Database POSDB
@@ -645,16 +634,8 @@ ProductCode INT FOREIGN KEY REFERENCES tblProduct (ProductCode),
 Item Varchar (50),
 Quantity Numeric (8,2))
 ```
-
-
-# AA
-
-
-
-
-
-https://user-images.githubusercontent.com/110928130/184591889-dcc59c34-abaa-4d99-ac12-94a5025b56d4.mp4
-
+###### You can watch this video (Creating a Relationship Between Two Tables).
+https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85-a369-ba201f58a33f.mp4
 
 
 
