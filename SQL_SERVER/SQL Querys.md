@@ -642,8 +642,13 @@ https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85
 # How to select only numeric values from a column if it has both numeric and varchar
 ```
 SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[0-9]%'
-
 SELECT ColumnName FROM TableName WHERE ColumnName LIKE '%[A-Z]%'
+
+-- Onlu Numeric
+SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^0-9]%' --and ITEM != ''
+
+-- Onlu Varchar
+SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != ''
 ```
 
 
