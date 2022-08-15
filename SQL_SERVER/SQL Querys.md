@@ -42,6 +42,12 @@ Having COUNT(Quantity) =1
 Order By ID DESC
 ```
 
+
+![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184685625-61a4911e-f30e-4d0e-8049-4fc7f359dd71.jpg)
+
+
+
+
 # The most useful website for SQL and Others
 - https://www.w3schools.com/sql/sql_intro.asp
 - https://www.w3resource.com/sql-exercises/
