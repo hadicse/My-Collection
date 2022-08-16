@@ -20,6 +20,47 @@
 Select * from tblProduct
 Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ```
+# Introduction to SQL
+###### What is SQL?
+- SQL stands for Structured Query Language
+- SQL lets you access and manipulate databases
+- SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+- 
+###### Some of The Most Important SQL Commands
+- SELECT - extracts data from a database
+- DATE - updates data in a database
+- LETE - deletes data from a database
+- SERT INTO - inserts new data into a database
+- EATE DATABASE - creates a new database
+- ER DATABASE - modifies a database
+- EATE TABLE - creates a new table
+- TER TABLE - modifies a table
+- OP TABLE - deletes a table
+- EATE INDEX - creates an index (search key)
+-ROP INDEX - deletes an index
+
+
+###### What Can SQL do?
+- SQL can execute queries against a database
+- SQL can retrieve data from a database
+- SQL can insert records in a database
+- SQL can update records in a database
+- SQL can delete records from a database
+- SQL can create new databases
+- SQL can create new tables in a database
+- SQL can create stored procedures in a database
+- SQL can create views in a database
+- SQL can set permissions on tables, procedures, and views
+
+
+
+
+
+
+
+
+
+
 
 # Basic Structure of SQL Queries:
 The fundamental structure of SQL queries includes three clauses that are select, from, and where clause. What we want in the final result relation is specified in the select clause. Which relations we need to access to get the result is specified in from clause. How the relation must be operated to get the result is specified in the where clause.
