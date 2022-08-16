@@ -54,7 +54,7 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 
 
 
-# SQL Basics Concepts
+# SQL Fundamental Concepts (These are the first topics to learn).
 ###### SQL, Create Database, Attach SQL Database, Detach SQL Database
 ###### SQL SERVER Data Types
 - VARCHAR, NVARCHAR, CHAR, NCHAR, DATE
@@ -101,8 +101,9 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 - LEAD(), LAG(), FIRST_VALUE(), LAST_VALUE()
 ###### SQL Mathematical Functions 
 - CEILING(), FLOOR(), ROUND(), RAND()
---------------------------------------------------
-# SQL Advance Concepts
+
+
+# SQL Advanced Concepts (These are required if you want to learn at the advanced level).
 - SQL Server Stored Procedure
 - Encrypt SQL Stored Procedure
 - Store the Output of stored procedure into table/temp table
