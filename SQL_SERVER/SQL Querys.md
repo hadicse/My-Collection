@@ -54,11 +54,53 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 
 
 
+# SQL Basics Concepts
+###### SQL, Create Database, Attach SQL Database, Detach SQL Database
+###### SQL SERVER Data Types
+- VARCHAR, NVARCHAR, CHAR, NCHAR, DATE
+###### SQL DDL (Data Definition Language) 
+- Create table, Alter , Drop, Truncate
+###### SQL DML (Data Manipulation Language)
+- Insert, Update
+- 	Update from select statement
+- Delete, DELETE TOP
+- SELECT Queries, Into, Insert Into, 
+- Order By, Group By, Having, Over Clause, Distinct, Where,TOP, Case Statement, Temporary/Temp table
+- IS NULL, IS NOT NULL, NULLIF
+- 
+###### SQL Operators
+- Exists Operator, Between Operator, Like Clause, Intersect, Except, Union, Union ALL 
 
+###### SQL Constraints
+- Primary Key, Composite Key, Foreign key, Cascading referential integrity in Foreign Key
+- SQL Server NOT NULL Constraint, Default Constraint, Unique Key, Server Check Constraint
 
-
-
-
+###### SQL Joins
+- Join Overview, Inner Join, Left Join, Right Join, Full Join, Cross Join, Cross Apply VS Outer Apply
+- Subquery
+- 
+###### SQL  Functions
+###### SQL System Functions
+- ISNUMERIC(), @@IDENTITY, NEWID(), NEWSEQUENTIALID(), @@ERROR, ISNULL(), 
+- 
+###### SQL Ranking/Window Functions
+- ROW_NUMBER(), RANK(), DENSE_RANK()
+###### SQL Conversion Functions
+- TRY_CAST(), PARSE Function
+###### Logical Functions 
+- IIF (), CHOOSE()
+###### SQL Date Functions
+- DATEPART(), DATEDIFF(), GETDATE(), CURRENT_TIMESTAMP() EOMONTH(), DATEADD(), DATEFROMPARTS(), DATENAME()
+- Date and Time Conversions in SQL Server using Convert function
+######  SQL String Functions
+- CHARINDEX(), LEN(), DATALENGTH(), SUBSTRING(), REPLACE(), REPLICATE(), UPPER(), LOWER(), TRIM(), LRTIM(), RTIM(), SPACE()
+- TRANSLATE(), STUFF(), SQL COALESCE(), STRING_SPLIT(), CONCAT_WS(), REVERSE(), FORMAT(), STRING_AGG(), PATINDEX(), QUOTENAME(),
+###### SQL Aggregate Functions
+SUM(), MAX(), MIN(), AVG(), COUNT()
+###### SQL Analytics Functions
+LEAD(), LAG(), FIRST_VALUE(), LAST_VALUE()
+###### SQL Mathematical Functions 
+CEILING(), FLOOR(), ROUND(), RAND()
 
 
 
