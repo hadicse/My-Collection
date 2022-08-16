@@ -272,6 +272,17 @@ Group By	schema_name(tab.schema_id) + '.' + tab.name
 Having		sum(part.rows) = 0
 Order By	[table]
 ```
+
+# SQL SERVER ROLLUP clause is used to display subtotals and grand totals in the result set. It is always used with GROUP BY CLAUSE.
+```
+SELECT COALESCE(Region ,'GRAND TOTAL' ) AS Region, SUM(Quantity) AS TotalQty
+FROM dbo.ItemQty 
+GROUP BY ROLLUP(Region) 
+```
+![SQL SERVER ROLLUP](https://user-images.githubusercontent.com/110928130/184917159-5c2cc363-9ba8-492e-abef-f71c269b231c.jpg)
+
+
+
 # Row to Colomn SQL Pivot
 ```
 SELECT   ShopCOde, Pro_Code, 1 as AreaCode_1, 2 as AreaCode_2 FROM   [dbo].[tblPvot] 
@@ -280,6 +291,8 @@ PIVOT (SUM(Stock) FOR [AreaCode] IN ([1], [2])) AS P
 Select ShopCode,Pro_Code,AreaCode,Stock from tblPvot
 
 ```
+# SQL UnPivot
+https://sqlskull.com/2020/06/06/sql-server-unpivot/
 
 # Disable Relation 
 ```
