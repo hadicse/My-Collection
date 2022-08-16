@@ -82,7 +82,7 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ###### SQL  Functions
 ###### SQL System Functions
 - ISNUMERIC(), @@IDENTITY, NEWID(), NEWSEQUENTIALID(), @@ERROR, ISNULL(), 
-- 
+
 ###### SQL Ranking/Window Functions
 - ROW_NUMBER(), RANK(), DENSE_RANK()
 ###### SQL Conversion Functions
@@ -96,11 +96,120 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 - CHARINDEX(), LEN(), DATALENGTH(), SUBSTRING(), REPLACE(), REPLICATE(), UPPER(), LOWER(), TRIM(), LRTIM(), RTIM(), SPACE()
 - TRANSLATE(), STUFF(), SQL COALESCE(), STRING_SPLIT(), CONCAT_WS(), REVERSE(), FORMAT(), STRING_AGG(), PATINDEX(), QUOTENAME(),
 ###### SQL Aggregate Functions
-SUM(), MAX(), MIN(), AVG(), COUNT()
+- SUM(), MAX(), MIN(), AVG(), COUNT()
 ###### SQL Analytics Functions
-LEAD(), LAG(), FIRST_VALUE(), LAST_VALUE()
+- LEAD(), LAG(), FIRST_VALUE(), LAST_VALUE()
 ###### SQL Mathematical Functions 
-CEILING(), FLOOR(), ROUND(), RAND()
+- CEILING(), FLOOR(), ROUND(), RAND()
+--------------------------------------------------
+# SQL Advance Concepts
+- SQL Server Stored Procedure
+- Encrypt SQL Stored Procedure
+- Store the Output of stored procedure into table/temp table
+- SQL Server Views
+- SQL Server Output Clause
+- SQL Server Merge
+- SQL Server Pivot
+- SQL Server Dynamic Pivot
+- SQL Server Unpivot
+- SQL Server ROLLUP
+- SQL Server Cube
+- SQL Server Grouping Sets
+- SQL User Defined Functions
+- SQL Server Table Type and Table Valued Parameters
+- SQL Server Sequence
+- SQL Server CTE (Common Table Expression)
+- SQL Recursive CTE
+- SQL Server Create Schema
+- SQL Server Synonyms
+- SQL Server Identify objects Dependencies
+- SQL Server OFFSET FETCH Clause
+- SQL Server Change Data Capture (CDC)
+- SQL Server Temporal Table (System-Versioned Table)
+- SQL Server Cursor
+- SQL IDENT_CURRENT Function
+- DROP IF EXISTS
+###### SQL Server Control of flow Statement
+- SQL WAITFOR
+- Try..Catch
+- While Loop
+- IF..ELSE
+- GOTO Statement
+- RETURN
+###### SQL Server JSON
+- FOR JSON Clause
+- JSON_QUERY
+- JSON_VALUE
+- JSON_MODIFY
+###### SQL Server XML
+- FOR XML
+###### SQL Server SET Statement
+- SQL Server SET XACT_ABORT
+- SQL Server SET DATEFORMAT
+- SQL Server SET IDENTITY_INSERT
+- SQL Server SET NOCOUNT ON | OFF
+- SQL Server SET ROWCOUNT
+- SQL SET LANGUAGE
+- SQL STATISTICS IO ON | OFF
+###### SQL Server Indexes
+- SQL Clustered Index
+- Clustered Vs Non-Clustered Indexes
+###### SQL Server Configuration Functions
+- SQL Server @@version
+- SQL Server @@spid
+- SQL Server @@Language
+- SQL Server @@servicename
+- 
+###### SQL Server Triggers
+- SQL Server Triggers Overview
+- DML Trigger
+- After Trigger
+- Instead Of Trigger
+- DDL Trigger
+- LogOn Triggers Trigger
+- 
+###### SQL Server Transactions 
+- Transaction Concurrency: Dirty reads problem in concurrent transactions
+- Transaction Concurrency: Lost update problem in concurrent transactions
+- SQL RollBack Transaction
+###### SQL Server Agent
+- Job Scheduling in SQL Server
+###### SQL Server System Stored Procedures
+- SQL Server sp_rename
+- SQL Server sp_help
+- SQL Server sp_monitor
+- SQL Server sp_executesql
+- SQL Server Startup procedures Sp_Procoption
+- SQL Server Sp_helptext
+###### Read SQL Server Error logs
+- xp_readerrorlog
+###### SQL Server Database Mail Configurations
+###### SQL Server Database Mail configuration
+- Troubleshooting SQL Server Database mail failure
+- Send a SQL Server Query result in text format using database e-mail
+###### SQL Query Optimization and Performance check
+- Identify Blocked Processes in SQL Server
+###### Data Import/Export in Database
+###### SQL Server Import .CSV file in Database
+- Export data from SQL Server to an Excel file
+- SQL Server Bulk Insert(BCP)
+- Copy or Delete files from directory in SQL Server
+###### SQL Server Collations
+- View Collation information at Server, Database, and Column Level
+- Change the column collation to case sensitive
+###### SQL Server Metadata Functions
+- PARSENAME
+- OBJECT_ID
+###### SQL Server Data Security
+- Dynamic Data Masking in SQL Server
+- Data discovery and classification
+- Implementing a ROW_LEVEL security in SQL Server
+- Column Level Encryption/Decryption Using SYMMETRIC Keys
+- SQL Vulnerability Assessment
+###### SQL Server Scripts Objects
+- Generate database scripts with Schema and Data
+- Script a table in SQL Server
+
 
 
 
