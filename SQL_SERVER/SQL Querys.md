@@ -52,8 +52,9 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 - SQL can create views in a database
 - SQL can set permissions on tables, procedures, and views
 
-
-
+----------
+# Many people do not understand which topics of SQL they need to learn. This topic is for them.
+----------
 # SQL Fundamental Concepts (These are the first topics to learn).
 ###### SQL, Create Database, Attach SQL Database, Detach SQL Database
 ###### SQL SERVER Data Types
@@ -78,7 +79,6 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ###### SQL Joins
 - Join Overview, Inner Join, Left Join, Right Join, Full Join, Cross Join, Cross Apply VS Outer Apply
 - Subquery
-- 
 ###### SQL  Functions
 ###### SQL System Functions
 - ISNUMERIC(), @@IDENTITY, NEWID(), NEWSEQUENTIALID(), @@ERROR, ISNULL(), 
@@ -102,8 +102,9 @@ Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ###### SQL Mathematical Functions 
 - CEILING(), FLOOR(), ROUND(), RAND()
 
-
+----------
 # SQL Advanced Concepts (These are required if you want to learn at the advanced level).
+----------
 - SQL Server Stored Procedure
 - Encrypt SQL Stored Procedure
 - Store the Output of stored procedure into table/temp table
