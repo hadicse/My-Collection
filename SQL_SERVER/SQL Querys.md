@@ -281,6 +281,15 @@ GROUP BY ROLLUP(Region)
 ```
 ![SQL SERVER ROLLUP](https://user-images.githubusercontent.com/110928130/184917159-5c2cc363-9ba8-492e-abef-f71c269b231c.jpg)
 
+# To display the total purchased quantities by region and items with SubTotal and GrandTotal 
+```
+SELECT COALESCE(Region ,'GRAND TOTAL') AS Region,
+COALESCE(Item ,'TOTAL') AS Item, SUM(Quantity) AS TotalQty
+FROM dbo.ItemQty
+GROUP BY ROLLUP(Region, Item
+```
+
+![SubTotal](https://user-images.githubusercontent.com/110928130/184917729-0ca75cfe-8f67-4b28-9e6e-29914fe96c41.jpg)
 
 
 # Row to Colomn SQL Pivot
