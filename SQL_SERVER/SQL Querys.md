@@ -312,6 +312,20 @@ ALTER TABLE tableName NOCHECK CONSTRAINT ALL
 ALTER TABLE tableName WITH CHECK CHECK CONSTRAINT ALL
 ```
 
+
+
+# Remove all Space from string in SQL Server Using SQL Replace
+```
+Select ColumnA, ColumnB from tblTrims
+   
+SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as WithOutSpace  from tblTrims
+   
+```
+
+![RemoveSpace](https://user-images.githubusercontent.com/110928130/185178778-e77d4714-a561-4a41-8998-892c0bea9d82.jpg)
+
+
+
 # RESTORE DATABASE DBNAME
 ```
 From Disk='G:\25-06-2020\Backup\Backup.bak'
@@ -503,16 +517,18 @@ TO DISK = 'D:\backups\testDB.bak'
 ```
 
 # SQL Server Functions
-
+###### Click here for details of Functions
+- https://docs.microsoft.com/en-us/sql/t-sql/functions/functions?view=sql-server-ver16
 - https://www.w3schools.com/sql/sql_ref_sqlserver.asp
+- https://www.educba.com/sql-string-functions/?source=leftnav
 
 # Update with Inner Join
 ```
 UPDATE C
 SET IsActive = 1
-FROM [dbo].[DimCustomer] C
-JOIN [dbo].[FactInternetSales]  S ON C.[CustomerKey] = S.[CustomerKey]
-WHERE S.[OrderDate] >= DATEADD(MONTH,-3,GETDATE());
+FROM tblCustomer C
+JOIN tblSales S ON C.CustomerID = S.CustomerID
+WHERE C.CustomerID=101111101
 ```
 
 # How To Select only Substring
