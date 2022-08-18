@@ -432,6 +432,16 @@ Select ReceiptNo, CAST(ROUND(ReceivedAmount,2) as Numeric (36,2) as TotalAmount
 Select SUM(CAST(ROUND(ColumnName+ColumnName,2) as Numeric (36,2))) as TotalAmount
 ```
 
+# SQL query to display the LEN and First 3 characters
+```
+SUBSTRING( string, start_position, length );
+SELECT SUBSTRING( column_name, 1, 3 ) FROM table_name;
+
+--Main Data
+	IM-APON-DEC21-1
+--Result
+	--INV
+```
 # Len Reducer
 ```
 Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
