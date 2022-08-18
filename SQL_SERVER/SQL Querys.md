@@ -324,7 +324,15 @@ SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as Wi
 
 ![RemoveSpace](https://user-images.githubusercontent.com/110928130/185178778-e77d4714-a561-4a41-8998-892c0bea9d82.jpg)
 
+# How to find percentage in SQL
+```
+Select ((300/100)*10) as Percentage
 
+--Result
+	Percentage
+	30
+
+```
 
 # RESTORE DATABASE DBNAME
 ```
