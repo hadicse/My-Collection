@@ -771,16 +771,44 @@ Drop table tblemployees
 
 # Query Execute or Run from Table Data
 ```
---Query Execute Run from Table Data
+--Query Execute/Run from Table Data
 
-DECLARE     @query		nVARCHAR(MAX) = '';
+-Create Table
+CREATE TABLE [dbo].[tblNulltbl](
+	[ID] [varchar](500) NULL,
+	[Name] [varchar](50) NULL
+) ON [PRIMARY]
 
-SET @query =(SELECT LastName FROM   Persons)
+--Insert Date or Query into Table
+Insert Into tblNulltbl
+Values ('Select 5+5', '1')
+Delete from tblNulltbl
 
--- execute dynamic query
-EXECUTE sp_executesql @query;
 
-SELECT LastName FROM   Persons
+
+DECLARE @Queries TABLE (ID INT IDENTITY(1,1),SQLScript VARCHAR(MAX))
+DECLARE @STR_QUERY VARCHAR(MAX);
+DECLARE @StartLoop INT
+DECLARE @EndLoop INT
+
+
+INSERT INTO @Queries
+SELECT ID as QueryResult
+FROM tblNulltbl Where Name='1'
+
+SELECT @EndLoop = MAX(ID), @StartLoop = MIN(ID)
+FROM @Queries
+
+WHILE @StartLoop < = @EndLoop
+BEGIN
+    SELECT @STR_QUERY = SQLScript 
+  FROM @Queries
+    WHERE ID = @StartLoop
+	
+    EXEC (@STR_QUERY)
+
+    SET @StartLoop = @StartLoop + 1
+END
 ```
 
 
