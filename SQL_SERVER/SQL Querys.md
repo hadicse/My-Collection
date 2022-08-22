@@ -244,6 +244,7 @@ Order By ID DESC
 - https://www.w3resource.com/sql-exercises/
 - https://sqlskull.com/2020/03/15/sql-server-lead-function/
 - https://devsonket.com/
+- https://blog.sqlauthority.com/?s=dynamic+pivot
 
 
 ![MY_FAVORITE_FREE_LEARNING_RESOURCES](https://user-images.githubusercontent.com/110928130/184687321-08948d09-1bc1-41c3-a8c5-0b005126d142.jpg)
