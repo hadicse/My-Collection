@@ -261,6 +261,41 @@ Order By ID DESC
 - https://www.hackerrank.com/domains/sql
 
 
+
+# How to Insert Results of Stored Procedure into a Temporary Table
+```
+	-- Create a Stored Procedure
+	CREATE PROCEDURE TestSP
+	AS
+	SELECT * from TestDB.dbo.tblSeq
+	GO
+	-- Execute Stored Procedure
+	EXEC TestSP
+	GO
+	
+	-- Enable Ad Hoc Distributed Queries
+	sp_configure 'Show Advanced Options', 1
+	GO
+	RECONFIGURE
+	GO
+	sp_configure 'Ad Hoc Distributed Queries', 1
+	GO
+	RECONFIGURE
+	GO
+
+
+	-- Insert into Temp Table
+	SELECT * INTO #TempTable
+	FROM OPENROWSET('SQLNCLI', 'Server=MY_LOVE\SQLSERVER2008R2;Trusted_Connection=yes;','EXEC TestSP')
+	GO
+	-- Select Data from Temp Table
+	SELECT * FROM #TempTable
+	GO
+```
+![SQL-0101s](https://user-images.githubusercontent.com/110928130/185967586-e37d8113-aca3-4ecf-8b68-4ad9875bcb13.jpg)
+
+
+
 ## Find empty tables in SQL Server database
 ```
 Select	schema_name(tab.schema_id) + '.' + tab.name as [table]
@@ -780,6 +815,14 @@ Delete from tblemployees
 Drop table tblemployees
 
 --Bulk Insert From Excel to SQL Using Query
+
+--OR you can use
+
+SELECT * FROM OPENROWSET(
+'Microsoft.ACE.OLEDB.12.0'
+,'Excel 12.0;Database=F:\Backup\SQLAuthority.xlsx;HDR=YES'
+,'SELECT * FROM [Sheet2$]')
+
 ```
 
 
