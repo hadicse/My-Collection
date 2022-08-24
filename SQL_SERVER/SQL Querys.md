@@ -609,6 +609,24 @@ EXEC procedure_name
 
 # SQL Data Types
 - https://www.w3schools.com/sql/sql_datatypes.asp
+- https://www.sqlshack.com/learn-sql-sql-data-types/
+- 
+## The Model
+Before doing anything else, we’ll take one quick look at the model we’re using in this series.
+![image](https://user-images.githubusercontent.com/110928130/186480644-01dd51d8-5d61-404f-b460-2a332c5405f2.png)
+
+- So, let’s quickly review textual data types first. In the table below, you’ll find Transact-SQL string/textual data types with short descriptions.
+![image](https://user-images.githubusercontent.com/110928130/186481012-45174bb7-fbcc-4226-9f04-2f2789fb0870.png)
+
+###### Numeric Data Types
+![image](https://user-images.githubusercontent.com/110928130/186481194-add50e09-d8bb-437c-a4e5-a757fdbf8d4a.png)
+###### Date & Time
+![image](https://user-images.githubusercontent.com/110928130/186481252-9a3281e4-072e-4b60-b3cc-c7975546189a.png)
+
+![image](https://user-images.githubusercontent.com/110928130/186481301-ddcaab3b-5ca3-4354-ba77-852bf6345383.png)
+
+
+
 
 
 # UNION ALL
