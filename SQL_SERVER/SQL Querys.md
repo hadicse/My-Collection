@@ -557,6 +557,26 @@ SELECT SUBSTRING( column_name, 1, 3 ) FROM table_name;
 Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
 ```
 
+# Dynamic SQL Query
+```
+DECLARE 
+    @sql NVARCHAR(MAX),
+	@top NVARCHAR(MAX),
+	@attributes NVARCHAR(MAX),
+	@table NVARCHAR(MAX),
+	@id NVARCHAR(MAX);
+ 
+-- run query using parameters(s)
+SET @top = ' TOP 3 ';
+SET @attributes = ' * ';
+SET @table = ' customer '
+SET @id = N'0';
+SET @sql = N'SELECT ' + @top + @attributes + N'FROM ' + @table + N' WHERE id > ' + @id;
+SELECT @sql AS query;
+EXEC sp_executesql @sql;
+```
+![image](https://user-images.githubusercontent.com/110928130/186484898-5ddc66dc-59c1-4c3d-a967-0b00808ebd20.png)
+
 # Case Wen
 ```
 CASE
