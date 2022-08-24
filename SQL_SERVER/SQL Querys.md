@@ -312,6 +312,35 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 
 
 
+
+# Overview of SQL RANK functions or Row Counts
+###### Click Here For Details of RANK functions
+- https://www.sqlshack.com/overview-of-sql-rank-functions/
+```
+SELECT Studentname, 
+       Subject, 
+       Marks, 
+       RANK() OVER(PARTITION BY Studentname ORDER BY Marks DESC) Rank
+FROM ExamResult
+ORDER BY Studentname, 
+         Rank;
+```
+###### Example of RANK() SQL RANK Function/PARTITION 
+![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
+
+
+# Different ways to SQL delete duplicate rows from a SQL Table
+-https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
+
+# How to Delete SQL User History
+- Click on Login and Select the User which you need to Delete.
+- Then you need to press the delete button.
+
+![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
+
+
+
+
 ## Find empty tables in SQL Server database
 ```
 Select	schema_name(tab.schema_id) + '.' + tab.name as [table]
@@ -620,31 +649,6 @@ DECLARE @Msg VARCHAR(300)
 Set @Msg = 'My Name is Rajendra Gupta';
 PRINT @Msg
 ```
-
-# Overview of SQL RANK functions or Row Counts
-###### Click Here For Details of RANK functions
-- https://www.sqlshack.com/overview-of-sql-rank-functions/
-```
-SELECT Studentname, 
-       Subject, 
-       Marks, 
-       RANK() OVER(PARTITION BY Studentname ORDER BY Marks DESC) Rank
-FROM ExamResult
-ORDER BY Studentname, 
-         Rank;
-```
-###### Example of RANK() SQL RANK Function/PARTITION 
-![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
-
-
-# Different ways to SQL delete duplicate rows from a SQL Table
--https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
-
-# How to Delete SQL User History
-- Click on Login and Select the User which you need to Delete.
-- Then you need to press the delete button.
-
-![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
 # Creating a Relationship Between Two Tables Using Query
 ```
