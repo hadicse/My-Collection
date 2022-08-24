@@ -575,7 +575,7 @@ SET @sql = N'SELECT ' + @top + @attributes + N'FROM ' + @table + N' WHERE id > '
 SELECT @sql AS query;
 EXEC sp_executesql @sql;
 ```
-![image](https://user-images.githubusercontent.com/110928130/186484898-5ddc66dc-59c1-4c3d-a967-0b00808ebd20.png)
+![image](https://user-images.githubusercontent.com/110928130/186487165-c7b41c6b-d6e3-498f-8b84-28a265c1e2d3.png)
 
 # Case Wen
 ```
