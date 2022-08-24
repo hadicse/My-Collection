@@ -260,7 +260,7 @@ Order By ID DESC
 ###### Join over 16 million developers in solving code challenges on (Best Practice Site for SQL)
 - https://www.hackerrank.com/domains/sql
 
-
+---------------------------------------------------------------------------------------------------------------------
 
 # How to Insert Results of Stored Procedure into a Temporary Table
 ```
@@ -338,6 +338,17 @@ ORDER BY Studentname,
 
 ![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
+# 
+
+```
+	SELECT	Order_id, order_date, status,
+			CHOOSE(status,'Pending', 'Processing', 'Rejected', 'Completed') AS order_status
+	FROM	tblorders
+	ORDER BY Order_date ASC
+
+	Select * from tblorders
+```
+![image](https://user-images.githubusercontent.com/110928130/186477291-523d6a3e-d3e3-4338-b895-66892c77c56f.png)
 
 
 
