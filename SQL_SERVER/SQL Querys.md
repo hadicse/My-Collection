@@ -338,7 +338,7 @@ ORDER BY Studentname,
 
 ![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
-# 
+# Using SQL Server CHOOSE() function for table column example
 
 ```
 	SELECT	Order_id, order_date, status,
@@ -348,8 +348,7 @@ ORDER BY Studentname,
 
 	Select * from tblorders
 ```
-![image](https://user-images.githubusercontent.com/110928130/186477291-523d6a3e-d3e3-4338-b895-66892c77c56f.png)
-
+![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
 
 
 ## Find empty tables in SQL Server database
