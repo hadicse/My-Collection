@@ -341,8 +341,14 @@ ORDER BY Studentname,
 # Using SQL Server CHOOSE() function for table column example
 
 ```
+SELECT top 10 [NationalIDNumber]
+,[JobTitle] ,[HireDate] ,
+CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'July','August','September','October','November','December') As [HireMonth]
+,[MaritalStatus]
+ FROM [AdventureWorks].[HumanResources].[Employee]
+  -------------------------------------------------
 	SELECT CHOOSE(2, 'First', 'Second', 'Third') Result
----------------------
+-------------------------------------------------
 
 	SELECT	Order_id, order_date, status,
 			CHOOSE(status,'Pending', 'Processing', 'Rejected', 'Completed') AS order_status
@@ -351,6 +357,8 @@ ORDER BY Studentname,
 
 	Select * from tblorders
 ```
+![image](https://user-images.githubusercontent.com/110928130/186479633-bee42a0e-0669-41ff-ab87-528fb5c1efff.png)
+
 ![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
 
 
