@@ -296,6 +296,22 @@ Order By ID DESC
 
 
 
+# Find Missing Identity Values / Missing Sequence
+```
+--Main Table
+Select ID	,Name from tblSeq
+
+--For Get Seq.
+SELECT Seq FROM (SELECT ROW_NUMBER() OVER (ORDER BY c1.column_id) Seq
+FROM sys.columns c1
+CROSS JOIN sys.columns c2) SequenceTable
+LEFT JOIN tblSeq ON tblSeq.ID = SequenceTable.Seq
+WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
+```
+![image](https://user-images.githubusercontent.com/110928130/185956825-0bfba03b-b149-40c9-bd10-498d35ead801.png)
+
+
+
 ## Find empty tables in SQL Server database
 ```
 Select	schema_name(tab.schema_id) + '.' + tab.name as [table]
@@ -667,20 +683,6 @@ SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != 
 ```
 SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item like  '%[0-9]%[A-Z]%'
 ```
-
-# Find Missing Identity Values / Missing Sequence
-```
---Main Table
-Select ID	,Name from tblSeq
-
---For Get Seq.
-SELECT Seq FROM (SELECT ROW_NUMBER() OVER (ORDER BY c1.column_id) Seq
-FROM sys.columns c1
-CROSS JOIN sys.columns c2) SequenceTable
-LEFT JOIN tblSeq ON tblSeq.ID = SequenceTable.Seq
-WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
-```
-![image](https://user-images.githubusercontent.com/110928130/185956825-0bfba03b-b149-40c9-bd10-498d35ead801.png)
 
 # Find Date Month year 
 ```
