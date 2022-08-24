@@ -341,6 +341,9 @@ ORDER BY Studentname,
 # Using SQL Server CHOOSE() function for table column example
 
 ```
+	SELECT CHOOSE(2, 'First', 'Second', 'Third') Result
+---------------------
+
 	SELECT	Order_id, order_date, status,
 			CHOOSE(status,'Pending', 'Processing', 'Rejected', 'Completed') AS order_status
 	FROM	tblorders
