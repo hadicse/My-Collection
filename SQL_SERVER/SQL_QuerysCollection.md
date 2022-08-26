@@ -145,6 +145,57 @@ CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'Jul
 
 ![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
 
+# SQL Query to get the list of files in a folder in SQL
+```
+	USE master; 
+GO
+
+-- To allow advanced options to be changed.
+EXECUTE sp_configure 'show advanced options', 1; 
+GO 
+-- To update the currently configured value for advanced options. 
+RECONFIGURE; 
+GO
+
+
+
+-- To enable the feature. 
+EXEC sp_configure 'xp_cmdshell', 1; 
+GO 
+-- To update the currently configured value for this feature. 
+RECONFIGURE;
+
+
+
+			DECLARE @dirPath nvarchar(500) = 'D:\databasefile' 
+
+			DECLARE @tblgetfileList TABLE
+			(FileName nvarchar(500)
+			,depth int
+			,isFile int)
+
+			INSERT INTO @tblgetfileList
+			EXEC xp_DirTree @dirPath,1,1
+
+			SELECT FileName from @tblgetfileList where isFile=1
+
+			--For Find File List From Local ComputerOR
+
+
+		CREATE TABLE tblgetfileList (excelFileName VARCHAR(100));
+
+		INSERT INTO tblgetfileList
+
+		EXEC xp_cmdshell 'dir /B "D:\databasefile"';
+
+		select * from tblgetfileList
+
+		
+
+
+```
+
+![image](https://user-images.githubusercontent.com/110928130/186836996-50c7a48a-969f-466e-bc10-03d7da4a93c8.png)
 
 # How to Delete SQL User History
 - Click on Login and Select the User which you need to Delete.
