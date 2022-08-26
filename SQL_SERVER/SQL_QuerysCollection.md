@@ -78,14 +78,40 @@ ORDER BY Studentname,
 ![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
 
 
+# Copy or delete files from directory in SQL Server
+```
+--1st Step
+SE master; 
+GO
+
+-- To allow advanced options to be changed.
+EXECUTE sp_configure 'show advanced options', 1; 
+GO 
+-- To update the currently configured value for advanced options. 
+RECONFIGURE; 
+GO
+```
+
+```
+--2nd Step
+-- To enable the feature. 
+EXEC sp_configure 'xp_cmdshell', 1; 
+GO 
+-- To update the currently configured value for this feature. 
+RECONFIGURE;
+```
+
+```
+--You Need to create SourceData Pathe and  TargetData Path
+EXEC xp_cmdshell 
+'copy E:\SourceData E:\TargetData';
+```
+![image](https://user-images.githubusercontent.com/110928130/186835537-348027ff-2e41-4fb0-bf66-df60d5591ca3.png)
+
+
 # Different ways to SQL delete duplicate rows from a SQL Table
 -https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
 
-# How to Delete SQL User History
-- Click on Login and Select the User which you need to Delete.
-- Then you need to press the delete button.
-
-![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
 # Using SQL Server CHOOSE() function for table column example
 
@@ -109,6 +135,13 @@ CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'Jul
 ![image](https://user-images.githubusercontent.com/110928130/186479633-bee42a0e-0669-41ff-ab87-528fb5c1efff.png)
 
 ![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
+
+
+# How to Delete SQL User History
+- Click on Login and Select the User which you need to Delete.
+- Then you need to press the delete button.
+
+![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
 
 ## Find empty tables in SQL Server database
