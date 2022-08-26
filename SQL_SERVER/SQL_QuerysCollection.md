@@ -77,8 +77,10 @@ ORDER BY Studentname,
 ###### Example of RANK() SQL RANK Function/PARTITION 
 ![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
 
+# Different ways to SQL delete duplicate rows from a SQL Table
+-https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
 
-# Copy or delete files from directory in SQL Server
+# Copy or delete files from directory/local computer in SQL Server
 ```
 --1st Step
 SE master; 
@@ -116,34 +118,6 @@ EXEC xp_cmdshell
 ```
 ![image](https://user-images.githubusercontent.com/110928130/186836048-5bd6363b-0a1c-4fdb-acbc-e08e0896c4c0.png)
 
-
-
-# Different ways to SQL delete duplicate rows from a SQL Table
--https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
-
-
-# Using SQL Server CHOOSE() function for table column example
-
-```
-SELECT top 10 [NationalIDNumber]
-,[JobTitle] ,[HireDate] ,
-CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'July','August','September','October','November','December') As [HireMonth]
-,[MaritalStatus]
- FROM [AdventureWorks].[HumanResources].[Employee]
-  -------------------------------------------------
-	SELECT CHOOSE(2, 'First', 'Second', 'Third') Result
--------------------------------------------------
-
-	SELECT	Order_id, order_date, status,
-			CHOOSE(status,'Pending', 'Processing', 'Rejected', 'Completed') AS order_status
-	FROM	tblorders
-	ORDER BY Order_date ASC
-
-	Select * from tblorders
-```
-![image](https://user-images.githubusercontent.com/110928130/186479633-bee42a0e-0669-41ff-ab87-528fb5c1efff.png)
-
-![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
 
 # SQL Query to get the list of files in a folder in SQL
 ```
@@ -197,6 +171,32 @@ RECONFIGURE;
 ```
 
 ![image](https://user-images.githubusercontent.com/110928130/186836996-50c7a48a-969f-466e-bc10-03d7da4a93c8.png)
+
+
+
+
+# Using SQL Server CHOOSE() function for table column example
+
+```
+SELECT top 10 [NationalIDNumber]
+,[JobTitle] ,[HireDate] ,
+CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'July','August','September','October','November','December') As [HireMonth]
+,[MaritalStatus]
+ FROM [AdventureWorks].[HumanResources].[Employee]
+  -------------------------------------------------
+	SELECT CHOOSE(2, 'First', 'Second', 'Third') Result
+-------------------------------------------------
+
+	SELECT	Order_id, order_date, status,
+			CHOOSE(status,'Pending', 'Processing', 'Rejected', 'Completed') AS order_status
+	FROM	tblorders
+	ORDER BY Order_date ASC
+
+	Select * from tblorders
+```
+![image](https://user-images.githubusercontent.com/110928130/186479633-bee42a0e-0669-41ff-ab87-528fb5c1efff.png)
+
+![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
 
 
 
