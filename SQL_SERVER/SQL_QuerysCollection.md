@@ -4,7 +4,7 @@
 
 
 ## My First Query
-```
+```sql
 Select * from tblProduct
 ```
 
@@ -15,7 +15,7 @@ Select * from tblProduct
 
 
 # How to Insert Results of Stored Procedure into a Temporary Table
-```
+```sql
 	-- Create a Stored Procedure
 	CREATE PROCEDURE TestSP
 	AS
@@ -52,7 +52,7 @@ Select * from tblProduct
 
 
 # Find Missing Identity Values / Missing Sequence
-```
+```sql
 --Main Table
 Select ID	,Name from tblSeq
 
@@ -74,7 +74,7 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 # Overview of SQL RANK functions or Row Counts
 ###### Click Here For Details of RANK functions
 - https://www.sqlshack.com/overview-of-sql-rank-functions/
-```
+```sql
 SELECT Studentname, 
        Subject, 
        Marks, 
@@ -82,7 +82,7 @@ SELECT Studentname,
 FROM ExamResult
 ORDER BY Studentname, 
          Rank;
-```
+```sql
 ###### Example of RANK() SQL RANK Function/PARTITION 
 ![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
 
@@ -104,7 +104,7 @@ ORDER BY Studentname,
 
 
 # Copy or delete files from directory/local computer in SQL Server
-```
+```sql
 --1st Step
 SE master; 
 GO
@@ -117,7 +117,7 @@ RECONFIGURE;
 GO
 ```
 
-```
+```sql
 --2nd Step
 -- To enable the feature. 
 EXEC sp_configure 'xp_cmdshell', 1; 
@@ -126,7 +126,7 @@ GO
 RECONFIGURE;
 ```
 
-```
+```sql
 --Final Step for Copy
 --You Need to create SourceData Pathe and  TargetData Path
 EXEC xp_cmdshell 
@@ -134,7 +134,7 @@ EXEC xp_cmdshell
 ```
 ![image](https://user-images.githubusercontent.com/110928130/186835537-348027ff-2e41-4fb0-bf66-df60d5591ca3.png)
 
-```
+```sql
 --Delete Step
 EXEC xp_cmdshell 
 'del E:\TargetData\StudentInfo.txt'
@@ -151,7 +151,7 @@ EXEC xp_cmdshell
 
 
 # SQL Query to get the list of files in a folder in SQL
-```
+```sql
 	USE master; 
 GO
 
@@ -199,7 +199,7 @@ RECONFIGURE;
 		
 
 
-```
+```sql
 
 ![image](https://user-images.githubusercontent.com/110928130/186836996-50c7a48a-969f-466e-bc10-03d7da4a93c8.png)
 
@@ -211,7 +211,7 @@ RECONFIGURE;
 
 # Using SQL Server CHOOSE() function for table column example
 
-```
+```sql
 SELECT top 10 [NationalIDNumber]
 ,[JobTitle] ,[HireDate] ,
 CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'July','August','September','October','November','December') As [HireMonth]
@@ -238,7 +238,7 @@ CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'Jul
 
 
 # SQL GOTO Statement
-```
+```sql
 Create  PROC Get_NumberEvenOrOdd
 @Number INT
 AS
@@ -265,7 +265,7 @@ SELECT CAST(@Number as VARCHAR) + ' Number is NotFound' AS Output
 RETURN
 GO
 ------------------------------------------------------------------------------
-```
+```sql
 ![image](https://user-images.githubusercontent.com/110928130/186840811-ad509f7f-4a1b-41f6-8e08-5be60bab2891.png)
 
 
@@ -283,7 +283,7 @@ GO
 
 
 ## Find empty tables in SQL Server database
-```
+```sql
 Select	schema_name(tab.schema_id) + '.' + tab.name as [table]
 		From sys.tables tab
 		Inner join sys.partitions part
@@ -302,7 +302,7 @@ Order By	[table]
 
 
 # SQL SERVER ROLLUP clause is used to display subtotals and grand totals in the result set. It is always used with GROUP BY CLAUSE.
-```
+```sql
 SELECT COALESCE(Region ,'GRAND TOTAL' ) AS Region, SUM(Quantity) AS TotalQty
 FROM dbo.ItemQty 
 GROUP BY ROLLUP(Region) 
@@ -317,7 +317,7 @@ GROUP BY ROLLUP(Region)
 
 
 # To display the total purchased quantities by region and items with SubTotal and GrandTotal 
-```
+```sql
 SELECT COALESCE(Region ,'GRAND TOTAL') AS Region,
 COALESCE(Item ,'TOTAL') AS Item, SUM(Quantity) AS TotalQty
 FROM dbo.ItemQty
@@ -334,7 +334,7 @@ GROUP BY ROLLUP(Region, Item
 
 
 # Row to Colomn SQL Pivot
-```
+```sql
 SELECT   ShopCOde, Pro_Code, 1 as AreaCode_1, 2 as AreaCode_2 FROM   [dbo].[tblPvot] 
 PIVOT (SUM(Stock) FOR [AreaCode] IN ([1], [2])) AS P
 
@@ -357,7 +357,7 @@ https://sqlskull.com/2020/06/06/sql-server-unpivot/
 
 
 # Disable Relation 
-```
+```sql
 -- Disable the constraints on a table called tableName:
 ALTER TABLE tableName NOCHECK CONSTRAINT ALL
 
@@ -370,7 +370,7 @@ ALTER TABLE tableName WITH CHECK CHECK CONSTRAINT ALL
 `Topic No: 15`
 
 # Remove all Space from string in SQL Server Using SQL Replace
-```
+```sql
 Select ColumnA, ColumnB from tblTrims
    
 SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as WithOutSpace  from tblTrims
@@ -386,7 +386,7 @@ SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as Wi
 
 
 # How to find percentage in SQL
-```
+```sql
 Select ((300/100)*10) as Percentage
 
 --Result
@@ -400,7 +400,7 @@ Select ((300/100)*10) as Percentage
 
 
 # RESTORE DATABASE DBNAME
-```
+```sql
 From Disk='G:\25-06-2020\Backup\Backup.bak'
 WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 		Move 'POS_data2'	to 'G:\POS_AUDIT_2.mdf',
@@ -418,7 +418,7 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 
 
 # SQL Server CREATE SCHEMA
-```
+```sql
 CREATE SCHEMA customer_services;
 GO
 Select * from sys.schemas
@@ -433,7 +433,7 @@ Select * from sys.schemas
 `Topic No: 19`
 
 # SQL User disable or user sleep 
-```
+```sql
 Select Session_id
 From Sys.dm.exec_session where login_name='prince'
 ```
@@ -445,14 +445,14 @@ From Sys.dm.exec_session where login_name='prince'
 
 
 # To get total number of columns in a table in sql
-```
+```sql
 SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns where TABLE_NAME = 'YourTableName'
 ```
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
 `Topic No: 21`
 
 # Current Month Last Last Date and To get the last day of the previous month:
-```
+```sql
 --Current Month Last Last Date
 DECLARE @test DATETIME
 SET @test = GETDATE()  -- or any other date
@@ -466,7 +466,7 @@ SELECT DATEADD(DAY, -(DAY(GETDATE())), GETDATE())
 `Topic No: 22`
 
 # Create Indexing or index
-```
+```sql
 --For Indexing or index
 Create INDEX IX_SalesReceiptNO
 ON [dbo].[tblSalesTransactionDetails]
@@ -488,7 +488,7 @@ ON [dbo].[tblSalesTransactionDetails]
 
 
 # Database Repair or DBCC CheckDB
-```	
+```sql	
 --1st Step  Delete All Temp Table
 USE [master]
 
@@ -520,7 +520,7 @@ DBCC CHECKDB('DBNAME')
 
 
 # CAST Date
-```
+```sql
 CAST(ROUND(SUM(Rd.UnitPrice), 2) as numeric (36,2)) as TotalSale 
 ```
 
@@ -529,7 +529,7 @@ CAST(ROUND(SUM(Rd.UnitPrice), 2) as numeric (36,2)) as TotalSale
 
 
 # Round
-```
+```sql
 Select ReceiptNo, CAST(ROUND(ReceivedAmount,2) as Numeric (36,2) as TotalAmount
 Select SUM(CAST(ROUND(ColumnName+ColumnName,2) as Numeric (36,2))) as TotalAmount
 ```
@@ -539,7 +539,7 @@ Select SUM(CAST(ROUND(ColumnName+ColumnName,2) as Numeric (36,2))) as TotalAmoun
 
 
 # SQL query to display the LEN and First 3 characters
-```
+```sql
 SUBSTRING( string, start_position, length );
 SELECT SUBSTRING( column_name, 1, 3 ) FROM table_name;
 
@@ -554,7 +554,7 @@ SELECT SUBSTRING( column_name, 1, 3 ) FROM table_name;
 
 
 # Len Reducer
-```
+```sql
 Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
 ```
 
@@ -563,7 +563,7 @@ Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
 
 
 # Dynamic SQL Query
-```
+```sql
 DECLARE 
     @sql NVARCHAR(MAX),
 	@top NVARCHAR(MAX),
@@ -589,7 +589,7 @@ EXEC sp_executesql @sql;
 
 
 # Case Wen
-```
+```sql
 CASE
     WHEN condition1 THEN result1
     WHEN condition2 THEN result2
@@ -610,7 +610,7 @@ FROM OrderDetails
 
 # Having
 
-```
+```sql
 SELECT column_name(s) FROM table_name
 WHERE condition
 GROUP BY column_name(s)
@@ -628,7 +628,7 @@ ORDER BY COUNT(CustomerID) DESC;
 
 
 # IIF Function
-```
+```sql
 SELECT IIF(3<2, 5, 10)
 --Result as 10
 ```
@@ -638,7 +638,7 @@ SELECT IIF(3<2, 5, 10)
 
 
 # PROCEDURE
-```
+```sql
 CREATE PROCEDURE procedure_name
 AS
 sql_statement
@@ -652,7 +652,7 @@ EXEC procedure_name
 
 
 # UNION ALL
-```
+```sql
 SELECT City, Name FROM Customers
 UNION ALL
 SELECT City,Name FROM Suppliers
@@ -676,7 +676,7 @@ Z	NULL
 
 
 # SQL BACKUP DATABASE Statement
-```
+```sql
 BACKUP DATABASE testDB
 TO DISK = 'D:\backups\testDB.bak'
 ```
@@ -698,7 +698,7 @@ TO DISK = 'D:\backups\testDB.bak'
 
 
 # Update with Inner Join
-```
+```sql
 UPDATE C
 SET IsActive = 1
 FROM tblCustomer C
@@ -713,7 +713,7 @@ WHERE C.CustomerID=101111101
 
 
 # How To Select only Substring
-```
+```sql
 SELECT  substring('abcde', 2, 3)
 ```
 
@@ -730,7 +730,7 @@ SELECT  substring('abcde', 2, 3)
 
 
 # SQL Print
-```
+```sql
 DECLARE @Msg VARCHAR(300)= 'My Name is Rajendra Gupta';
 PRINT @Msg
 
@@ -747,7 +747,7 @@ PRINT @Msg
 
 
 # Creating a Relationship Between Two Tables Using Query
-```
+```sql
 Create Database POSDB
 
 Use POSDB
@@ -775,17 +775,17 @@ https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85
 
 # Get Only numeric or Only Varchar or Mixed (Numeric & Varchar Mixed) from a column
 ###### Onlu Numeric
-```
+```sql
 SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^0-9]%' --and ITEM != ''
 ```
 
 ###### Onlu Varchar
-```
+```sql
 SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != ''
 ```
 
 ###### Only Mixed
-```
+```sql
 SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item like  '%[0-9]%[A-Z]%'
 ```
 
@@ -794,7 +794,7 @@ SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item l
 
 
 # Find Date Month year 
-```
+```sql
 --Find Date Month year 
 Select FDate, FMonth, FYear from #FDateTimeYear
 
@@ -839,7 +839,7 @@ SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
 
 
 # Auto Row Count Row Number
-```
+```sql
 --Auto Row Count Row Number
 Select ROW_NUMBER () Over(Order by UserID ) as SLN, UserID from tblUsers
 ```
@@ -850,7 +850,7 @@ Select ROW_NUMBER () Over(Order by UserID ) as SLN, UserID from tblUsers
 
 
 # Varchar Date Month Year
-```
+```sql
 --Varchar Date Month Year
 SELECT CONVERT(VARCHAR(19), (SELECT DAY(GETDATE())), 103) as DAY 
 SELECT CONVERT(VARCHAR(19), (SELECT UPPER(Convert(char(3), GetDate(), 0))), 103) as MONTH 
@@ -877,7 +877,7 @@ Drop table #DayMonthYear
 
 # IF EXISTS
 
-```
+```sql
 Declare @Return as Varchar (MAX)
 	IF EXISTS (Select * from tblUsers where UserID='ADMN2')
 	
@@ -909,7 +909,7 @@ ELSE
 
 # Bulk Insert From Excel to SQL Using Query
 ###### Before Bulk Insert Need to Install and Run the Below Query
-```
+```sql
 ---------------------------
 --SQL Ad Hoc Access to OLE DB
 EXEC sp_configure 'show advanced options', 1
@@ -923,7 +923,7 @@ GO
 https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255
 ```
 ###### Bulk Insert From Excel to SQL Using Query
-```
+```sql
 --Bulk Insert From Excel to SQL Using Query
 Create table tblemployees
 (ID int primary key identity(1,1),
@@ -963,7 +963,7 @@ SELECT * FROM OPENROWSET(
 `Topic No: 48`
 
 # Query Execute or Run from Table Data
-```
+```sql
 --Query Execute/Run from Table Data
 
 -Create Table
@@ -1009,7 +1009,7 @@ END
 
 # Quickest Way to Run the Same Query Multiple Times in SQL Server
 
-```
+```sql
 --Quickest Way to Run the Same Query Multiple Times in SQL Server
 
 CREATE TABLE LoopTest
@@ -1041,7 +1041,7 @@ Select * from LoopTest
 - https://www.sqlshack.com/sql-convert-date-functions-and-formats/
 
 ###### Convert Date time to Number
-```
+```sql
 select replace(convert(varchar, getdate(),101),'/','')		
 select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':','')		
 ```
@@ -1051,7 +1051,7 @@ select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar
 
 
 # Plan_Cursor and FETCH
-```
+```sql
 DECLARE @id varchar(50) ,@maxDayQty numeric(14,2), @startDate numeric(14), @raminingQty numeric(14)
 DECLARE @tempDate numeric(14)
 
@@ -1106,7 +1106,7 @@ DEALLOCATE plan_cursor;
 `Topic No: 52`
 
 # Script to create dynamic PIVOT queries in SQL Server
-```
+```sql
 --If You Ned to Drop or Delete
 --Delete  tblStudentGrades
 --Drop table tblStudentGrades
