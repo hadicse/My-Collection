@@ -2,23 +2,10 @@
 - Here I will collect all types of complex queries.
 - which was used for my work purposes.
 
-## My SQL GURU
-
-```
-- Khan Mohammad Sohel Zaman Bhai
-- Nazir Ali Bhai
-- Shahadat Bhai
-- Forhad Bhai
-- Rubel Bhai
-- Rahat Bhai
-- Omar Faruk Shamim Bhai
-- Ahsan Kabir
-```
 
 ## My First Qyery
 ```
 Select * from tblProduct
-Learn from Nazir Ali Bhai (Ex Southtech Colleague)
 ```
 
 
