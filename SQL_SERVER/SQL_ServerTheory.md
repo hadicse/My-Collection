@@ -1,6 +1,4 @@
-
-
-> __Note__
+>> __Note__
 > Serial No: 01
 
 # Introduction to SQL
@@ -38,7 +36,7 @@
 - SQL can set permissions on tables, procedures, and views
 
 
-> __Note__
+>> __Note__
 > Serial No: 02
 
 
@@ -57,7 +55,7 @@
 - SELECT Queries, Into, Insert Into, 
 - Order By, Group By, Having, Over Clause, Distinct, Where,TOP, Case Statement, Temporary/Temp table
 - IS NULL, IS NOT NULL, NULLIF
-- 
+
 ###### SQL Operators
 - Exists Operator, Between Operator, Like Clause, Intersect, Except, Union, Union ALL 
 
@@ -91,7 +89,7 @@
 ###### SQL Mathematical Functions 
 - CEILING(), FLOOR(), ROUND(), RAND()
 
-> __Note__
+>> __Note__
 > Serial No: 03
 
 
@@ -204,7 +202,7 @@
 - Script a table in SQL Server
 
 
-> __Note__
+>> __Note__
 > Serial No: 04
 
 # Basic Structure of SQL Queries:
@@ -230,7 +228,7 @@ Order By ID DESC
 ###### Basic example of SQL
 ![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
 
-> __Note__
+>> __Note__
 > Serial No: 05
 
 
@@ -255,7 +253,7 @@ Order By ID DESC
 ###### Join over 16 million developers in solving code challenges on (Best Practice Site for SQL)
 - https://www.hackerrank.com/domains/sql
 
-> __Note__
+>> __Note__
 > Serial No: 06
 
 # Date Type
