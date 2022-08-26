@@ -297,7 +297,7 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
 `Serial No: 07`
 
-# কী ফিল্ড (Key) – প্রাইমারি কী, কম্পোজিট প্রাইমারি কী, ফরেন কী
+# কী ফিল্ড (Key) – প্রাইমারি কী, কম্পোজিট প্রাইমারি কী, ফরেন কী (Primary Key and Foreign Key and Composite Key)
 - কী ফিল্ড
 - প্রাইমারি কী
 - কম্পোজিট প্রাইমারি কী
