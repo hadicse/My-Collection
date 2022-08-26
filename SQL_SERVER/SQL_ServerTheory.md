@@ -9,9 +9,6 @@
 - SQL lets you access and manipulate databases
 - SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
 
-> __Note__
-> Serial No: 02
-
 
 ###### Some of The Most Important SQL Commands
 - SELECT - extracts data from a database
@@ -27,8 +24,6 @@
 -ROP INDEX - deletes an index
 
 
-> __Note__
-> Serial No: 03
 
 ###### What Can SQL do?
 - SQL can execute queries against a database
@@ -44,9 +39,9 @@
 
 
 > __Note__
-> Serial No: 04
+> Serial No: 02
 
-----------
+
 # Many people do not understand which topics of SQL they need to learn. This topic is for them.
 ----------
 # SQL Fundamental Concepts (These are the first topics to learn).
@@ -97,11 +92,10 @@
 - CEILING(), FLOOR(), ROUND(), RAND()
 
 > __Note__
-> Serial No: 05
+> Serial No: 03
 
-----------
+
 # SQL Advanced Concepts (These are required if you want to learn at the advanced level).
-----------
 - SQL Server Stored Procedure
 - Encrypt SQL Stored Procedure
 - Store the Output of stored procedure into table/temp table
@@ -158,7 +152,7 @@
 - SQL Server @@spid
 - SQL Server @@Language
 - SQL Server @@servicename
-- 
+
 ###### SQL Server Triggers
 - SQL Server Triggers Overview
 - DML Trigger
@@ -166,7 +160,7 @@
 - Instead Of Trigger
 - DDL Trigger
 - LogOn Triggers Trigger
-- 
+
 ###### SQL Server Transactions 
 - Transaction Concurrency: Dirty reads problem in concurrent transactions
 - Transaction Concurrency: Lost update problem in concurrent transactions
@@ -211,7 +205,7 @@
 
 
 > __Note__
-> Serial No: 06
+> Serial No: 04
 
 # Basic Structure of SQL Queries:
 The fundamental structure of SQL queries includes three clauses that are select, from, and where clause. What we want in the final result relation is specified in the select clause. Which relations we need to access to get the result is specified in from clause. How the relation must be operated to get the result is specified in the where clause.
@@ -237,7 +231,7 @@ Order By ID DESC
 ![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
 
 > __Note__
-> Serial No: 07
+> Serial No: 05
 
 
 # The most useful website for SQL and Others
@@ -262,7 +256,7 @@ Order By ID DESC
 - https://www.hackerrank.com/domains/sql
 
 > __Note__
-> Serial No: 08
+> Serial No: 06
 
 # Date Type
 
