@@ -198,6 +198,40 @@ RECONFIGURE;
 
 ![image](https://user-images.githubusercontent.com/110928130/186836996-50c7a48a-969f-466e-bc10-03d7da4a93c8.png)
 
+
+
+# SQL GOTO Statement
+```
+Create  PROC Get_NumberEvenOrOdd
+@Number INT
+AS
+------------------------------------------------------------------------------
+IF @Number =1
+GOTO One
+
+IF @Number =2
+GOTO Odd
+
+ELSE
+GOTO NotFound
+------------------------------------------------------------------------------
+One:
+SELECT CAST(@Number as VARCHAR) + ' Number is One' AS Output
+RETURN
+------------------------------------------------------------------------------
+Odd:
+SELECT CAST(@Number as VARCHAR) + ' Number is Two' AS Output
+RETURN
+------------------------------------------------------------------------------
+NotFound:
+SELECT CAST(@Number as VARCHAR) + ' Number is NotFound' AS Output
+RETURN
+GO
+------------------------------------------------------------------------------
+```
+![image](https://user-images.githubusercontent.com/110928130/186840811-ad509f7f-4a1b-41f6-8e08-5be60bab2891.png)
+
+
 # How to Delete SQL User History
 - Click on Login and Select the User which you need to Delete.
 - Then you need to press the delete button.
