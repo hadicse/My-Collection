@@ -1,10 +1,18 @@
 
+
+> __Note__
+> Serial No: 01
+
 # Introduction to SQL
 ###### What is SQL?
 - SQL stands for Structured Query Language
 - SQL lets you access and manipulate databases
 - SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
-- 
+
+> __Note__
+> Serial No: 02
+
+
 ###### Some of The Most Important SQL Commands
 - SELECT - extracts data from a database
 - DATE - updates data in a database
@@ -19,6 +27,9 @@
 -ROP INDEX - deletes an index
 
 
+> __Note__
+> Serial No: 03
+
 ###### What Can SQL do?
 - SQL can execute queries against a database
 - SQL can retrieve data from a database
@@ -30,6 +41,10 @@
 - SQL can create stored procedures in a database
 - SQL can create views in a database
 - SQL can set permissions on tables, procedures, and views
+
+
+> __Note__
+> Serial No: 04
 
 ----------
 # Many people do not understand which topics of SQL they need to learn. This topic is for them.
@@ -80,6 +95,9 @@
 - LEAD(), LAG(), FIRST_VALUE(), LAST_VALUE()
 ###### SQL Mathematical Functions 
 - CEILING(), FLOOR(), ROUND(), RAND()
+
+> __Note__
+> Serial No: 05
 
 ----------
 # SQL Advanced Concepts (These are required if you want to learn at the advanced level).
@@ -192,7 +210,8 @@
 - Script a table in SQL Server
 
 
-
+> __Note__
+> Serial No: 06
 
 # Basic Structure of SQL Queries:
 The fundamental structure of SQL queries includes three clauses that are select, from, and where clause. What we want in the final result relation is specified in the select clause. Which relations we need to access to get the result is specified in from clause. How the relation must be operated to get the result is specified in the where clause.
@@ -217,6 +236,9 @@ Order By ID DESC
 ###### Basic example of SQL
 ![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
 
+> __Note__
+> Serial No: 07
+
 
 # The most useful website for SQL and Others
 - https://www.w3schools.com/sql/sql_intro.asp
@@ -239,13 +261,14 @@ Order By ID DESC
 ###### Join over 16 million developers in solving code challenges on (Best Practice Site for SQL)
 - https://www.hackerrank.com/domains/sql
 
-
+> __Note__
+> Serial No: 08
 
 # Date Type
 
 - https://www.w3schools.com/sql/sql_datatypes.asp
 - https://www.sqlshack.com/learn-sql-sql-data-types/
-- 
+
 ## The Model
 Before doing anything else, we’ll take one quick look at the model we’re using in this series.
 ![image](https://user-images.githubusercontent.com/110928130/186480644-01dd51d8-5d61-404f-b460-2a332c5405f2.png)
