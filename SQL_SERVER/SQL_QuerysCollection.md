@@ -102,11 +102,20 @@ RECONFIGURE;
 ```
 
 ```
+--Final Step for Copy
 --You Need to create SourceData Pathe and  TargetData Path
 EXEC xp_cmdshell 
 'copy E:\SourceData E:\TargetData';
 ```
 ![image](https://user-images.githubusercontent.com/110928130/186835537-348027ff-2e41-4fb0-bf66-df60d5591ca3.png)
+
+```
+--Delete Step
+EXEC xp_cmdshell 
+'del E:\TargetData\StudentInfo.txt'
+```
+![image](https://user-images.githubusercontent.com/110928130/186836048-5bd6363b-0a1c-4fdb-acbc-e08e0896c4c0.png)
+
 
 
 # Different ways to SQL delete duplicate rows from a SQL Table
