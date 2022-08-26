@@ -1046,6 +1046,9 @@ select replace(convert(varchar, getdate(),101),'/','')
 select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':','')		
 ```
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 51`
+
 
 # Plan_Cursor and FETCH
 ```
@@ -1099,7 +1102,8 @@ DEALLOCATE plan_cursor;
 ```
 
 
-
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 52`
 
 # Script to create dynamic PIVOT queries in SQL Server
 ```
