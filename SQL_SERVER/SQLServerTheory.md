@@ -243,8 +243,6 @@ Order By ID DESC
 
 # Date Type
 
-
-# SQL Data Types
 - https://www.w3schools.com/sql/sql_datatypes.asp
 - https://www.sqlshack.com/learn-sql-sql-data-types/
 - 
