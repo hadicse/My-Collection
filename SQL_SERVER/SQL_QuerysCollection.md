@@ -3,7 +3,7 @@
 - which was used for my work purposes.
 
 
-## My First Qyery
+## My First Query
 ```
 Select * from tblProduct
 ```
@@ -11,7 +11,7 @@ Select * from tblProduct
 
 ---------------------------------------------------------------------------------------------------------------------
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 01`
+`Topic No: 01`
 
 
 # How to Insert Results of Stored Procedure into a Temporary Table
@@ -48,7 +48,7 @@ Select * from tblProduct
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 02`
+`Topic No: 02`
 
 
 # Find Missing Identity Values / Missing Sequence
@@ -67,7 +67,7 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 03`
+`Topic No: 03`
 
 
 
@@ -88,7 +88,7 @@ ORDER BY Studentname,
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 04`
+`Topic No: 04`
 
 
 
@@ -98,7 +98,7 @@ ORDER BY Studentname,
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 05`
+`Topic No: 05`
 
 
 
@@ -144,7 +144,7 @@ EXEC xp_cmdshell
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 06`
+`Topic No: 06`
 
 
 
@@ -205,7 +205,7 @@ RECONFIGURE;
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 07`
+`Topic No: 07`
 
 
 
@@ -234,7 +234,7 @@ CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'Jul
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 08`
+`Topic No: 08`
 
 
 # SQL GOTO Statement
@@ -272,7 +272,7 @@ GO
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 09`
+`Topic No: 09`
 
 
 # How to Delete SQL User History
@@ -296,7 +296,7 @@ Order By	[table]
 ```
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 10`
+`Topic No: 10`
 
 
 
@@ -311,7 +311,7 @@ GROUP BY ROLLUP(Region)
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 11`
+`Topic No: 11`
 
 
 
@@ -328,7 +328,7 @@ GROUP BY ROLLUP(Region, Item
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 12`
+`Topic No: 12`
 
 
 
@@ -344,7 +344,7 @@ Select ShopCode,Pro_Code,AreaCode,Stock from tblPvot
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 13`
+`Topic No: 13`
 
 
 # SQL UnPivot
@@ -353,7 +353,7 @@ https://sqlskull.com/2020/06/06/sql-server-unpivot/
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 14`
+`Topic No: 14`
 
 
 # Disable Relation 
@@ -367,7 +367,7 @@ ALTER TABLE tableName WITH CHECK CHECK CONSTRAINT ALL
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 15`
+`Topic No: 15`
 
 # Remove all Space from string in SQL Server Using SQL Replace
 ```
@@ -382,7 +382,7 @@ SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as Wi
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 16`
+`Topic No: 16`
 
 
 # How to find percentage in SQL
@@ -396,7 +396,7 @@ Select ((300/100)*10) as Percentage
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 17`
+`Topic No: 17`
 
 
 # RESTORE DATABASE DBNAME
@@ -413,7 +413,7 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 18`
+`Topic No: 18`
 
 
 
@@ -430,7 +430,7 @@ Select * from sys.schemas
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 19`
+`Topic No: 19`
 
 # SQL User disable or user sleep 
 ```
@@ -441,13 +441,16 @@ From Sys.dm.exec_session where login_name='prince'
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 20`
+`Topic No: 20`
 
 
 # To get total number of columns in a table in sql
 ```
 SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns where TABLE_NAME = 'YourTableName'
 ```
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 21`
+
 # Current Month Last Last Date and To get the last day of the previous month:
 ```
 --Current Month Last Last Date
@@ -459,6 +462,8 @@ SELECT DATEADD(month, ((YEAR(@test) - 1900) * 12) + MONTH(@test), -1)
 SELECT DATEADD(DAY, -(DAY(GETDATE())), GETDATE())
 
 ```
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 22`
 
 # Create Indexing or index
 ```
@@ -478,6 +483,8 @@ ON [dbo].[tblSalesTransactionDetails]
 (ReceiptNo ASC, Barcode asc)
 
 ```
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 23`
 
 
 # Database Repair or DBCC CheckDB
@@ -508,15 +515,28 @@ DBCC CHECKDB('DBNAME')
 --4th Step Indexing  by Start a Task Weserd
 ```
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 24`
+
+
 # CAST Date
 ```
 CAST(ROUND(SUM(Rd.UnitPrice), 2) as numeric (36,2)) as TotalSale 
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 25`
+
+
 # Round
 ```
 Select ReceiptNo, CAST(ROUND(ReceivedAmount,2) as Numeric (36,2) as TotalAmount
 Select SUM(CAST(ROUND(ColumnName+ColumnName,2) as Numeric (36,2))) as TotalAmount
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 26`
+
 
 # SQL query to display the LEN and First 3 characters
 ```
@@ -528,10 +548,19 @@ SELECT SUBSTRING( column_name, 1, 3 ) FROM table_name;
 --Result
 	--INV
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 27`
+
+
 # Len Reducer
 ```
 Update tblCustomerInfo set Name=RIGHT(Name, LEN(Name)-1)
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 28`
+
 
 # Dynamic SQL Query
 ```
@@ -553,6 +582,12 @@ EXEC sp_executesql @sql;
 ```
 ![image](https://user-images.githubusercontent.com/110928130/186487165-c7b41c6b-d6e3-498f-8b84-28a265c1e2d3.png)
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 29`
+
+
+
 # Case Wen
 ```
 CASE
@@ -570,7 +605,8 @@ CASE
 END AS QuantityText
 FROM OrderDetails
 ```
-
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 30`
 
 # Having
 
@@ -587,11 +623,19 @@ HAVING COUNT(CustomerID) > 5
 ORDER BY COUNT(CustomerID) DESC;
 ```
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 31`
+
+
 # IIF Function
 ```
 SELECT IIF(3<2, 5, 10)
 --Result as 10
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 32`
+
 
 # PROCEDURE
 ```
@@ -602,6 +646,9 @@ GO
 
 EXEC procedure_name
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 33`
 
 
 # UNION ALL
@@ -623,17 +670,32 @@ Z	NULL
 
 ```
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 34`
+
+
 # SQL BACKUP DATABASE Statement
 ```
 BACKUP DATABASE testDB
 TO DISK = 'D:\backups\testDB.bak'
 ```
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 35`
+
+
 # SQL Server Functions
 ###### Click here for details of Functions
 - https://docs.microsoft.com/en-us/sql/t-sql/functions/functions?view=sql-server-ver16
 - https://www.w3schools.com/sql/sql_ref_sqlserver.asp
 - https://www.educba.com/sql-string-functions/?source=leftnav
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 36`
+
 
 # Update with Inner Join
 ```
@@ -644,13 +706,28 @@ JOIN tblSales S ON C.CustomerID = S.CustomerID
 WHERE C.CustomerID=101111101
 ```
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 37`
+
+
+
 # How To Select only Substring
 ```
 SELECT  substring('abcde', 2, 3)
 ```
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 38`
+
 # SQL WHILE loop with simple examples
 - https://www.sqlshack.com/sql-while-loop-with-simple-examples/
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 39`
+
 
 # SQL Print
 ```
@@ -663,6 +740,11 @@ DECLARE @Msg VARCHAR(300)
 Set @Msg = 'My Name is Rajendra Gupta';
 PRINT @Msg
 ```
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 40`
+
 
 # Creating a Relationship Between Two Tables Using Query
 ```
@@ -685,6 +767,11 @@ Quantity Numeric (8,2))
 https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85-a369-ba201f58a33f.mp4
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 41`
+
+
+
 
 # Get Only numeric or Only Varchar or Mixed (Numeric & Varchar Mixed) from a column
 ###### Onlu Numeric
@@ -701,6 +788,10 @@ SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != 
 ```
 SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item like  '%[0-9]%[A-Z]%'
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 42`
+
 
 # Find Date Month year 
 ```
@@ -730,16 +821,32 @@ SELECT CONVERT(VARCHAR(19), SYSDATETIME(), 120)
 SELECT DATEADD(dd, -1, DATEADD(yy, DATEDIFF(yy, 0, GETDATE()), 0))
 ```
 
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 43`
+
 # Upper and Lower Font Style in SQL
 ###### how to display space first letter capital in sql server
 ###### After Space Letter Capital First Letter in capital, Upper and Lower font style
 - https://www.sqlshack.com/overview-of-sql-lower-and-sql-upper-functions/#:~:text=We%20use%20SQL%20UPPER%20function,all%20characters%20into%20capital%20letters.
+
+
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 44`
+
 
 # Auto Row Count Row Number
 ```
 --Auto Row Count Row Number
 Select ROW_NUMBER () Over(Order by UserID ) as SLN, UserID from tblUsers
 ```
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 45`
 
 
 # Varchar Date Month Year
@@ -762,6 +869,10 @@ Select Day + '-' + Month + '-' + LastYear as ToDate Into #ToDate from #DayMonthY
 Drop table #FromDate
 Drop table #DayMonthYear
 ```
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 46`
 
 
 # IF EXISTS
@@ -790,6 +901,10 @@ ELSE
 		PRINT	'NotFound'	--IF not Found Then Inser LastDateOFPreviousMonth
 		END
 ```
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 47`
 
 
 # Bulk Insert From Excel to SQL Using Query
@@ -844,7 +959,8 @@ SELECT * FROM OPENROWSET(
 ,'SELECT * FROM [Sheet2$]')
 
 ```
-
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 48`
 
 # Query Execute or Run from Table Data
 ```
@@ -888,7 +1004,8 @@ BEGIN
 END
 ```
 
-
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 49`
 
 # Quickest Way to Run the Same Query Multiple Times in SQL Server
 
@@ -905,6 +1022,9 @@ GO 20
 -- GO 20 means This will run 20 times.
 Select * from LoopTest
 ```
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 50`
 
 # Multiple Date & Time Formate 
 ##### You can try by using 1,2,3,4,5,6,7,... 103. The following is just one example.
