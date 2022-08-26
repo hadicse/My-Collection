@@ -1,7 +1,7 @@
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `dfgfgf`
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 01`
 
->> __Note__
-> Serial No: 01
+
 
 # Introduction to SQL
 ###### What is SQL?
@@ -38,8 +38,10 @@
 - SQL can set permissions on tables, procedures, and views
 
 
->> __Note__
-> Serial No: 02
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 02`
+
+
 
 
 # Many people do not understand which topics of SQL they need to learn. This topic is for them.
@@ -91,8 +93,9 @@
 ###### SQL Mathematical Functions 
 - CEILING(), FLOOR(), ROUND(), RAND()
 
->> __Note__
-> Serial No: 03
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 03`
+
 
 
 # SQL Advanced Concepts (These are required if you want to learn at the advanced level).
@@ -204,8 +207,10 @@
 - Script a table in SQL Server
 
 
->> __Note__
-> Serial No: 04
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 04`
+
+
 
 # Basic Structure of SQL Queries:
 The fundamental structure of SQL queries includes three clauses that are select, from, and where clause. What we want in the final result relation is specified in the select clause. Which relations we need to access to get the result is specified in from clause. How the relation must be operated to get the result is specified in the where clause.
@@ -230,8 +235,10 @@ Order By ID DESC
 ###### Basic example of SQL
 ![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
 
->> __Note__
-> Serial No: 05
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 05`
+
+
 
 
 # The most useful website for SQL and Others
@@ -255,8 +262,10 @@ Order By ID DESC
 ###### Join over 16 million developers in solving code challenges on (Best Practice Site for SQL)
 - https://www.hackerrank.com/domains/sql
 
->> __Note__
-> Serial No: 06
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 06`
+
+
 
 # Date Type
 
