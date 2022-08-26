@@ -10,6 +10,9 @@ Select * from tblProduct
 
 
 ---------------------------------------------------------------------------------------------------------------------
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 01`
+
 
 # How to Insert Results of Stored Procedure into a Temporary Table
 ```
@@ -44,6 +47,9 @@ Select * from tblProduct
 ![SQL-0101s](https://user-images.githubusercontent.com/110928130/185967586-e37d8113-aca3-4ecf-8b68-4ad9875bcb13.jpg)
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 02`
+
 
 # Find Missing Identity Values / Missing Sequence
 ```
@@ -59,6 +65,9 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 ```
 ![image](https://user-images.githubusercontent.com/110928130/185956825-0bfba03b-b149-40c9-bd10-498d35ead801.png)
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 03`
 
 
 
@@ -77,8 +86,22 @@ ORDER BY Studentname,
 ###### Example of RANK() SQL RANK Function/PARTITION 
 ![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 04`
+
+
+
+
 # Different ways to SQL delete duplicate rows from a SQL Table
 -https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 05`
+
+
+
 
 # Copy or delete files from directory/local computer in SQL Server
 ```
@@ -117,6 +140,14 @@ EXEC xp_cmdshell
 'del E:\TargetData\StudentInfo.txt'
 ```
 ![image](https://user-images.githubusercontent.com/110928130/186836048-5bd6363b-0a1c-4fdb-acbc-e08e0896c4c0.png)
+
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 06`
+
+
+
 
 
 # SQL Query to get the list of files in a folder in SQL
@@ -173,6 +204,9 @@ RECONFIGURE;
 ![image](https://user-images.githubusercontent.com/110928130/186836996-50c7a48a-969f-466e-bc10-03d7da4a93c8.png)
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 07`
+
 
 
 # Using SQL Server CHOOSE() function for table column example
@@ -198,6 +232,9 @@ CHOOSE(MONTH([HireDate]),'January','February','March','April','May','June', 'Jul
 
 ![image](https://user-images.githubusercontent.com/110928130/186477750-4d6b88bf-f707-4469-b23f-bcc156fcac71.png)
 
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 08`
 
 
 # SQL GOTO Statement
@@ -232,6 +269,12 @@ GO
 ![image](https://user-images.githubusercontent.com/110928130/186840811-ad509f7f-4a1b-41f6-8e08-5be60bab2891.png)
 
 
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 09`
+
+
 # How to Delete SQL User History
 - Click on Login and Select the User which you need to Delete.
 - Then you need to press the delete button.
@@ -252,6 +295,12 @@ Having		sum(part.rows) = 0
 Order By	[table]
 ```
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 10`
+
+
+
+
 # SQL SERVER ROLLUP clause is used to display subtotals and grand totals in the result set. It is always used with GROUP BY CLAUSE.
 ```
 SELECT COALESCE(Region ,'GRAND TOTAL' ) AS Region, SUM(Quantity) AS TotalQty
@@ -259,6 +308,13 @@ FROM dbo.ItemQty
 GROUP BY ROLLUP(Region) 
 ```
 ![SQL SERVER ROLLUP](https://user-images.githubusercontent.com/110928130/184917159-5c2cc363-9ba8-492e-abef-f71c269b231c.jpg)
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 11`
+
+
+
 
 # To display the total purchased quantities by region and items with SubTotal and GrandTotal 
 ```
@@ -271,6 +327,12 @@ GROUP BY ROLLUP(Region, Item
 ![SubTotal](https://user-images.githubusercontent.com/110928130/184917729-0ca75cfe-8f67-4b28-9e6e-29914fe96c41.jpg)
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 12`
+
+
+
+
 # Row to Colomn SQL Pivot
 ```
 SELECT   ShopCOde, Pro_Code, 1 as AreaCode_1, 2 as AreaCode_2 FROM   [dbo].[tblPvot] 
@@ -279,8 +341,20 @@ PIVOT (SUM(Stock) FOR [AreaCode] IN ([1], [2])) AS P
 Select ShopCode,Pro_Code,AreaCode,Stock from tblPvot
 
 ```
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 13`
+
+
 # SQL UnPivot
 https://sqlskull.com/2020/06/06/sql-server-unpivot/
+
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 14`
+
 
 # Disable Relation 
 ```
@@ -292,6 +366,8 @@ ALTER TABLE tableName WITH CHECK CHECK CONSTRAINT ALL
 ```
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 15`
 
 # Remove all Space from string in SQL Server Using SQL Replace
 ```
@@ -303,6 +379,12 @@ SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as Wi
 
 ![RemoveSpace](https://user-images.githubusercontent.com/110928130/185178778-e77d4714-a561-4a41-8998-892c0bea9d82.jpg)
 
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 16`
+
+
 # How to find percentage in SQL
 ```
 Select ((300/100)*10) as Percentage
@@ -310,8 +392,12 @@ Select ((300/100)*10) as Percentage
 --Result
 	Percentage
 	30
-
 ```
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 17`
+
 
 # RESTORE DATABASE DBNAME
 ```
@@ -326,6 +412,11 @@ WITH	Move 'POS_data'		to 'G:\POS_AUDIT.mdf',
 ```
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 18`
+
+
+
 # SQL Server CREATE SCHEMA
 ```
 CREATE SCHEMA customer_services;
@@ -338,12 +429,20 @@ Select * from sys.schemas
 
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 19`
 
 # SQL User disable or user sleep 
 ```
 Select Session_id
 From Sys.dm.exec_session where login_name='prince'
 ```
+
+
+
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 20`
+
 
 # To get total number of columns in a table in sql
 ```
