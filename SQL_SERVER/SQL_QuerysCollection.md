@@ -166,7 +166,7 @@ GO
 RECONFIGURE;
 
 
-
+--For Find File List From Local Computer (Its Best)
 			DECLARE @dirPath nvarchar(500) = 'D:\databasefile' 
 
 			DECLARE @tblgetfileList TABLE
@@ -179,7 +179,8 @@ RECONFIGURE;
 
 			SELECT FileName from @tblgetfileList where isFile=1
 
-			--For Find File List From Local ComputerOR
+--For Find File List From Local Computer
+--OR Using Below Query
 
 
 		CREATE TABLE tblgetfileList (excelFileName VARCHAR(100));
