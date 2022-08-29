@@ -82,7 +82,7 @@ SELECT Studentname,
 FROM ExamResult
 ORDER BY Studentname, 
          Rank;
-```sql
+```
 ###### Example of RANK() SQL RANK Function/PARTITION 
 ![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
 
