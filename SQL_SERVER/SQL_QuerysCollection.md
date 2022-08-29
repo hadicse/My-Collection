@@ -199,7 +199,7 @@ RECONFIGURE;
 		
 
 
-```sql
+```
 
 ![image](https://user-images.githubusercontent.com/110928130/186836996-50c7a48a-969f-466e-bc10-03d7da4a93c8.png)
 
@@ -265,7 +265,7 @@ SELECT CAST(@Number as VARCHAR) + ' Number is NotFound' AS Output
 RETURN
 GO
 ------------------------------------------------------------------------------
-```sql
+```
 ![image](https://user-images.githubusercontent.com/110928130/186840811-ad509f7f-4a1b-41f6-8e08-5be60bab2891.png)
 
 
