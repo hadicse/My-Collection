@@ -281,6 +281,9 @@ GO
 
 ![GoogleImage](https://github.com/hadicse/My-Collection/blob/main/Source%20Image/Delete%20SQL%20User%20Login%20History.jpg?raw=true) 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Topic No: 9.1`
+
 
 ## Find empty tables in SQL Server database
 ```sql
