@@ -75,16 +75,15 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 ###### Click Here For Details of RANK functions
 - https://www.sqlshack.com/overview-of-sql-rank-functions/
 ```sql
-SELECT Studentname, 
-       Subject, 
-       Marks, 
-       RANK() OVER(PARTITION BY Studentname ORDER BY Marks DESC) Rank
-FROM ExamResult
-ORDER BY Studentname, 
-         Rank;
+	-- 1 column must contain at least one unique value. 
+	SELECT Studentname, Subject, Marks, 
+		   RANK() OVER(PARTITION BY Studentname ORDER BY Subject DESC) Rank
+	FROM ExamResult
+	ORDER BY Studentname, 
+			 Rank;
 ```
 ###### Example of RANK() SQL RANK Function/PARTITION 
-![GoogleImage](https://www.sqlshack.com/wp-content/uploads/2019/07/ranksql-rank-function.png) 
+![image](https://user-images.githubusercontent.com/110928130/187938455-a9b478ec-0ac6-44e6-be4f-d1aad5256aa1.png)
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
