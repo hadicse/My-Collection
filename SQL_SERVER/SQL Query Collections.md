@@ -95,6 +95,7 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 -https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
 
 ```sql
+--If All Column Same The You Can Use this
 	WITH CTE([Firstname],[Lastname], [Country], Duplicatecount)
 	AS (SELECT [FirstName],[Lastname], [Country], 
 			   ROW_NUMBER() OVER(PARTITION BY [Firstname], [Lastname], [Country]
