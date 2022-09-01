@@ -87,13 +87,25 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+
+
 `Topic No: 04`
-
-
-
 
 # Different ways to SQL delete duplicate rows from a SQL Table
 -https://www.sqlshack.com/different-ways-to-sql-delete-duplicate-rows-from-a-sql-table/
+
+```sql
+	WITH CTE([Firstname],[Lastname], [Country], Duplicatecount)
+	AS (SELECT [FirstName],[Lastname], [Country], 
+			   ROW_NUMBER() OVER(PARTITION BY [Firstname], [Lastname], [Country]
+			   ORDER BY [Country]) AS DuplicateCount
+		FROM [Employee])
+	SELECT * FROM CTE
+
+
+```
+![image](https://user-images.githubusercontent.com/110928130/187942489-26aea123-8e4a-4488-bf96-eff7875a76f6.png)
+
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
