@@ -31,7 +31,7 @@ Select * from tblProduct
 	RECONFIGURE
 	GO
 	sp_configure 'Ad Hoc Distributed Queries', 1
-	GO
+	GO 
 	RECONFIGURE
 	GO
 
