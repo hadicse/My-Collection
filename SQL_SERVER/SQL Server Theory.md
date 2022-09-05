@@ -362,14 +362,18 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 # SQL Server Functions
 
 ```
-SQL Server Functions
-
+SQL Server Functions mainly 2 Types
+-----------------------------------
  1. System Functions		(Main)
  2. User-Defined Functions 	(Main)
- 
+ 	
+	User-Defined Functions 2 Types
+	------------------------------
  	# 2.A. Scalar Functions			(SUB)
 	# 2.B. Table-Valued Functions		(SUB)
-	
+			
+			# 2.B. Table-Valued Functions 2 Types
+			-------------------------------------
 			A. Inline Table Valued Function			(Sub-Child)
 			B. Multi-Statement Table Valued Function	(Sub-Child)
 	
