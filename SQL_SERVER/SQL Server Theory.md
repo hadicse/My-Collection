@@ -419,6 +419,7 @@ Here is the list of some system functions used in the SQL Server:
 - Mathematical Functions (ABS, POWER, PI, EXP, LOG)
 - Ranking Functions (RANK, DENSE_RANK, ROW_NUMBER, NTILE)
 The following picture shows all the built-in database functions used in the SQL Server:
+
 ![image](https://user-images.githubusercontent.com/110928130/188474956-c6f3775e-fd75-4e80-84b0-e9854faee0e7.png)
 
 
