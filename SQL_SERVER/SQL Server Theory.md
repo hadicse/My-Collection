@@ -1,6 +1,7 @@
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 01`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 01`
+
+
 
 
 
@@ -39,8 +40,7 @@
 - SQL can set permissions on tables, procedures, and views
 
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 02`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 02`
 
 
 
@@ -94,8 +94,7 @@
 ###### SQL Mathematical Functions 
 - CEILING(), FLOOR(), ROUND(), RAND()
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 03`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 03`
 
 
 
@@ -208,8 +207,7 @@
 - Script a table in SQL Server
 
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 04`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 04`
 
 
 
@@ -236,8 +234,7 @@ Order By ID DESC
 ###### Basic example of SQL
 ![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 05`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 05`
 
 
 
@@ -263,8 +260,7 @@ Order By ID DESC
 ###### Join over 16 million developers in solving code challenges on (Best Practice Site for SQL)
 - https://www.hackerrank.com/domains/sql
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 06`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 06`
 
 
 
@@ -294,8 +290,7 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 ![image](https://user-images.githubusercontent.com/110928130/186830901-e4fb648c-045f-461d-bde7-c52f19895f9d.png)
 
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 07`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 07`
 
 # কী ফিল্ড (Key) – প্রাইমারি কী, কম্পোজিট প্রাইমারি কী, ফরেন কী (Primary Key and Foreign Key and Composite Key)
 - কী ফিল্ড
@@ -359,8 +354,7 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 ![image](https://user-images.githubusercontent.com/110928130/186973455-f8963b9a-3a1f-4e71-b9d6-24322b321a5f.png)
 
 
-![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
-`Serial No: 08`
+![image](https://user-images.githubusercontent.com/110928130/188482496-ac78dfda-2e97-4b22-8da1-5f1b241c6cd6.png) `Serial No: 08`
 
 # SQL Server Functions
 
