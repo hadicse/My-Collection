@@ -414,16 +414,16 @@ SELECT স্টেটমেন্টগুলিই শুধুমাত্র
 আমরা ফাংশনে TRY এবং CATCH স্টেটমেন্ট ব্যবহার করতে পারি না।
 
 ```
-
-###### Types of Functions
 -------------------------
+###### Types of Functions
+
 ###### SQL Server categorizes the functions into two types:
 
 # 1. System Functions
 # 2. User-Defined Functions
-
+-------------------------
 # 1. System Functions Details
----------------------------
+
 Functions that are defined by the system are known as system functions. In other words, 
 all the built-in functions supported by the server are referred to as System functions. 
 The built-in functions save us time while performing the specific task. These types of 
