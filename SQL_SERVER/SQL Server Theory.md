@@ -359,6 +359,9 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 ![image](https://user-images.githubusercontent.com/110928130/186973455-f8963b9a-3a1f-4e71-b9d6-24322b321a5f.png)
 
 
+![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
+`Serial No: 08`
+
 # SQL Server Functions
 
 ```
