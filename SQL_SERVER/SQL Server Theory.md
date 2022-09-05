@@ -402,20 +402,41 @@ SELECT স্টেটমেন্টগুলিই শুধুমাত্র
 ###### Types of Functions
 SQL Server categorizes the functions into two types:
 
-- System Functions
-- User-Defined Functions
+# 1. System Functions
+# 2. User-Defined Functions
 
 ###### System Functions
-Functions that are defined by the system are known as system functions. In other words, all the built-in functions supported by the server are referred to as System functions. The built-in functions save us time while performing the specific task. These types of functions usually work with the SQL SELECT statement to calculate values and manipulate data.
+Functions that are defined by the system are known as system functions. In other words, 
+all the built-in functions supported by the server are referred to as System functions. 
+The built-in functions save us time while performing the specific task. These types of 
+functions usually work with the SQL SELECT statement to calculate values and manipulate data.
 
 Here is the list of some system functions used in the SQL Server:
 
-String Functions (LEN, SUBSTRING, REPLACE, CONCAT, TRIM)
-Date and Time Functions (datetime, datetime2, smalldatetime)
-Aggregate Functions (COUNT, MAX, MIN, SUM, AVG)
-Mathematical Functions (ABS, POWER, PI, EXP, LOG)
-Ranking Functions (RANK, DENSE_RANK, ROW_NUMBER, NTILE)
+- String Functions (LEN, SUBSTRING, REPLACE, CONCAT, TRIM)
+- Date and Time Functions (datetime, datetime2, smalldatetime)
+- Aggregate Functions (COUNT, MAX, MIN, SUM, AVG)
+- Mathematical Functions (ABS, POWER, PI, EXP, LOG)
+- Ranking Functions (RANK, DENSE_RANK, ROW_NUMBER, NTILE)
 The following picture shows all the built-in database functions used in the SQL Server:
+![image](https://user-images.githubusercontent.com/110928130/188474956-c6f3775e-fd75-4e80-84b0-e9854faee0e7.png)
+
+
+###### User-Defined Functions
+Functions that are created by the user in the system database or a user-defined database are 
+known as user-defined functions. The UDF functions accept parameters, perform actions, and 
+returns the result. These functions help us to simplify our development by encapsulating complex 
+business logic and making it available for reuse anywhere based on the needs. The user-defined 
+functions make the code needed to query data a lot easier to write. They also improve query readability 
+and functionality, as well as allow other users to replicate the same procedures.
+
+- SQL Server categorizes the user-defined functions mainly into two types:
+
+1. Scalar Functions
+1. Table-Valued Functions
+Here are the descriptions of these UDF functions.
+
+Scalar Functions
 
 
 
