@@ -360,6 +360,20 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 
 
 # SQL Server Functions
+
+```
+SQL Server Functions
+
+ 1. System Functions		(Main)
+ 2. User-Defined Functions 	(Main)
+ 	# 2.A. Scalar Functions
+	# 2.B. Table-Valued Functions
+			A. Inline Table Valued Function
+			B. Multi-Statement Table Valued Function
+	
+
+
+```
 ```
 Functions in SQL Server are the database objects that contains a set of SQL statements to perform a specific task. 
 A function accepts input parameters, perform actions, and then return the result. 
