@@ -358,3 +358,76 @@ Before doing anything else, we’ll take one quick look at the model we’re usi
 # প্রাইমারি কী এবং ফরেন কী এর মধ্যে পার্থক্য (Difference between Primary Key and Foreign Key)
 ![image](https://user-images.githubusercontent.com/110928130/186973455-f8963b9a-3a1f-4e71-b9d6-24322b321a5f.png)
 
+
+# SQL Server Functions
+```
+Functions in SQL Server are the database objects that contains a set of SQL statements to perform a specific task. 
+A function accepts input parameters, perform actions, and then return the result. 
+We should note that functions always return either a single value or a table. 
+The main purpose of functions is to replicate the common task easily.
+We can build functions one time and can use them in multiple locations based on our needs. 
+SQL Server does not allow to use of the functions for inserting, deleting, or updating records in the database tables.
+
+SQL সার্ভারের ফাংশন হল ডাটাবেস অবজেক্ট যা একটি নির্দিষ্ট কাজ সম্পাদন করার জন্য SQL স্টেটমেন্টের একটি সেট ধারণ করে। 
+একটি ফাংশন ইনপুট পরামিতি গ্রহণ করে, ক্রিয়া সম্পাদন করে এবং তারপর ফলাফল প্রদান করে। 
+আমাদের লক্ষ্য করা উচিত যে ফাংশনগুলি সর্বদা একটি একক মান বা একটি টেবিল প্রদান করে। ফাংশনগুলির মূল উদ্দেশ্য হল সাধারণ,
+কাজটি সহজে প্রতিলিপি করা। আমরা একবার ফাংশন তৈরি করতে পারি এবং আমাদের প্রয়োজনের উপর ভিত্তি করে একাধিক স্থানে ব্যবহার করতে পারি। 
+SQL সার্ভার ডাটাবেস টেবিলে রেকর্ড সন্নিবেশ, মুছে বা আপডেট করার জন্য ফাংশন ব্যবহার করার অনুমতি দেয় না।
+
+```
+
+```
+The following are the rules for creating SQL Server functions:
+
+A function must have a name, and the name cannot begin with a special character such as @, $, #, or other similar characters.
+SELECT statements are the only ones that operate with functions.
+We can use a function anywhere such as AVG, COUNT, SUM, MIN, DATE, and other functions with the SELECT query in SQL.
+Whenever a function is called, it compiles.
+Functions must return a value or result.
+Functions use only input parameters.
+We cannot use TRY and CATCH statements in functions.
+
+নিম্নলিখিত SQL সার্ভার ফাংশন তৈরি করার নিয়ম আছে:
+
+একটি ফাংশনের একটি নাম থাকতে হবে এবং নামটি একটি বিশেষ অক্ষর যেমন @, $, # বা অন্যান্য অনুরূপ অক্ষর দিয়ে শুরু হতে পারে না।
+SELECT স্টেটমেন্টগুলিই শুধুমাত্র ফাংশনগুলির সাথে কাজ করে।
+আমরা SQL-এ SELECT কোয়েরি সহ AVG, COUNT, SUM, MIN, DATE এবং অন্যান্য ফাংশনের মতো যেকোনো জায়গায় একটি ফাংশন ব্যবহার করতে পারি।
+যখনই একটি ফাংশন কল করা হয়, এটি কম্পাইল হয়।
+ফাংশন অবশ্যই একটি মান বা ফলাফল প্রদান করবে।
+ফাংশন শুধুমাত্র ইনপুট পরামিতি ব্যবহার করে।
+আমরা ফাংশনে TRY এবং CATCH স্টেটমেন্ট ব্যবহার করতে পারি না।
+
+```
+
+###### Types of Functions
+SQL Server categorizes the functions into two types:
+
+- System Functions
+- User-Defined Functions
+
+###### System Functions
+Functions that are defined by the system are known as system functions. In other words, all the built-in functions supported by the server are referred to as System functions. The built-in functions save us time while performing the specific task. These types of functions usually work with the SQL SELECT statement to calculate values and manipulate data.
+
+Here is the list of some system functions used in the SQL Server:
+
+String Functions (LEN, SUBSTRING, REPLACE, CONCAT, TRIM)
+Date and Time Functions (datetime, datetime2, smalldatetime)
+Aggregate Functions (COUNT, MAX, MIN, SUM, AVG)
+Mathematical Functions (ABS, POWER, PI, EXP, LOG)
+Ranking Functions (RANK, DENSE_RANK, ROW_NUMBER, NTILE)
+The following picture shows all the built-in database functions used in the SQL Server:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
