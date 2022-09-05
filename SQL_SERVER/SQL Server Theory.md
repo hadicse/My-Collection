@@ -406,7 +406,7 @@ SELECT স্টেটমেন্টগুলিই শুধুমাত্র
 # 1. System Functions
 # 2. User-Defined Functions
 
-# 1. System Functions
+# 1. System Functions Details
 ---------------------------
 Functions that are defined by the system are known as system functions. In other words, 
 all the built-in functions supported by the server are referred to as System functions. 
@@ -426,7 +426,7 @@ The following picture shows all the built-in database functions used in the SQL 
 ![image](https://user-images.githubusercontent.com/110928130/188474956-c6f3775e-fd75-4e80-84b0-e9854faee0e7.png)
 
 
-# 2. User-Defined Functions
+# 2. User-Defined Functions Details
 ----------------------
 Functions that are created by the user in the system database or a user-defined database are 
 known as user-defined functions. The UDF functions accept parameters, perform actions, and 
@@ -438,11 +438,11 @@ and functionality, as well as allow other users to replicate the same procedures
 ###### SQL Server categorizes the user-defined functions mainly into two types:
 ---------------------------
 
-# 2.1. Scalar Functions
-# 2.2. Table-Valued Functions
+# 2.A. Scalar Functions
+# 2.B. Table-Valued Functions
 Here are the descriptions of these UDF functions.
 
-##### 2.1 Scalar Functions
+##### 2.A Scalar Functions
 -----------------
 ```
 Scalar function in SQL Server always accepts parameters, either single or multiple and returns a single value.
@@ -473,15 +473,15 @@ We can call the scalar functions the same as the built-in function in SQL Server
 ![image](https://user-images.githubusercontent.com/110928130/188479100-5ec1c577-dc3b-4524-966f-3300cb7a77ae.png)
 
 
-###### 2.2 Table-Valued Functions
+###### 2.B Table-Valued Functions
 -----------------
 
 Table-valued functions in SQL Server are the user-defined function that returns data of a table type. 
 Since this function's return type is a table, we can use it the same way as we use a table.
 
 We can categorize the table-valued function into two types:
-# 2.2.1 Inline Table-Values Functions
-# 2.2.2 Multi-statement table-valued functions (MSTVF)
+# 2.B.1 Inline Table-Values Functions
+# 2.B.2 Multi-statement table-valued functions (MSTVF)
 --------------
 
 
