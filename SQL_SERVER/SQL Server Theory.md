@@ -373,10 +373,9 @@ SQL Server Functions mainly 2 Types
 			-------------------------------------
 			A. Inline Table Valued Function			(Sub-Child)
 			B. Multi-Statement Table Valued Function	(Sub-Child)
-	
-
-
 ```
+![image](https://user-images.githubusercontent.com/110928130/188485427-88290e12-a74f-4522-a2c5-ed41f7be9f4e.png)
+
 ```
 Functions in SQL Server are the database objects that contains a set of SQL statements to perform a specific task. 
 A function accepts input parameters, perform actions, and then return the result. 
