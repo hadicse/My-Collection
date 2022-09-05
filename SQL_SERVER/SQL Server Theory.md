@@ -366,10 +366,12 @@ SQL Server Functions
 
  1. System Functions		(Main)
  2. User-Defined Functions 	(Main)
- 	# 2.A. Scalar Functions
-	# 2.B. Table-Valued Functions
-			A. Inline Table Valued Function
-			B. Multi-Statement Table Valued Function
+ 
+ 	# 2.A. Scalar Functions			(SUB)
+	# 2.B. Table-Valued Functions		(SUB)
+	
+			A. Inline Table Valued Function			(Sub-Child)
+			B. Multi-Statement Table Valued Function	(Sub-Child)
 	
 
 
