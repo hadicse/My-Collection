@@ -1,5 +1,9 @@
- 
-  CEO/Owner of the company’s thoughts, it is difficult to track the business activities, and they are looking for a smart and strong ERP system. decided to go for cloud ERP. Search a popular ERP team and discussed with the ERP team to implement their ERP. To obtain a clear view, the CEO meets with the ERP team, and the ERP team then demonstrates their ERP. Finally, the CEO found a clear demonstration for all their requirements and finally decided to implement the ERP.
+![image](https://user-images.githubusercontent.com/110928130/193302463-9f67f845-7088-4e8a-a7e0-80dd1049ddc8.png)
+
+
+
+![image](https://user-images.githubusercontent.com/110928130/193302477-8fc2d376-f673-4896-af81-ab8f4b37a79c.png)
+CEO/Owner of the company’s thoughts, it is difficult to track the business activities, and they are looking for a smart and strong ERP system. decided to go for cloud ERP. Search a popular ERP team and discussed with the ERP team to implement their ERP. To obtain a clear view, the CEO meets with the ERP team, and the ERP team then demonstrates their ERP. Finally, the CEO found a clear demonstration for all their requirements and finally decided to implement the ERP.
  
  Goal: to gather and document business requirements 
 This step includes collection of requirements for software product development from stakeholders, industry experts, and even potential customers. After that, the project owners outline the project scope, defining a budget, resources, deadlines, and potential risks and quality assurance requirements. All requirements are encapsulated in a formal document, Software Requirement Specification. Project managers, business analysts, and software developers will refer to this document frequently.
