@@ -788,7 +788,7 @@ https://user-images.githubusercontent.com/110928130/184592294-c79c9934-b5d6-4b85
 
 
 
-# Get Only numeric or Only Varchar or Mixed (Numeric & Varchar Mixed) from a column
+# Get Only numeric or Only Varchar or Mixed (Numeric & Varchar Mixed) value from a column
 ###### Onlu Numeric
 ```sql
 SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^0-9]%' --and ITEM != ''
@@ -803,6 +803,33 @@ SELECT ITEM FROM tblProductDetails WHERE ITEM not like '%[^A-Z]%' --and ITEM != 
 ```sql
 SELECT ITEM FROM tblProductDetails WHERE ITEM   like '%[^0-9]%[^A-Z]%' or item like  '%[0-9]%[A-Z]%'
 ```
+
+###### SQL Query to Get Only Numbers or numeric value From a String/varchar
+```sql
+CREATE FUNCTION dbo.getNumericValue
+ (
+@inputString VARCHAR(256)
+)
+RETURNS VARCHAR(256)
+AS
+BEGIN
+  DECLARE @integerPart INT
+  SET @integerPart = PATINDEX('%[^0-9]%', @inputString)
+  BEGIN
+    WHILE @integerPart > 0
+    BEGIN
+      SET @inputString = STUFF(@inputString, @integerPart, 1, '' )
+      SET @integerPart = PATINDEX('%[^0-9]%', @inputString )
+    END
+  END
+  RETURN ISNULL(@inputString,0)
+END
+GO
+
+SELECT dbo.getNumericValue(StudentName) from (tbl name)
+```
+![image](https://user-images.githubusercontent.com/110928130/194232229-c0988257-65a1-415a-86ec-09bf20bd4275.png)
+
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
 `Topic No: 42`
