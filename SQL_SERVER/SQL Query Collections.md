@@ -828,7 +828,7 @@ GO
 
 SELECT dbo.getNumericValue(StudentName) from (tbl name)
 ```
-![image](https://user-images.githubusercontent.com/110928130/194232229-c0988257-65a1-415a-86ec-09bf20bd4275.png)
+![image](https://user-images.githubusercontent.com/110928130/194338456-e23c3ed6-ff96-4106-9f84-7f9a5fef1f8d.png)
 
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
