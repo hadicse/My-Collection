@@ -95,42 +95,40 @@
 
 
 # Sales Return || Credit Note
+###### Impact:
+- Mushak 6.7
+- Mushak 6.2
+- Mushak 9.1 || Note 32
+
+# Export Sales || Export || Direct Export || Vat Rate = 0%
 
 
-Impact:
-•	Mushak 6.7
-•	Mushak 6.2
-•	Mushak 9.1 || Note 32
-
-16.	Export Sales || Export || Direct Export || Vat Rate = 0%
-
-
-Impact:
-•	Mushak 6.3
-•	Mushak 6.2
-•	Mushak 9.1 || Note 1
-•	Mushak 9.1 || Note 27[Add VAT], Note 31[Minus VAT] & Note 41
+###### Impact:
+- Mushak 6.3
+- Mushak 6.2
+- Mushak 9.1 || Note 1
+- Mushak 9.1 || Note 27[Add VAT], Note 31[Minus VAT] & Note 41
  
-17.	Other Adjustment: Increasing
+# Other Adjustment: Increasing
 
-Impact:
-•	Mushak 9.1 || Note 27
+###### Impact:
+- Mushak 9.1 || Note 27
+
+# Other Adjustment: Decreasing
+
+###### Impact:
+- Mushak 9.1 || Note 33
+
+# Net Vat Statement || Note 35 to 63
+
+# Treasury Challan || Payable for Note 42 to 49
+- Development Surcharge: 700 || Note 46
+- ICT :1000 || Note 47
+- Note 48|| 800
+- Note 49|| 500
 
 
-18.	Other Adjustment: Decreasing
-•	(a) deceasing 1000
-Impact:
-•	Mushak 9.1 || Note 33
-
-19.	Net Vat Statement || Note 35 to 63
-
-20.	Treasury Challan || Payable for Note 42 to 49
-
-•	Development Surcharge: 700 || Note 46
-•	ICT :1000 || Note 47
-•	Note 48|| 800
-•	Note 49|| 500
-21.	Treasury Challan Submission || Do not submit
-Impact:
-•	Mushak 9.1 || Note 54-61
-•	Summary Report Mushak 9.1
+# Treasury Challan Submission || Do not submit
+###### Impact:
+- Mushak 9.1 || Note 54-61
+- Summary Report Mushak 9.1
