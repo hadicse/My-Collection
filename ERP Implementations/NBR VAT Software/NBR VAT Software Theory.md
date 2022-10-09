@@ -40,9 +40,21 @@
 
 সংযোজীত মূল্যের উপর যে TAX দেয়া হয় তাই VAT
 ইহা ২ প্রকার
-১. পরোক্ষ  indirect
-2. প্রত্যক্ষ  direct
+১. পরোক্ষ  indirect (Ex: VAT)
+2. প্রত্যক্ষ  direct   (Ex: TAX)
 ```
+# কিছু পূর্ন নামঃ
+
+- SD = Supplementary Duty (Supplementary Duty অর্থ সম্পূরক শুল্ক)
+- SC = Surcharge
+- CD = Custom Duty
+- RD = Regulatary Duty
+- TT = Turnover TAX
+- AT = Advance TAX
+- TTI = Total TAX Incedence
+- AIT = Advance Income TAX
+- AV  = Assessable Value
+- TTI = CD+RD+SD+VAT+AIT+AT যোগ করে হয়।
 
 # কাজ করার জন্য মূলত ১৩ ধরনের মুসক সম্পর্কে জানতে হয়
 - Mushak-4.3    (Input/Output Co-Effeceint Declaration)
