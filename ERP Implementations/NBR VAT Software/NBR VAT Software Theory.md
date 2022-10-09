@@ -44,7 +44,7 @@
 2. প্রত্যক্ষ  direct
 ```
 
-# কাজ করার জন্য মূলত ১২ ধরনের মুসক সম্পর্কে জানতে হয়
+# কাজ করার জন্য মূলত ১৩ ধরনের মুসক সম্পর্কে জানতে হয়
 - Mushak-4.3    (Input/Output Co-Effeceint Declaration)
 - Mushak-6.1    Purchase Register
 - Mushak-6.2    Sales Register
