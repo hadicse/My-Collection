@@ -56,7 +56,8 @@
 - Mushak-6.7    Credit Note (Sales Return)
 - Mushak-6.8    Debit Note  (Purchase Return)
 - Mushak-6.9    Turnover TAX Invoice
-- Mushak-6.10    TAX Invoice Info 
+- Mushak-6.10   TAX Invoice Info For Avobe 2 Lakh Taka of Purchase/Sales
+- Mushak-9.1    VAT Return Form. 
 
 
 # একটি প্রতিষ্ঠানে VAT রিলেটেড কাজ 
