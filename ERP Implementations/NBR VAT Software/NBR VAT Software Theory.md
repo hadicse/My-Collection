@@ -44,6 +44,21 @@
 2. প্রত্যক্ষ  direct
 ```
 
+# কাজ করার জন্য মূলত ১২ ধরনের মুসক সম্পর্কে জানতে হয়
+- Mushak-4.3    (Input/Output Co-Effeceint Declaration)
+- Mushak-6.1    Purchase Register
+- Mushak-6.2    Sales Register
+- Mushak-6.2.1  Purchase Sales Book Register
+- Mushak-6.3    Vat Invoice/Sales Invoice
+- Mushak-6.4    Invoice of Contructual Output For Manufacturing (Contructual Manufacturing)
+- Mushak-6.5    Good Transer Information (Internal Transfer and Received)
+- Mushak-6.6    Certificate of VDS (VAT Deduction Source)  
+- Mushak-6.7    Credit Note (Sales Return)
+- Mushak-6.8    Debit Note  (Purchase Return)
+- Mushak-6.9    Turnover TAX Invoice
+- Mushak-6.10    TAX Invoice Info 
+
+
 # একটি প্রতিষ্ঠানে VAT রিলেটেড কাজ 
 ```
 - ক্রয় করা/পণ্যের ষ্টক আপডেট করা
