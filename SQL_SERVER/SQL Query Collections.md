@@ -1224,7 +1224,27 @@ GO
 ```
 
 
+# RAISERROR Message Show
 
+```sql
+Select intInventoryTransactionId,dteTransactionDate, strReferenceCode,strWarehouseName, numTotalQty ,isApproved into #A  
+from [wms].[tblInventoryTransactionHeader]
+Where strReferenceCode in (Select strReferenceCode from wms.tblInventoryTransactionHeader	Where intInventoryTransactionId=279703)
+and TransactionGroupName='Transfer In' and strReferenceTypeName like '%Transfer%' and isApproved=1
+
+	If((select count(*) from #A A
+	Inner join wms.tblInventoryTransactionHeader B on A.dteTransactionDate=B.dteTransactionDate and  A.strReferenceCode=B.strReferenceCode 
+							and A.strWarehouseName=B.strWarehouseName and A.numTotalQty=B.numTotalQty 
+							where  B.isApproved=0)>0)
+
+		Begin
+			RAISERROR('Its a duplicate transfer, please reject it and contact Vendor ',16,1)
+		End
+		
+		Drop table #A
+
+
+```
 
 
 
