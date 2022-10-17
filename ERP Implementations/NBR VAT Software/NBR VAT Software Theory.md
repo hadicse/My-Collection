@@ -200,6 +200,9 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 # TDS/VDS (6.6):
 - TDS: Tax Deducted at Source
 - VDS: VAT Deducted at Source
+###### VDS দুই প্রকার 
+- VDS Issue
+- VDS Receiving
 
 যে TAX / VAT সোর্সেই কেটে রেখে জমা করা হয় তাই VDS or TDS
 
