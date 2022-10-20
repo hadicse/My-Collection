@@ -232,7 +232,8 @@ Having COUNT(Quantity) =1
 Order By ID DESC
 ```
 ###### Basic example of SQL
-![SQL_CHEATSHEET](https://user-images.githubusercontent.com/110928130/184686403-0c740700-51ab-430b-9047-cb1755dc1436.jpg)
+![image](https://user-images.githubusercontent.com/110928130/196995893-d201c95f-5f40-4459-b4fc-d664cd47aa89.png)
+
 
 ![image](https://user-images.githubusercontent.com/110928130/188483555-d59ae09a-6d32-45d9-9b25-2e3882fd89a9.png) `Topic No: 05`
 
