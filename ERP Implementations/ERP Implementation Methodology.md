@@ -14,6 +14,7 @@ advantages and disadvantages. Therefore, you’ll need to thoroughly understand 
 - The big bang approach   (Big Bang)
 - The phased approach     (Phased Rollout)
 - The parallel approach   (Parallel Adoption)
+- Hybrid
 
 # 1. The big bang approach
 ```
@@ -57,6 +58,35 @@ system at one location before moving on to other offices, factories or facilitie
 ![image](https://user-images.githubusercontent.com/110928130/197252866-71cbed09-64f0-40bf-bffd-c453151506ee.png)
 
 
+# 3. The parallel approach
+```
+In the parallel approach, a new ERP system is implemented while running legacy systems in parallel.
+This minimizes implementation risks, as you can default to the legacy systems in case critical errors come up in the new system.
+However, running two systems simultaneously invites technical complexities, such as data synchronization issues. It also adds to 
+the cost of implementation, since you’ll be relying on implementation as well as IT experts throughout the process.
+
+
+Parallel adoption
+With this strategy, the organization keeps using its legacy systems in parallel with the new ERP for a specific length of time. 
+This is generally considered the least risky approach because it’s possible to revert to the legacy system if you run into problems. 
+Because of this safety net, some organizations use this strategy for critical functions that absolutely must always continue operating.
+This approach can also make it easier for some users to gradually adjust to the new system. However, parallel adoption can be an 
+expensive approach because it requires more staff time and resources to keep two systems running at the same time. And parallel 
+adoption can create its own risks: Entering data twice, into two different systems, doubles the chance of errors.
+Still, this might be the best bet for companies using a two-tier ERP architecture, a setup often found in firms that
+have expanded, whether organically or through mergers and acquisitions.
+```
+![image](https://user-images.githubusercontent.com/110928130/197253287-ebd47cf0-92d5-44a9-86a2-d85f8b3618ba.png)
+
+
+# Hybrid
+```
+As the name implies, this approach combines elements of the strategies above. 
+For example, an organization might switch on core ERP modules using a big-bang strategy, 
+then roll out other modules in phases to specific locations or departments.
+```
+###### Click for Details:
+https://www.softwareadvice.com/resources/erp-implementation-methodology/#:~:text=There%20are%20three%20key%20approaches,caters%20to%20your%20IT%20setup.
 
 
 
