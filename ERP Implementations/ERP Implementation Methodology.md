@@ -1,4 +1,4 @@
-# Which ERP Implementation Methodology:
+# ERP Implementation Methodology:
 ```
 Did you know that 50% of ERP implementations fail the first time around? Failed implementation can result in wasted software spend and has 
 the potential to hurt business profitability. With stakes this high, it’s vital to choose an implementation approach that suits your 
