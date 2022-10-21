@@ -89,5 +89,42 @@ then roll out other modules in phases to specific locations or departments.
 https://www.softwareadvice.com/resources/erp-implementation-methodology/#:~:text=There%20are%20three%20key%20approaches,caters%20to%20your%20IT%20setup.
 
 
+![image](https://user-images.githubusercontent.com/110928130/197253933-b5b9506b-290a-42a9-a8b8-100e0a62bece.png)
+
+# How to Select an ERP Implementation Strategy
+
+No single ERP implementation strategy works for every company and every situation. Your choice of implementation strategy depends on several factors. These include:
+
+###### Organizational size:
+
+The big bang strategy often works best for small and midsize firms, where it can be easier to manage the process of transitioning the entire organization at once because you have fewer employees and locations. Larger companies, especially those with complex organizational structures, may find this approach too risky.
+
+###### Risk tolerance:
+If you encounter major problems when employees start using the new ERP system, what would be the impact on your business? A business that is completely reliant on systems operating 24/7 may be less inclined to take the risks associated with a big bang approach, and perhaps might choose a parallel adoption, at least for the most critical modules.
+
+###### Desired pace of return on investment (ROI):
+With a phased adoption, you may be able to roll out ERP modules that address specific business bottlenecks, and therefore generate ROI relatively quickly. Big bang, of course, completes the entire transition to ERP quickly, with the potential for even greater ROI because the organization soon starts realizing the benefits that accrue when everyone is using the same integrated system.
+###### Cost:
+If the overall project cost is an overriding concern, a big-bang strategy may be appealing because it eliminates the cost of operating old and new systems at the same time.
+
+![image](https://user-images.githubusercontent.com/110928130/197254231-09411007-6a6a-4978-8a43-00e584c88b3d.png)
 
 
+
+# ERP Implementation Tips
+The transition to ERP represents a significant change in how the organization operates, and any change brings risks. These tips can help smooth the path to success.
+
+###### Obtain senior management buy-in:
+Without the backing of top management across departments, an ERP implementation is likely to falter. It’s also a best practice to have one overall C-level champion.
+
+######  Manage expectations: 
+No project of this scope will come off without hiccups. It’s critical that employees have realistic expectations about the transition. This requires communication from the project team throughout the entire implementation process.
+
+###### Consider the impact of customization:
+Most organizations, and various departments, will ask for some customization to support business processes. However, with on-premises ERP software, extensive customization can make it difficult to upgrade to new releases, which hinders your ability to take advantage of desirable new features. For SaaS ERP, IT or an integration partner can make customizations, but again, that adds cost. Before piling on custom code, look closely at whether processes could be adjusted; you may find that you end up with more efficient ways of getting work done.
+
+######  Use the right KPIs: 
+Your ERP system can help you track key performance indicators (KPIs) that enable the organization to measure progress and results. But it’s important to focus on the metrics that are most meaningful to your business goals, whether that means tracking sales growth or operational efficiency.
+
+For More Click Here:
+https://www.netsuite.com/portal/resource/articles/erp/erp-implementation-strategies.shtml
