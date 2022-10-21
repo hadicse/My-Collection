@@ -36,8 +36,26 @@ productivity drop as employees get used to the new system.
 
 # 2. The phased approach
 ```
+In this approach, implementation is planned sequentially, with each phase implementing the ERP system for one or more business processes.
+You can plan these phases by business department, location, manufacturing facility, and more.
+The phased approach takes more time to implement than the big bang method, but it provides a higher degree of safety because errors, 
+if any, won’t be impacting all business operations. It also puts less pressure on the implementation team, as there are fewer things 
+to worry about during each phase.
 
+
+Phased rollout
+Under a phased approach, the deployment of features, tools and components is done over an extended period, which may cover weeks or months.
+This more measured approach can be less risky than the big-bang strategy. It also enables the company to focus first on “quick wins”—the
+functions that deliver the most immediate benefits—and to apply learnings from the initial deployment phases to improve the process 
+for subsequent phases. But there are drawbacks: It takes longer to get the full benefits of the new ERP, and your company will 
+need to support, and pay for, two systems at the same time. There are three primary approaches. Organizations may switch on one 
+ERP module, iron out bugs and process issues, and then tackle another phase. Most organizations start with core functions and 
+expand from there. Another possibility is to deploy by business unit, such as HR, finance or logistics, and then move forward 
+based on needs and hierarchies.The third approach is to phase the rollout by geography. A company might test and perfect the 
+system at one location before moving on to other offices, factories or facilities.
 ```
+![image](https://user-images.githubusercontent.com/110928130/197252866-71cbed09-64f0-40bf-bffd-c453151506ee.png)
+
 
 
 
