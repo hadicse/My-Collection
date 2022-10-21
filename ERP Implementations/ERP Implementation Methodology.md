@@ -11,10 +11,10 @@ approaches and suggested a tool that can help you decide which approach is the b
 There are three key approaches that you can use to implement an ERP system: big bang, phased, and parallel. Each approach has its inherent
 advantages and disadvantages. Therefore, you’ll need to thoroughly understand each type to select the one that best caters to your IT setup.
 
-- The big bang approach   (Big Bang)
-- The phased approach     (Phased Rollout)
-- The parallel approach   (Parallel Adoption)
-- Hybrid
+###### The big bang approach   (Big Bang)
+###### The phased approach     (Phased Rollout)
+###### The parallel approach   (Parallel Adoption)
+###### Hybrid
 
 # 1. The big bang approach
 ```
