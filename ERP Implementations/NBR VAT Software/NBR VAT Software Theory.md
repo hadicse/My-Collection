@@ -173,6 +173,9 @@ HS Code Input করার মাধ্যমে Product এর CD, RD, SD, VAT,
  - ত্রৈমাসিক, বা
  - মাসিক ভিত্তিতে; টার্ণওভার কর পরিশোধ করতে পারবেন। 
 ```
+![image](https://user-images.githubusercontent.com/110928130/197342740-c990af48-3fca-4bd1-956d-3d0621775b46.png)
+![image](https://user-images.githubusercontent.com/110928130/197342774-356c9da2-1ccc-48b7-8942-60945ce7544e.png)
+![image](https://user-images.githubusercontent.com/110928130/197342798-586e6d07-c1bd-482e-ac6d-04e7acb2f82f.png)
 
 # H.S.Code কি? কেন প্রয়োজন? কিভাবে হারমোনাইজড সিস্টেমে চ্যাপ্টার, হেডিং, সাব হেডিং যেভাবে সৃজিত আছে তার সংক্ষিপ্ত বর্ননা আলোচনা করা হল:
 ![image](https://user-images.githubusercontent.com/110928130/194771864-071404eb-df78-46f2-beee-e96a6ae90dd4.png)
