@@ -191,6 +191,23 @@ HS Code Input করার মাধ্যমে Product এর CD, RD, SD, VAT,
 ![image](https://user-images.githubusercontent.com/110928130/197342774-356c9da2-1ccc-48b7-8942-60945ce7544e.png)
 ![image](https://user-images.githubusercontent.com/110928130/197342798-586e6d07-c1bd-482e-ac6d-04e7acb2f82f.png)
 
+
+
+
+
+# রেয়াত কি  বা  উপকরণ কর রেয়াত কি 
+![image](https://user-images.githubusercontent.com/110928130/197345861-d8e3c862-dcd0-4c0d-8426-54a6d42b9a92.png)
+![image](https://user-images.githubusercontent.com/110928130/197345899-5ba6f53a-4a1a-4a68-8f63-b6f4db6caa7d.png)
+![image](https://user-images.githubusercontent.com/110928130/197345908-8f911459-bc25-48c9-87f5-078bed919175.png)
+![image](https://user-images.githubusercontent.com/110928130/197345934-84ec8972-28af-403c-8d06-06707505379c.png)
+![image](https://user-images.githubusercontent.com/110928130/197345949-82a0da39-d7f6-4d31-8f7d-adc4047f1172.png)
+![image](https://user-images.githubusercontent.com/110928130/197345956-40a2f1e6-d59c-4e27-8503-672a4277fc26.png)
+
+
+
+
+
+
 # H.S.Code কি? কেন প্রয়োজন? কিভাবে হারমোনাইজড সিস্টেমে চ্যাপ্টার, হেডিং, সাব হেডিং যেভাবে সৃজিত আছে তার সংক্ষিপ্ত বর্ননা আলোচনা করা হল:
 ![image](https://user-images.githubusercontent.com/110928130/194771864-071404eb-df78-46f2-beee-e96a6ae90dd4.png)
 
