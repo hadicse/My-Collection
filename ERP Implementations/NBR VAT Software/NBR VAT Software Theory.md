@@ -330,6 +330,27 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 - 2. Sales Book Item
 - 3. Trading Item
 
+###### 1. Purchase Book Item
+```
+- Raw Materials Item or Product
+- Semi Finished Goods/ Item or Product
+- Only Production / Process Item or Product
+- Non salable Product or Item
+```
+
+
+###### 2. Sales Book Item
+```
+- Only Process Item or Product, Which Item or Product Process for Sale.
+- Finished Good's, Which Item or Product Process for Sale.
+- Not Buy and Sale (Example: Buy Pen and sale Pen)
+```
+
+
+###### 3. Trading Item
+```
+- 
+```
 
 ![image](https://user-images.githubusercontent.com/110928130/197587639-b20afd55-8f63-44f4-b4fa-d754925ae52d.png)
 
