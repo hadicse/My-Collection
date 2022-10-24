@@ -367,6 +367,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 	- Tafsil এর 1st Schedule HS Code দিয়ে বিস্তারিত দেয়া আছে, নতুন কিছু VAT Exempted Goods and Services হলে সরকার জানিয়ে দেয় 
 ```
 
+# 2. Zero Rated Goods/Service
 
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
 
