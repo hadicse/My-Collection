@@ -355,14 +355,20 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 - No Production, No Process, No Semi Finished Good's
 - Buy and Sale Same as Buy (Example: Buy Pen and sale Pen)
 ```
-
 ![image](https://user-images.githubusercontent.com/110928130/197587639-b20afd55-8f63-44f4-b4fa-d754925ae52d.png)
 
 
+# Supply Type
+
+# VAT Exempted Goods and Services 
+যে সব পণ্যে ভ্যাট নেয়া হয়না বা ভ্যাট দেয়া হয়না সে সকল পণ্যেকে VAT Exempted Goods and Services  বলে। 
+```
+- কোন কোন পণ্যে VAT Exempted Goods and Services 
+	- Tafsil এর 1st Schedule HS Code দিয়ে বিস্তারিত দেয়া আছে, নতুন কিছু VAT Exempted Goods and Services হলে সরকার জানিয়ে দেয় 
+```
 
 
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
-
 
 
 
