@@ -368,6 +368,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 # 2. Zero Rated Goods/Service
+like bread, salt, Fruits, Milk
 
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
 
