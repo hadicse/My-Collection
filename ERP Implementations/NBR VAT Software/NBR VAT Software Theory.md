@@ -325,9 +325,18 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ---------------------------------------------------
 -------------------------------------------------------
 # Software Feature 
+# Item Create Screen > Item Group
+- 1. Purchase Book Item
+- 2. Sales Book Item
+- 3. Trading Item
+
+
 ![image](https://user-images.githubusercontent.com/110928130/197586486-c00ec3b2-ea3c-4a60-90fb-71f7625142ba.png)
 
 
+
+
+![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
 
 
 
