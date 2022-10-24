@@ -14,6 +14,7 @@
 জমা দিয়ে তার সংক্ষিপ্ত বিবরণ তাদের দাখিলপত্রে উল্লেখ করেন এবং ট্রেজারি চালানের কপিসহ দাখিলপত্র স্থানীয় মূসক কার্যালয়ে দাখিল করেন। 
 করদায়িতার (দাখিলপত্র ও সংশ্লিষ্ট অন্যান্য দলিলাদি) অডিটকরণ বা সঠিকতা যাচাই পরবর্র্র্তী সময় সম্পাদিত হয়ে থাকে।
 ```
+![image](https://user-images.githubusercontent.com/110928130/197593031-a1479759-16c9-4623-9756-8ba344bcb3a3.png)
 
 ###### কর মূলত ৪ প্রকার 
 - 15 %
@@ -339,7 +340,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 
-###### 2. Sales Book Item
+###### 2. Sales Book Item (Mushak-4.3)
 ```
 - Only Process Item or Product, Which Item or Product Process for Sale.
 - Finished Good's, Which Item or Product Process for Sale.
@@ -347,7 +348,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 
-###### 3. Trading Item
+###### 3. Trading Item (Mushak-6.1 & 6.2)
 ```
 - No Production, No Process, No Semi Finished Good's
 - Buy and Sale Same as Buy (Example: Buy Pen and sale Pen)
