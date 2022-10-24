@@ -360,7 +360,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 # Supply Type
 
-# VAT Exempted Goods and Services 
+# 1. VAT Exempted Goods and Services 
 যে সব পণ্যে ভ্যাট নেয়া হয়না বা ভ্যাট দেয়া হয়না সে সকল পণ্যেকে VAT Exempted Goods and Services  বলে। 
 ```
 - কোন কোন পণ্যে VAT Exempted Goods and Services 
