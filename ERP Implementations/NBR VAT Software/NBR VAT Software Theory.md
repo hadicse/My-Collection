@@ -360,7 +360,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 - No Production, No Process, No Semi Finished Good's
 - Buy and Sale Same as Buy (Example: Buy Pen and sale Pen)
 ```
-![image](https://user-images.githubusercontent.com/110928130/197587639-b20afd55-8f63-44f4-b4fa-d754925ae52d.png)
+![image](https://user-images.githubusercontent.com/110928130/197752077-ca36a24c-7cf1-4534-b462-3754b0e720cb.png)
 
 
 # Supply Type
