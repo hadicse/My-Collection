@@ -360,22 +360,39 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 # Supply Type
 
-# 1. VAT Exempted Goods and Services 
+###### 1. VAT Exempted Goods and Services 
 যে সব পণ্যে ভ্যাট নেয়া হয়না বা ভ্যাট দেয়া হয়না সে সকল পণ্যেকে VAT Exempted Goods and Services  বলে। 
 ```
-- কোন কোন পণ্যে VAT Exempted Goods and Services 
+- কোন কোন পণ্যে VAT Exempted Goods and Services..?
 	- Tafsil এর 1st Schedule HS Code দিয়ে বিস্তারিত দেয়া আছে, নতুন কিছু VAT Exempted Goods and Services হলে সরকার জানিয়ে দেয় 
+	- Tafsil for local---********
+	- Tarrif only For Foegin--*******
 ```
 
-# 2. Zero Rated Goods/Service
-like bread, salt, Fruits, Milk
-
+###### 2. Zero Rated Goods/Service
+```
+- Exempted for local supply sales3--no
+- Zero for export
+- RMG
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
 
 
+###### Goods Based on MRP	
+-- Food-Essential Product
+
+# Goods/Service Based on Specific VAT
+patao, uber, Internet bill, quriar, service reletad
 
 
+# Goods/Service Other than Standard Rate
+- Agro ind product
+--sar, pat bacg, tructor
 
+# Retail/Wholesale/Trade Based Supply
+- retails h. 15% fixed, same product with value add
+
+# Standard Rated Goods/Service
+med, furnichar, laptop, Standard rate industry
 
 
 
