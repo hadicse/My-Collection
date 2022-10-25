@@ -94,10 +94,28 @@ https://nbr.gov.bd/faq/vat-faq/ban
 
 ```
 
+
+# Tarrif Schedule
+
+ট্যারিফ বা শুল্ক এক ধরনের ট্যাক্স, ইহা আমদানি ও রপ্তানী যোগ্য পণ্যের উপর ধার্য করা কর কেই ট্যারিফ বা শুল্ক  বলে।
+HS Code Input করার মাধ্যমে Product এর CD, RD, SD, VAT, AIT, AT, TTI, EXD ইদ্যাদির ভ্যালু যানা যায়।
+- Tarrif Schedule Only For Foreign *******
+
+###### ট্যারিফ বা শুল্ক ৫ প্রকারের
+- Revenue Tarrif       (রাজস্ব শুল্ক)
+- Import Tarrif        (আমদানী শুল্ক)
+- Export Tarrif        (রপ্তানি শুল্ক)
+- Transit Tarrif       (রাস্তা ব্যবহৃত শুল্ক)
+- Protective Tarrif    (..............) 
+- ![image](https://user-images.githubusercontent.com/110928130/194772138-deed81bc-ab2c-4952-aaae-21451aa92661.png)
+
+
+
 # TOPSIL / তফসিল কি
 ```
 আমরা সবাই নির্বাচনী তফসিল এর কথা শুনেছি, নির্বাচনের আগে নির্বাচনের তফসিল ঘোষণা হয় অর্থাৎ নির্বাচন কত তারিখ হবে সেটি ঘোষণা। 
 কিন্তু তফসিল মানে শুধুই নির্বাচনের তারিখ ঘোষণা নয়। নির্বাচনের সাথে জড়িত খুঁটিনাটি আরো অনেক বিষয়ে সিদ্ধান্ত জড়িত এই তফসিলের সাথে। 
+- Tafsil for Local ********
 
 ঠিক তেমনি ভ্যাটের ক্ষেত্রে ও তফসিল আছে, যেমন কোন পন্য গুলো ভ্যাট এর আওতায় থাকবে, কোনগুলো থাকবেনা ইত্যাদি 
 
@@ -147,19 +165,6 @@ C. 3rd TOPSIL
 - C. ৫-১০ কোটি টাকার মধ্যে সম্পদ হলে ১৫% সারচার্জ   দিতে হয় ।
 
 ```
-# Tarrif Schedule
-
-ট্যারিফ বা শুল্ক এক ধরনের ট্যাক্স, ইহা আমদানি ও রপ্তানী যোগ্য পণ্যের উপর ধার্য করা কর কেই ট্যারিফ বা শুল্ক  বলে।
-HS Code Input করার মাধ্যমে Product এর CD, RD, SD, VAT, AIT, AT, TTI, EXD ইদ্যাদির ভ্যালু যানা যায়।
-
-###### ট্যারিফ বা শুল্ক ৫ প্রকারের
-- Revenue Tarrif       (রাজস্ব শুল্ক)
-- Import Tarrif        (আমদানী শুল্ক)
-- Export Tarrif        (রপ্তানি শুল্ক)
-- Transit Tarrif       (রাস্তা ব্যবহৃত শুল্ক)
-- Protective Tarrif    (..............) 
-- ![image](https://user-images.githubusercontent.com/110928130/194772138-deed81bc-ab2c-4952-aaae-21451aa92661.png)
-
 
 
 # টার্নওভার করঃ 
@@ -361,8 +366,10 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 # Supply Type
 
 ###### 1. VAT Exempted Goods and Services 
-যে সব পণ্যে ভ্যাট নেয়া হয়না বা ভ্যাট দেয়া হয়না সে সকল পণ্যেকে VAT Exempted Goods and Services  বলে। 
+
 ```
+যে সব পণ্যে ভ্যাট নেয়া হয়না বা ভ্যাট দেয়া হয়না সে সকল পণ্যেকে VAT Exempted Goods and Services  বলে। 
+
 - কোন কোন পণ্যে VAT Exempted Goods and Services..?
 	- Tafsil এর 1st Schedule HS Code দিয়ে বিস্তারিত দেয়া আছে, নতুন কিছু VAT Exempted Goods and Services হলে সরকার জানিয়ে দেয় 
 	- Tafsil for local---********
@@ -375,32 +382,32 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 ###### 3. Goods/Service Based on Specific VAT
 ```
-- patao, uber, Internet bill, quriar, service reletad
+- Patho, Uber, Internet Bill, Courier, Mainly Service Reletad
 ```
 
 ###### 4. Goods/Service Other than Standard Rate
 ```
-- Agro ind product
-- Sar, pat bacg, tructor
+- Agro Industry or Product
+- Fertilizer, Jute Bags, Agriculture Trucktor
 ```
 
 ###### 5. Retail/Wholesale/Trade Based Supply
 ```
-- retails h. 15% fixed, same product with value add
+- Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
 ```
 
 
 # 6. Standard Rated Goods/Service
 ```
-med, furnichar, laptop, Standard rate industry
+Medicine, Farnichar, Laptop, Standard Rate Industry
 ```
 
 
 ###### 7. Zero Rated Goods/Service
 ```
-- Exempted for local supply sales3--no
-- Zero for export
-- RMG
+- Exempted for Local Supply 
+- Zero for Export
+- RMG Sector (Reason of: Already Pay VAT When RAW Materials Import)
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
 
 
