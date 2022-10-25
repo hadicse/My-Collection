@@ -369,6 +369,12 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 	- Tarrif only For Foegin--*******
 ```
 
+###### Goods Based on MRP
+```
+- Food-Essential Product
+```
+
+
 ###### 2. Zero Rated Goods/Service
 ```
 - Exempted for local supply sales3--no
@@ -377,8 +383,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
 
 
-###### Goods Based on MRP	
--- Food-Essential Product
+
 
 # Goods/Service Based on Specific VAT
 patao, uber, Internet bill, quriar, service reletad
