@@ -397,7 +397,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 
-# 6. Standard Rated Goods/Service
+###### 6. Standard Rated Goods/Service
 ```
 Medicine, Farnichar, Laptop, Standard Rate Industry
 ```
@@ -408,18 +408,8 @@ Medicine, Farnichar, Laptop, Standard Rate Industry
 - Exempted for Local Supply 
 - Zero for Export
 - RMG Sector (Reason of: Already Pay VAT When RAW Materials Import)
+```
 ![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
