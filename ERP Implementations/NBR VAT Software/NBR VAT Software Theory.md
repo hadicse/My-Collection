@@ -390,11 +390,13 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 
-# Standard Rated Goods/Service
-med, furnichar, laptop, Standard rate industry
-
+# 6. Standard Rated Goods/Service
 ```
-###### . Zero Rated Goods/Service
+med, furnichar, laptop, Standard rate industry
+```
+
+
+###### 7. Zero Rated Goods/Service
 ```
 - Exempted for local supply sales3--no
 - Zero for export
