@@ -380,25 +380,25 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 ###### 2. Goods Based on MRP
-###### সর্বোচ্চ খুচরা মূল্য ভিত্তিক পণ্য ( নোট নংঃ ৫  )
+###### সর্বোচ্চ খুচরা মূল্য ভিত্তিক পণ্য  ( নোট নংঃ ৫ )
 ```
 - Food and Essential Product
 ```
 ###### 3. Goods/Service Based on Specific VAT
-###### 
+###### সুনির্দিষ্ট কর ভিত্তিক পণ্য ও সেবা  ( নোট নংঃ ৬ )
 ```
 - Patho, Uber, Internet Bill, Courier, Mainly Service Reletad
 ```
 
 ###### 4. Goods/Service Other than Standard Rate
-###### 
+###### আদর্শ কর হার ব্যতীত ভিন্ন কর হার ভিত্তিক পণ্য/সেবা  ( নোট নংঃ ৭ )
 ```
 - Agro Industry or Product
 - Fertilizer, Jute Bags, Agriculture Trucktor
 ```
 
 ###### 5. Retail/Wholesale/Trade Based Supply
-###### 
+###### খুচরা/ পাইকারী/ ব্যবসায়ী ভিত্তিক সরবরাহ ( নোট নংঃ ৮ )
 ```
 - Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
 ```
