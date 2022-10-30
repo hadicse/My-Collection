@@ -335,10 +335,14 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ---------------------------------------------------
 -------------------------------------------------------
 # Software Feature 
+
+
 # Item Create Screen > Item Group
 - 1. Purchase Book Item
 - 2. Sales Book Item
 - 3. Trading Item
+
+![image](https://user-images.githubusercontent.com/110928130/197752077-ca36a24c-7cf1-4534-b462-3754b0e720cb.png)
 
 ###### 1. Purchase Book Item
 ```
@@ -365,6 +369,9 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 
 # Supply Type
+![image](https://user-images.githubusercontent.com/110928130/198891580-45fd4354-aad3-46a4-9512-559bd6b1b15a.png)
+
+
 
 ###### 1,2 Zero Rated Goods/Service
 ###### শূন্যহার বিশিষ্ট পণ্য ও সেবা  ( নোট নংঃ ১ ও ২  )
@@ -419,7 +426,7 @@ Medicine, Farnichar, Laptop, Standard Rate Industry
 - Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
 ```
 
-![image](https://user-images.githubusercontent.com/110928130/197752077-ca36a24c-7cf1-4534-b462-3754b0e720cb.png)
+
 
 
 
