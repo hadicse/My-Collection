@@ -382,7 +382,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 
-###### 3. VAT Exempted Goods and Services 
+###### 3. Exempted Goods and Services 
 ###### অব্যাহতি প্রাপ্ত পণ্য ও সেবা ( নোট নং ৩ )
 
 ```
