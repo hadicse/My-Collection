@@ -368,6 +368,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 # Supply Type
 
 ###### 1. VAT Exempted Goods and Services 
+###### অব্যাহতি প্রাপ্ত পণ্য ও সেবা ( নোট নং ৩ )
 
 ```
 যে সব পণ্যে ভ্যাট নেয়া হয়না বা ভ্যাট দেয়া হয়না সে সকল পণ্যেকে VAT Exempted Goods and Services  বলে। 
@@ -379,34 +380,40 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 ###### 2. Goods Based on MRP
+###### সর্বোচ্চ খুচরা মূল্য ভিত্তিক পণ্য ( নোট নংঃ ৫  )
 ```
 - Food and Essential Product
 ```
 ###### 3. Goods/Service Based on Specific VAT
+###### 
 ```
 - Patho, Uber, Internet Bill, Courier, Mainly Service Reletad
 ```
 
 ###### 4. Goods/Service Other than Standard Rate
+###### 
 ```
 - Agro Industry or Product
 - Fertilizer, Jute Bags, Agriculture Trucktor
 ```
 
 ###### 5. Retail/Wholesale/Trade Based Supply
+###### 
 ```
 - Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
 ```
 
 
 ###### 6. Standard Rated Goods/Service
+###### আদর্শ হারের পণ্য ও সেবা ( নোট নংঃ ৪  )
 ```
 Medicine, Farnichar, Laptop, Standard Rate Industry
 ```
 
 
 ###### 7. Zero Rated Goods/Service
-```
+###### শূন্যহার বিশিষ্ট পণ্য ও সেবা  ( নোট নংঃ ১ ও ২  )
+``` 
 - Exempted for Local Supply 
 - Zero for Export
 - RMG Sector (Reason of: Already Pay VAT When RAW Materials Import)
