@@ -362,7 +362,6 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 - No Production, No Process, No Semi Finished Good's
 - Buy and Sale Same as Buy (Example: Buy Pen and sale Pen)
 ```
-![image](https://user-images.githubusercontent.com/110928130/197752077-ca36a24c-7cf1-4534-b462-3754b0e720cb.png)
 
 
 # Supply Type
@@ -374,7 +373,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 - Zero for Export
 - RMG Sector (Reason of: Already Pay VAT When RAW Materials Import)
 ```
-![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
+
 
 ###### 3. VAT Exempted Goods and Services 
 ###### অব্যাহতি প্রাপ্ত পণ্য ও সেবা ( নোট নং ৩ )
@@ -420,7 +419,7 @@ Medicine, Farnichar, Laptop, Standard Rate Industry
 - Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
 ```
 
-
+![image](https://user-images.githubusercontent.com/110928130/197752077-ca36a24c-7cf1-4534-b462-3754b0e720cb.png)
 
 
 
