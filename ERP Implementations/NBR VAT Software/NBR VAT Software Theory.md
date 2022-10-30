@@ -367,7 +367,16 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 # Supply Type
 
-###### 1. VAT Exempted Goods and Services 
+###### 1,2 Zero Rated Goods/Service
+###### শূন্যহার বিশিষ্ট পণ্য ও সেবা  ( নোট নংঃ ১ ও ২  )
+``` 
+- Exempted for Local Supply 
+- Zero for Export
+- RMG Sector (Reason of: Already Pay VAT When RAW Materials Import)
+```
+![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
+
+###### 3. VAT Exempted Goods and Services 
 ###### অব্যাহতি প্রাপ্ত পণ্য ও সেবা ( নোট নং ৩ )
 
 ```
@@ -379,48 +388,37 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 	- Tarrif only For Foegin--*******
 ```
 
-###### 2. Goods Based on MRP
-###### সর্বোচ্চ খুচরা মূল্য ভিত্তিক পণ্য  ( নোট নংঃ ৫ )
-```
-- Food and Essential Product
-```
-###### 3. Goods/Service Based on Specific VAT
-###### সুনির্দিষ্ট কর ভিত্তিক পণ্য ও সেবা  ( নোট নংঃ ৬ )
-```
-- Patho, Uber, Internet Bill, Courier, Mainly Service Reletad
-```
-
-###### 4. Goods/Service Other than Standard Rate
-###### আদর্শ কর হার ব্যতীত ভিন্ন কর হার ভিত্তিক পণ্য/সেবা  ( নোট নংঃ ৭ )
-```
-- Agro Industry or Product
-- Fertilizer, Jute Bags, Agriculture Trucktor
-```
-
-###### 5. Retail/Wholesale/Trade Based Supply
-###### খুচরা/ পাইকারী/ ব্যবসায়ী ভিত্তিক সরবরাহ ( নোট নংঃ ৮ )
-```
-- Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
-```
-
-
-###### 6. Standard Rated Goods/Service
+###### 4. Standard Rated Goods/Service
 ###### আদর্শ হারের পণ্য ও সেবা ( নোট নংঃ ৪  )
 ```
 Medicine, Farnichar, Laptop, Standard Rate Industry
 ```
 
 
-###### 7. Zero Rated Goods/Service
-###### শূন্যহার বিশিষ্ট পণ্য ও সেবা  ( নোট নংঃ ১ ও ২  )
-``` 
-- Exempted for Local Supply 
-- Zero for Export
-- RMG Sector (Reason of: Already Pay VAT When RAW Materials Import)
+
+###### 5. Goods Based on MRP
+###### সর্বোচ্চ খুচরা মূল্য ভিত্তিক পণ্য  ( নোট নংঃ ৫ )
 ```
-![image](https://user-images.githubusercontent.com/110928130/197587281-9d387b9b-8a62-4095-828f-73d667b9ba64.png)
+- Food and Essential Product
+```
+###### 6. Goods/Service Based on Specific VAT
+###### সুনির্দিষ্ট কর ভিত্তিক পণ্য ও সেবা  ( নোট নংঃ ৬ )
+```
+- Patho, Uber, Internet Bill, Courier, Mainly Service Reletad
+```
 
+###### 7. Goods/Service Other than Standard Rate
+###### আদর্শ কর হার ব্যতীত ভিন্ন কর হার ভিত্তিক পণ্য/সেবা  ( নোট নংঃ ৭ )
+```
+- Agro Industry or Product
+- Fertilizer, Jute Bags, Agriculture Trucktor
+```
 
+###### 8. Retail/Wholesale/Trade Based Supply
+###### খুচরা/ পাইকারী/ ব্যবসায়ী ভিত্তিক সরবরাহ ( নোট নংঃ ৮ )
+```
+- Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
+```
 
 
 
