@@ -470,6 +470,7 @@ Medicine, Farnichar, Laptop, Standard Rate Industry
 ###### 8. Retail/Wholesale/Trade Based Supply
 ###### খুচরা/ পাইকারী/ ব্যবসায়ী ভিত্তিক সরবরাহ ( নোট নংঃ ৮ ), ট্রেডিং পর্যায়ে ৫% হারে পণ্য/সেবা সরবরাহ
 ```
+- বাণিজ্যিক আমদানিকারক, পেট্রোলিয়াম পণ্যের ব্যবসায়ী, সুপারশপ ব্যবসায়ী, ঔষধজাত পণ্য ব্যবসায়ী  এবং খুচরা পাইকারি ব্যবসায়ী মূলত এই নোটে বিবরণ পূরণ করবেন
 - Retail & WholeSale like Supershop-15% Fixed, Same Product With Value ADD
 ```
 
