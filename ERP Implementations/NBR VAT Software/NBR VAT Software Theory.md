@@ -433,6 +433,8 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ###### 4. Standard Rated Goods/Service
 ###### আদর্শ হারের পণ্য ও সেবা ( নোট নংঃ ৪  ), ১৫% হারে সরবরাহকৃত পণ্য/ সেবা
 ```
+নিবন্ধিত ব্যাক্তি বা প্রতিষ্ঠান ১৫% শাতাংশ হারে ভ্যাট পরিশোধিত করে পণ্য / সেবার সরবরাহ করলে এই নোট পূরন করতে হয়।
+আদর্শ হারের সরবরাহ হল ১৫% শতাংশ ভ্যাট পরিশোধিত পণ্য বা সেবার সরবরাহ। 
 Medicine, Farnichar, Laptop, Standard Rate Industry
 ```
 
