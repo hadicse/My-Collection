@@ -223,6 +223,8 @@ C. 3rd TOPSIL
 
 
 # রেয়াত কি  বা  উপকরণ কর রেয়াত কি 
+![image](https://user-images.githubusercontent.com/110928130/200899049-5365833a-a8b2-4d03-8570-0b26971bce79.png)
+
 ![image](https://user-images.githubusercontent.com/110928130/197345861-d8e3c862-dcd0-4c0d-8426-54a6d42b9a92.png)
 ![image](https://user-images.githubusercontent.com/110928130/197345899-5ba6f53a-4a1a-4a68-8f63-b6f4db6caa7d.png)
 ![image](https://user-images.githubusercontent.com/110928130/197345908-8f911459-bc25-48c9-87f5-078bed919175.png)
