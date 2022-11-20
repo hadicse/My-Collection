@@ -122,7 +122,6 @@ HS Code Input করার মাধ্যমে Product এর CD, RD, SD, VAT,
 ঠিক তেমনি ভ্যাটের ক্ষেত্রে ও তফসিল আছে, যেমন কোন পন্য গুলো ভ্যাট এর আওতায় থাকবে, কোনগুলো থাকবেনা ইত্যাদি 
 
 TOPSIL/তফসিল মূলত 3 প্রকার
-![image](https://user-images.githubusercontent.com/110928130/202883265-b70e1d45-a797-46d1-880a-52f5fa44da25.png)
 
 A. 1st TOPSIL
 B. 2nd TOPSIL
@@ -133,6 +132,7 @@ C. 3rd TOPSIL
            	    যেমনঃ সিগারেট, ক্ষতিকারক কিছু।
 	3rd TOPSIL: গুরুত্বপূর্ন পণ্য কিন্তু মোলিক পণ্য নয়, এমন সব পণ্যের লিষ্ট হল 3rd TOPSIL
 ```
+![image](https://user-images.githubusercontent.com/110928130/202883265-b70e1d45-a797-46d1-880a-52f5fa44da25.png)
 ![image](https://user-images.githubusercontent.com/110928130/194771149-1ec90e36-61f6-4ff3-92b8-daf4a8492998.png)
 ![image](https://user-images.githubusercontent.com/110928130/194771153-2187f965-2784-4ef9-a2f8-164d66362e55.png)
 ![image](https://user-images.githubusercontent.com/110928130/194771146-04d98d81-0391-4284-b116-a0f76fd5f028.png)
