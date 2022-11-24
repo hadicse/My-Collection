@@ -18,11 +18,15 @@
 https://nbr.gov.bd/faq/vat-faq/ban
 ![image](https://user-images.githubusercontent.com/110928130/197593031-a1479759-16c9-4623-9756-8ba344bcb3a3.png)
 
-###### কর মূলত ৪ প্রকার 
+###### কর এর প্রকারভেদ
 - 15 %
 - 10 %
 - 7.5 %
 - 5 %
+- ৪.৫% 
+- ৪%
+- ২.৪%
+- ২%
 
 ![image](https://user-images.githubusercontent.com/110928130/194772295-04a10465-6475-4a87-b303-2d3e9a389d9a.png)
 
