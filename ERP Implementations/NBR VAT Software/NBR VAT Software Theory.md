@@ -108,6 +108,8 @@ https://nbr.gov.bd/faq/vat-faq/ban
 
 # কাজ করার জন্য মূলত ১৩ ধরনের মুসক সম্পর্কে জানতে হয়
 - Mushak-4.3    (Input/Output Co-Effeceint Declaration)
+- Mushak-4.4    Item Destroy
+- Mushak-4.5    Accident Destroy
 - Mushak-6.1    Purchase Register
 - Mushak-6.2    Sales Register
 - Mushak-6.2.1  Purchase Sales Book Register
@@ -129,11 +131,13 @@ https://nbr.gov.bd/faq/vat-faq/ban
 <details>
     <summary>সব মূসক দেখতে অনুগ্রহকরে এখানে ক্লিক করুন</summary>
 
-### Heading
-- Serial No
+### ফর্ম নাম্বার সহ মূসক এর নাম নিচে দেয়া হলঃ
+- ২.১ মূসক নিবন্ধনের জন্য আবেদন
+- ২.২ অনাবাসিক ব্যাক্তির মূসক নিবন্ধনের জন্য আবেদন ফর্ম
+- ২.৩  নিবন্ধন বা তালিকাভুক্তির সনদ 
 
-     
-	
+
+
 </details>
 
 
