@@ -1247,6 +1247,21 @@ and TransactionGroupName='Transfer In' and strReferenceTypeName like '%Transfer%
 ```
 
 
+# SQL Analytics Functions
+```sql
+SELECT Account	,TranDate,	TranAmount, FIRST_VALUE(TranAmount) OVER(
+		PARTITION BY Account
+        ORDER BY Account
+		) FIRST_VALUE
+FROM  tblTest
+
+SELECT Account	,TranDate,	TranAmount, Last_VALUE(TranAmount) OVER(
+		PARTITION BY Account
+        ORDER BY Account
+		) Last_VALUE
+FROM  tblTest
+```
+![image](https://user-images.githubusercontent.com/110928130/206227711-87ea9166-d4cd-4e85-bfe6-03848ff14b83.png)
 
 
 
