@@ -1296,7 +1296,7 @@ FROM  tblTest
 --Select * from tblMOB
 --Delete from tblMOB
 ```
-![image](https://user-images.githubusercontent.com/110928130/206862591-26072f95-708c-406d-b705-ab6b76487005.png)
+![image](https://user-images.githubusercontent.com/110928130/206862622-1c8e3dba-d074-46c5-9721-2f4346f55b8d.png)
 
 
 
