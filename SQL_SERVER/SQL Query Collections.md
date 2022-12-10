@@ -1300,7 +1300,14 @@ FROM  tblTest
 
 
 
+# How to Get current AUTO_INCREMENT / identity value for any table
+```sql
+Select IDENT_CURRENT ('[TAX].[dco].[table name]')
 
+-- If +1
+Select (Select IDENT_CURRENT ('[TAX].[dco].[table name]')+)
+
+```
 
 
 
