@@ -1311,6 +1311,39 @@ FROM  tblTest
 
 
 
+# How to rollback using explicit SQL Server transactions
+##### BEGIN TRANSACTION, COMMIT, ROLLBACK
 
+```sql
+    BEGIN
+        BEGIN TRY
+            BEGIN TRANSACTION;
+	    	----------------------------------*** Type Here Your Query ***----------------------------------
+			Insert into tblMOB
+			Select  '1'
+			
+			Insert into tblMOB
+			Select  '111111111111'
+		----------------------------------*** Type Here Your Query ***----------------------------------
+            IF @@TRANCOUNT > 0
+                COMMIT;
+        END TRY
+        BEGIN CATCH
+            IF @@TRANCOUNT > 0
+                ROLLBACK;
+            SELECT ERROR_NUMBER() AS ErrorNumber;
+            SELECT ERROR_MESSAGE() AS ErrorMessage;
+        END CATCH
+    END
+
+
+--Select * from tblMOB
+--Delete from tblMOB
+
+
+
+
+
+```
 
 
