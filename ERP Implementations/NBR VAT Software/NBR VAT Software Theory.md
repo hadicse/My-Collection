@@ -18,6 +18,7 @@
 ```
 - NBR এর ওয়েবসাইট, এখানে সকল তথ্য পাওয়া যাবেঃ https://nbr.gov.bd/faq/vat-faq/ban
 - NBR এর ওয়েবসাইট থেকে মূসক ডাউনলোডঃ  https://nbr.gov.bd/form/vat/vat-2012/eng
+- NBR এর ওয়েবসাইট থেকে HS CODE দিয়ে তথ্য হালনাগাদ করার লিঙ্ক : http://bangladeshcustoms.gov.bd/trade_info/duty_calculator
 ![image](https://user-images.githubusercontent.com/110928130/197593031-a1479759-16c9-4623-9756-8ba344bcb3a3.png)
 
 ###### কর এর প্রকারভেদ
