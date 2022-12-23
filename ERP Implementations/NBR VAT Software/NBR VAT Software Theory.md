@@ -21,6 +21,7 @@
 ### NBR ওয়েবসাইট থেকে বিভিন্ন প্রশ্নের উত্তর জানতে ভিজিট করুনঃ   https://nbr.gov.bd/faq/vat-faq/ban
 ### NBR এর ওয়েবসাইট থেকে মূসক ডাউনলোডঃ  			https://nbr.gov.bd/form/vat/vat-2012/eng
 ### NBR এর ওয়েবসাইট থেকে HS CODE দিয়ে তথ্য হালনাগাদ করার লিঙ্ক ঃ  http://bangladeshcustoms.gov.bd/trade_info/duty_calculator
+### ভ্যাট ৩৬৮  টি প্রশ্নের উত্তর জানতে ক্লিক করুনঃ https://nbr.gov.bd/uploads/publications/149.pdf
 
 ![image](https://user-images.githubusercontent.com/110928130/197593031-a1479759-16c9-4623-9756-8ba344bcb3a3.png)
 
@@ -438,7 +439,8 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 - ফিনিশ পণ্য বা কাঁচামালের মাধ্যমে  উৎপাদন করলে Input-Output CoEfficient (4.3) (ইনপুট-আউটপুট সহগ-4.3) দিতে হয়। 
 - ৪.৩ উৎপাদন  সহায়ক ঘোষনা (বাংলা) এর জন্য Purchase এর Info  লাগে এবং একটি Product যখন মার্কেটজাত করা হয় তার ১৫ দিন আগে ভ্যাট দাখিল করতে হয়।
 - কারা দাখিল করবেঃ যারা পণ্য বা কাঁচামাল আমদানী করে যখন বিভিন্ন পন্য (Finished Product) তৈরী  করে বাজারজাত করে তারাই  Input-Output CoEfficient (4.3) দাখিল করবেন।
-
+### ৪.৩ নিয়ে আরো জানতে ক্লিক করুন ঃ https://nbr.gov.bd/uploads/publications/6a.pdf
+#### https://nbr.gov.bd/uploads/publications/FL6_Valuation1.pdf
 ###### উদাহারনঃ 
 - কলম কিনেছি এবং কলমেই বিক্রি করবো তখন Input-Output CoEfficient (4.3) দাখিল এর প্রয়োজন নাই। 
 - বিভিন্ন কাঁচামাল কিনে প্রসেস করে কলম বানিয়ে , কলম বিক্রি করলে তখন কাঁচামালের জন্য  Input-Output CoEfficient (4.3) দাখিল করতে হয়। 
@@ -472,6 +474,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 # Mushak-6.3, Sales Invoice  (চালান পত্র পুস্তক-৬.৩):
 বিক্রি করার প্রথম ধাপ হলো চালান পত্র ইস্যু করা। একটি চালান পত্রে একাধিক পণ্য বিক্রি করা হতে পারে। 
 - বিক্রেতা বা সরবরাহ কর্তৃক পণ্য বা সেবার সাথে  প্রদানকৃত  কর চালানই হল Sales Invoice (কর চালান পত্র-৬.৩)।
+### চালান পত্র পুস্তক-৬.৩ নিয়ে আরো জানতে ক্লিক করুনঃ https://nbr.gov.bd/uploads/publications/8a.pdf
 
 ###### কি কি থাকেঃ
 - সরবরাহ  বা বিক্রেতার তথ্য 
