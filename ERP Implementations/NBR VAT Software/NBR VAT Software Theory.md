@@ -16,9 +16,12 @@
 জমা দিয়ে তার সংক্ষিপ্ত বিবরণ তাদের দাখিলপত্রে উল্লেখ করেন এবং ট্রেজারি চালানের কপিসহ দাখিলপত্র স্থানীয় মূসক কার্যালয়ে দাখিল করেন। 
 করদায়িতার (দাখিলপত্র ও সংশ্লিষ্ট অন্যান্য দলিলাদি) অডিটকরণ বা সঠিকতা যাচাই পরবর্র্র্তী সময় সম্পাদিত হয়ে থাকে।
 ```
-- NBR এর ওয়েবসাইট, এখানে সকল তথ্য পাওয়া যাবেঃ https://nbr.gov.bd/faq/vat-faq/ban
-- NBR এর ওয়েবসাইট থেকে মূসক ডাউনলোডঃ  https://nbr.gov.bd/form/vat/vat-2012/eng
-- NBR এর ওয়েবসাইট থেকে HS CODE দিয়ে তথ্য হালনাগাদ করার লিঙ্ক : http://bangladeshcustoms.gov.bd/trade_info/duty_calculator
+
+
+### NBR ওয়েবসাইট থেকে বিভিন্ন প্রশ্নের উত্তর জানতে ভিজিট করুনঃ   https://nbr.gov.bd/faq/vat-faq/ban
+### NBR এর ওয়েবসাইট থেকে মূসক ডাউনলোডঃ  			https://nbr.gov.bd/form/vat/vat-2012/eng
+### NBR এর ওয়েবসাইট থেকে HS CODE দিয়ে তথ্য হালনাগাদ করার লিঙ্ক ঃ  http://bangladeshcustoms.gov.bd/trade_info/duty_calculator
+
 ![image](https://user-images.githubusercontent.com/110928130/197593031-a1479759-16c9-4623-9756-8ba344bcb3a3.png)
 
 ###### কর এর প্রকারভেদ
