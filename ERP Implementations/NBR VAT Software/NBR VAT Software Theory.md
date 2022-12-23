@@ -543,7 +543,24 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 # ৬.৯
 # ৬.১০
-# ৯.১
+
+
+## ৯.১ দাখিল পত্র (৯.১ এর ইফেক্ট বিস্তারিত দেয়া হলঃ  
+<details>
+    <summary>মূসক ৯.১ দেখতে অনুগ্রহকরে এখানে ক্লিক করুন</summary>
+
+![9 1 -1](https://user-images.githubusercontent.com/110928130/209358997-d4116d9f-6a8f-42d8-b981-e3ddcb4f5f76.jpeg)
+![9 1 -2](https://user-images.githubusercontent.com/110928130/209359010-a2925d5b-ba7d-4c7a-ab81-f0837f860efa.jpeg)
+![9 1 -3](https://user-images.githubusercontent.com/110928130/209359126-78213d85-8b1e-400e-945c-708a9de28bfb.jpeg)
+![9 1 -4](https://user-images.githubusercontent.com/110928130/209359139-4d8b36f4-b2ec-4f92-8ee6-10cf313dc510.jpeg)
+![9 1 -5](https://user-images.githubusercontent.com/110928130/209359152-0f937dce-08f7-4401-8ac7-a15a9fb6ea89.jpeg)
+![9 1 -6](https://user-images.githubusercontent.com/110928130/209359162-d4e97edf-539b-412f-ab1d-2a89cfbc3700.jpeg)
+![9 1 -7](https://user-images.githubusercontent.com/110928130/209359174-90462b9d-c06d-48df-82a0-431899e34bd4.jpeg)
+
+
+	
+</details>	
+
 
 # টার্নওভার কর ৯.২ দাখিল পত্রঃ  
 ```
