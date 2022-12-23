@@ -611,6 +611,9 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 ![image](https://user-images.githubusercontent.com/110928130/209359953-cd8710a8-4ac9-4ce3-8af7-0eab7d0ca45c.png)
 
+</details>
+
+
 # ৯.৪ 
 ---------------------------------------------------
 -------------------------------------------------------
