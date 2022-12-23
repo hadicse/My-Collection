@@ -545,7 +545,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 # ৬.১০
 
 
-## ৯.১ দাখিল পত্র (৯.১ এর ইফেক্ট বিস্তারিত দেয়া হলঃ  
+## ৯.১ দাখিল পত্র (৯.১ এর ইফেক্ট বিস্তারিত দেয়া হল) ঃ   
 <details>
     <summary>মূসক ৯.১ দেখতে অনুগ্রহকরে এখানে ক্লিক করুন</summary>
 
@@ -602,7 +602,12 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 
 
-# ৯.৩
+## ৯.৩ দাখিল পত্র (৯.৩ এর ইফেক্ট বিস্তারিত দেয়া হল)  ঃ   
+<details>
+    <summary>মূসক ৯.৩ দেখতে অনুগ্রহকরে এখানে ক্লিক করুন</summary>
+
+![image](https://user-images.githubusercontent.com/110928130/209359953-cd8710a8-4ac9-4ce3-8af7-0eab7d0ca45c.png)
+
 # ৯.৪ 
 ---------------------------------------------------
 -------------------------------------------------------
