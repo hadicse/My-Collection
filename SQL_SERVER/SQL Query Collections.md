@@ -1309,8 +1309,9 @@ Select (Select IDENT_CURRENT ('[TAX].[dco].[table name]')+)
 
 ```
 
-# How to GET Bangla Fata From SQL Table OR How to Insert Bangla Data into SQL Table
+# How to GET Bangla Data From SQL Table OR How to Insert Bangla Data into SQL Table
 ```sql
+--Data Type Must be SET nvarchar type
 -- How to GET Bangla Data From SQL Table
 --Need to set Capital N before Condition Data
 Select * from tblAddress Where HouseAddress =N'রংপুর'
