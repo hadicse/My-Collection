@@ -1340,19 +1340,20 @@ Select * from sys.tables
 
 --2nd Step to Find
 SELECT        SQLTEXT.text as ExecutedQueryDetails, STATS.last_execution_time as DateandTime
---Into ##tmpHistorya
+--Into #tmpHistory
 FROM          sys.dm_exec_query_stats STATS
 CROSS APPLY   sys.dm_exec_sql_text(STATS.sql_handle) AS SQLTEXT
 WHERE         STATS.last_execution_time > GETDATE()-1
 ORDER BY      STATS.last_execution_time DESC
 
 
-Select * From ##tmpHistorya Where ExecutedQueryDetails like '%tables%'
+Select * From #tmpHistory Where ExecutedQueryDetails like '%tables%'
 
 
 
-Drop Table Into ##tmpHistorya
+Drop Table Into #tmpHistory
 ```
+![image](https://user-images.githubusercontent.com/110928130/211072193-3fde3254-888c-41de-9fc8-0c2933516bc5.png)
 
 
 
