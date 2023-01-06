@@ -1331,7 +1331,28 @@ Select '5', N'বাংলাদেশ'
 
 
 
+# How to Find Last Executed Query or Query History in SQL SERVER
 
+```sql
+
+--1st Execute Query
+Select * from sys.tables
+
+--2nd Step to Find
+SELECT        SQLTEXT.text as ExecutedQueryDetails, STATS.last_execution_time as DateandTime
+--Into ##tmpHistorya
+FROM          sys.dm_exec_query_stats STATS
+CROSS APPLY   sys.dm_exec_sql_text(STATS.sql_handle) AS SQLTEXT
+WHERE         STATS.last_execution_time > GETDATE()-1
+ORDER BY      STATS.last_execution_time DESC
+
+
+Select * From ##tmpHistorya Where ExecutedQueryDetails like '%tables%'
+
+
+
+Drop Table Into ##tmpHistorya
+```
 
 
 
