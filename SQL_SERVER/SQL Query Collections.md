@@ -1356,7 +1356,19 @@ Drop Table Into #tmpHistory
 ![image](https://user-images.githubusercontent.com/110928130/211072193-3fde3254-888c-41de-9fc8-0c2933516bc5.png)
 
 
+# table name with schima name
+```
+select schema_name(t.schema_id) as schema_name,
+       t.name as table_name
+from sys.tables t
+where t.object_id in 
+    (select c.object_id 
+      from sys.columns c
+     where c.name like '%Item%')
+order by schema_name,
+         table_name
 
+```
 
 
 
