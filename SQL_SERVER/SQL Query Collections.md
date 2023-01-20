@@ -1372,7 +1372,8 @@ order by schema_name,
 
 
 # How Find table name by table data or table value in  SQL Server
-```
+
+```sql
 --Select * from TAX.TAX.tblTaxItemGroup---Cement additives grinding aid
 
 
