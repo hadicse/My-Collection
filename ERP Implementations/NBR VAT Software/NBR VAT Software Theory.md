@@ -554,11 +554,12 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ## ৯.১ দাখিল পত্র (৯.১ এর ইফেক্ট বিস্তারিত দেয়া হল) ঃ   
 <details>
     <summary>মূসক ৯.১ দেখতে অনুগ্রহকরে এখানে ক্লিক করুন</summary>
-মূসক ৯.১ নিয়ে বিস্তারিত এই ভিডিও তে পাবেন (পার্ট-০১) 
-https://www.youtube.com/watch?v=Ro3_Fqo_maw
 	
-মূসক ৯.১ নিয়ে বিস্তারিত এই ভিডিও তে পাবেন (পার্ট-০১) 
-https://www.youtube.com/watch?v=K_bDFEMhiuQ&t=533s
+	মূসক ৯.১ নিয়ে বিস্তারিত এই ভিডিও তে পাবেন (পার্ট-০১) 
+	https://www.youtube.com/watch?v=Ro3_Fqo_maw
+
+	মূসক ৯.১ নিয়ে বিস্তারিত এই ভিডিও তে পাবেন (পার্ট-০২) 
+	https://www.youtube.com/watch?v=K_bDFEMhiuQ&t=533s
 ------------------------------------------------ 
 ![9 1 -1](https://user-images.githubusercontent.com/110928130/209358997-d4116d9f-6a8f-42d8-b981-e3ddcb4f5f76.jpeg)
 ![9 1 -2](https://user-images.githubusercontent.com/110928130/209359010-a2925d5b-ba7d-4c7a-ab81-f0837f860efa.jpeg)
