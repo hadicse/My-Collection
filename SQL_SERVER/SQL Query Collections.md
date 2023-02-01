@@ -88,6 +88,21 @@ WHERE tblSeq.ID IS NULL AND Seq < (SELECT MAX(ID) FROM tblSeq)
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
+#  Example of RANK() SQL RANK Function/PARTITION 
+```sql
+select TR.intTaxPricingId, TR.intTaxItemGroupId, 
+numBasePrice,
+RANK() OVER(PARTITION BY numBasePrice ORDER BY TR.intTaxPricingId DESC) Rank
+---TR.intTaxPricingId	, TR.intTaxItemGroupId,	numBasePrice 
+from tax.tblTaxItemOutputTaxRate TR
+Join  TAX.tax.tblTaxItemPriceSetupHeader SH on Sh.intTaxPricingId=TR.intTaxPricingId 
+Where intAccountId=10 and  TR.intTaxItemGroupId=1526
+
+```
+
+![image](https://user-images.githubusercontent.com/110928130/216062339-3f7158e3-f0c3-466d-ba7d-7c8552201181.png)
+
+
 
 `Topic No: 04`
 
