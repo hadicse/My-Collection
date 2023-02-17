@@ -1449,7 +1449,9 @@ END
 
 SELECT Distinct ColumnName, ColumnValue FROM @Results
 
------OR-------------
+-------------------------------------------------OR-------------
+-------------------------------------------------OR-------------
+-------------------------------------------------OR-------------
 declare @SearchStr nvarchar(100)
 set @SearchStr = '%AMi Hadi Bolsi%'
 
