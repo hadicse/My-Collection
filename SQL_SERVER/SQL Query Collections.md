@@ -1520,7 +1520,7 @@ https://gist.github.com/csharpforevermore/71289d4b345fb2e0d528adee9bc9cb54
 # How do I get only the numbers after the decimal or DOT or Fraction Value in a Numerical Value?
 ```sql
 
-SELECT TranAmount as MainAmount,  TranAmount - FLOOR(TranAmount) AS OnlyFractionAmt     FROM tblTest
+SELECT ReceivedAmount as MainAmount,  ReceivedAmount - FLOOR(ReceivedAmount) AS OnlyFractionAmount   FROM tblTest
 
 ```
 
