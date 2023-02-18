@@ -762,34 +762,13 @@ Medicine, Farnichar, Laptop, Standard Rate Industry
 
 # মূসক ৪.৩ উপকরণ-উৎপাদ সহগ (মূসক ৪.৩) প্রস্তুত করার ক্ষেত্রে অপচয় বা অবচয় প্রকৃত উৎপাদনের সাথে সামঞ্জস্যপূর্ণ কিনা তা যাচাই করার পাশাপাশি মূল্য সংযোজনের খাতগুলো যথাযথভাবে প্রতিফলিত হয়েছে কিনা তা যাচাই করা বেশ গুরুত্বপূর্ণ। প্রতিষ্ঠান ও পন্যভেদে এ সংযোজনের খাত ভিন্ন হতে পারে। নিম্নে কিছু খাত উল্লেখ করা হল:
 ```
-1. Salary and Wages
-2. Board Meeting Expense
-3. Product Development
-4. Training Expenses
-5. Loading and Unloading
-6. Profit
-7. Bank Interest and Charges
-8. office Rent
-9. cleaning charge
-10. Transport Expense
-11. Repairing and Maintenance
-12. Allowances
-13. Traveling and Conveyance
-14. Entertainment
-15. Printing and Stationary
-16. Postage and Telegram
-17. Subscription and Donation
-18. License and renewal
-19. Insurance
-20. Telephone
-21. Internet
-22. C & F Commission
-23. Depreciation
-24. Building and Construction
-25. Selling and Distribution Expense
-26. Advertisement and Marketing Expense
-27. Misc. Expenses
-
+1. Salary and Wages  2. Board Meeting Expense 3. Product Development 4. Training Expenses 5. Loading and Unloading
+6. Profit  7. Bank Interest and Charges  8. office Rent   9. cleaning charge   10. Transport Expense
+11. Repairing and Maintenance    12. Allowances   13. Traveling and Conveyance   14. Entertainment
+15. Printing and Stationary     16. Postage and Telegram   17. Subscription and Donation  18. License and renewal
+19. Insurance    20. Telephone    21. Internet   22. C & F Commission
+23. Depreciation     24. Building and Construction     25. Selling and Distribution Expense   
+26. Advertisement and Marketing Expense    27. Misc. Expenses
 ```
 
 
