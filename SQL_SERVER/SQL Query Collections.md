@@ -1538,7 +1538,7 @@ SELECT ReceivedAmount as MainAmount,  ReceivedAmount - FLOOR(ReceivedAmount) AS 
 
 
 ```
-![image](https://user-images.githubusercontent.com/110928130/221423026-18a51591-f936-4da9-895e-d18a1e79094d.png)
+![image](https://user-images.githubusercontent.com/110928130/221423686-65c47d80-f6b4-42e7-83d2-7f094c4ee2a1.png)
 
 
 
