@@ -157,7 +157,16 @@
 - Mushak-9.1    VAT Return Form. 
 - Mushak-9.2	Turnover Tax Return
 
-![image](https://user-images.githubusercontent.com/110928130/194771402-669aea28-2ae1-435e-a15b-f03487271f48.png)
+# সব মূসক নিয়ে নিচে সংক্ষেপে আলোচনা দেয়া হলঃ 
+
+![1-3](https://user-images.githubusercontent.com/110928130/221417057-5558c156-94ee-49b0-9b94-99550f8e762a.jpg)
+![4-5](https://user-images.githubusercontent.com/110928130/221417060-1ec75165-f267-40a4-8a6c-5e27bfcd4dae.jpg)
+![6-8](https://user-images.githubusercontent.com/110928130/221417065-02e20855-1b0e-41d0-9cd5-fcc446bd8ed0.jpg)
+![image](https://user-images.githubusercontent.com/110928130/221417153-49e05f44-1269-4826-8f29-063a2bc18648.png)
+![12-14](https://user-images.githubusercontent.com/110928130/221417071-15ad8adc-421f-4c51-93c4-5ed6feb6a595.jpg)
+![15-16](https://user-images.githubusercontent.com/110928130/221417076-6b6f26cc-671c-45fc-a8ad-f2e0913a8a8b.jpg)
+
+
 
 ------------------------------------------------------------
 ------------------------------------------------------------
