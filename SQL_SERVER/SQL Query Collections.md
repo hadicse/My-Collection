@@ -1529,7 +1529,7 @@ SELECT ReceivedAmount as MainAmount,  ReceivedAmount - FLOOR(ReceivedAmount) AS 
 
 
 # Start Serial after 5 rows like 1,1,1,1,1, 2,2,2,2,2 in SQL Server 
-```
+```sql
 		--Select * from   tblSerialGroup
 
 		SELECT DENSE_RANK() OVER (ORDER BY BatchNum) AS Serial, ID, Name, ROLL
