@@ -404,7 +404,8 @@ ALTER TABLE tableName WITH CHECK CHECK CONSTRAINT ALL
 Select ColumnA, ColumnB from tblTrims
    
 SELECT REPLACE(ColumnA,' ', '') as WithOutSpace , REPLACE(ColumnB,' ', '') as WithOutSpace  from tblTrims
-   
+      Select REPLACE(1234.100, '.', '')
+ --   '.', Mainly here main value
 ```
 
 ![RemoveSpace](https://user-images.githubusercontent.com/110928130/185178778-e77d4714-a561-4a41-8998-892c0bea9d82.jpg)
