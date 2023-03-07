@@ -138,6 +138,7 @@
 - AIT = Advance Income TAX
 - AV  = Assessable Value
 - TTI = CD+RD+SD+VAT+AIT+AT যোগ করে হয়।
+# Vatable Value  = AV + CD + RD + SD
 
 # কাজ করার জন্য মূলত ১৬ ধরনের মুসক সম্পর্কে জানতে হয়ঃ 
 - Mushak-4.3    (Input/Output Co-Effeceint Declaration)
