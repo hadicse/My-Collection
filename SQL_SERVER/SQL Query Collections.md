@@ -1568,7 +1568,7 @@ SELECT SUBSTRING(Names, 1, CHARINDEX(' ', Names, CHARINDEX(' ', Names, CHARINDEX
 FROM tblSpace
 WHERE Names LIKE '% % % % %'
 ```
-![image](https://user-images.githubusercontent.com/110928130/235446098-9d13ea07-9fc3-4c87-81ec-2bd880114341.png)
+![image](https://user-images.githubusercontent.com/110928130/235446409-a0d93196-82db-4e81-9cac-4ed1aa2298ea.png)
 
 
 
