@@ -1546,7 +1546,7 @@ SELECT ReceivedAmount as MainAmount,  ReceivedAmount - FLOOR(ReceivedAmount) AS 
 
 
 # To find the substring before the space (1st, 2nd, 3rd, 4th or Multiple Space) in a SQL column 
-```
+```sql
 --1st Space
 SELECT SUBSTRING(names, 0, CHARINDEX(' ', names) - 0) AS names
 FROM tblSpace
