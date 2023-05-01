@@ -1545,6 +1545,35 @@ SELECT ReceivedAmount as MainAmount,  ReceivedAmount - FLOOR(ReceivedAmount) AS 
 
 
 
+# To find the substring before the space (1st, 2nd, 3rd, 4th or Multiple Space) in a SQL column 
+```
+--1st Space
+SELECT SUBSTRING(names, 0, CHARINDEX(' ', names) - 0) AS names
+FROM tblSpace
+WHERE names LIKE '% %'
+
+--2nd Space
+SELECT SUBSTRING(names, 1, CHARINDEX(' ', names, CHARINDEX(' ', names) + 1) - 1) AS names
+FROM tblSpace
+WHERE names LIKE '% % %'
+
+
+--3rd Space
+SELECT SUBSTRING(names, 1, CHARINDEX(' ', names, CHARINDEX(' ', names, CHARINDEX(' ', names) + 1) + 1) - 1) AS names
+FROM tblSpace
+WHERE names LIKE '% % % %'
+
+--4th Space
+SELECT SUBSTRING(Names, 1, CHARINDEX(' ', Names, CHARINDEX(' ', Names, CHARINDEX(' ', Names, CHARINDEX(' ', Names) + 1) + 1) + 1) - 1) AS Names
+FROM tblSpace
+WHERE Names LIKE '% % % % %'
+```
+![image](https://user-images.githubusercontent.com/110928130/235446098-9d13ea07-9fc3-4c87-81ec-2bd880114341.png)
+
+
+
+
+
 
 <!-- For Color Tex
 ```diff
