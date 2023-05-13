@@ -1159,6 +1159,22 @@ CLOSE plan_cursor;
 DEALLOCATE plan_cursor;
 ```
 
+# Dynamic PIVOT (Dynamic Row to Column)
+```sql
+DECLARE @Columns NVARCHAR(MAX);
+SELECT @Columns = COALESCE(@Columns + ', ', '') + QUOTENAME(WalletName)
+FROM (SELECT DISTINCT WalletName FROM ##AllPayment) AS Temp
+DECLARE @DynamicSQL NVARCHAR(MAX);
+SET @DynamicSQL = 
+'SELECT UserName, ' + @Columns + '
+FROM ( SELECT UserName, WalletName, Amount FROM ##AllPayment
+) AS SourceTable
+PIVOT ( SUM(Amount) FOR WalletName IN (' + isnull(@Columns,0) + ')) AS PivotTable'
+EXEC sp_executesql @DynamicSQL;
+```
+![image](https://github.com/hadicse/My-Collection/assets/110928130/e6a3dbff-fcdd-442d-9c87-d821bc51600d)
+
+
 
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
 `Topic No: 52`
