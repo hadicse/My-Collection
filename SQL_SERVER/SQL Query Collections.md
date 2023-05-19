@@ -1,3 +1,6 @@
+[SQL 56 Pages.pdf](https://github.com/hadicse/My-Collection/files/11514869/SQL.56.Pages.pdf)
+
+
 # **Welcome to SQL Server Collection's of Hadiuzzaman**
 - Here I will collect all types of complex queries.
 - which was used for my work purposes.
