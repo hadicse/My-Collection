@@ -43,6 +43,75 @@
 ![image](https://user-images.githubusercontent.com/110928130/188483555-d59ae09a-6d32-45d9-9b25-2e3882fd89a9.png) `Topic No: 02`
 
 
+------------------------------------------------------------
+------------------------------------------------------------
+# All SQL Query With Example  
+![SQL 56 Pages_page-0001](https://github.com/hadicse/My-Collection/assets/110928130/4f2e01c3-e00f-4916-bcdd-4c0666397ccf)
+<details>
+    <summary>All SQL Query With Example দেখতে অনুগ্রহকরে এখানে ক্লিক করুন</summary>
+
+### ফর্ম নাম্বার সহ মূসক এর নাম নিচে দেয়া হলঃ
+![SQL 56 Pages_page-0001](https://github.com/hadicse/My-Collection/assets/110928130/4f2e01c3-e00f-4916-bcdd-4c0666397ccf)
+![SQL 56 Pages_page-0002](https://github.com/hadicse/My-Collection/assets/110928130/218dadb0-fe7d-41cd-bb5b-1e4c25074284)
+![SQL 56 Pages_page-0003](https://github.com/hadicse/My-Collection/assets/110928130/d907af08-2c46-4b8e-b554-4ec2213d5ff8)
+![SQL 56 Pages_page-0004](https://github.com/hadicse/My-Collection/assets/110928130/9d669244-0b45-44df-928b-57a1c9a27082)
+![SQL 56 Pages_page-0005](https://github.com/hadicse/My-Collection/assets/110928130/35d39254-111d-464e-b715-bc0684124c19)
+![SQL 56 Pages_page-0006](https://github.com/hadicse/My-Collection/assets/110928130/cd25347c-83d2-4506-8d3c-9ec97d1c7c92)
+![SQL 56 Pages_page-0007](https://github.com/hadicse/My-Collection/assets/110928130/f253d2b3-ae1f-4515-b56c-339b1f8360e5)
+![SQL 56 Pages_page-0008](https://github.com/hadicse/My-Collection/assets/110928130/6f8c7d3e-2d52-4208-907d-22fd21b2fa07)
+![SQL 56 Pages_page-0009](https://github.com/hadicse/My-Collection/assets/110928130/5b2fd70b-ec70-4147-a103-6f71e7bd3e5e)
+![SQL 56 Pages_page-0010](https://github.com/hadicse/My-Collection/assets/110928130/0fe0f10f-0b3e-40ad-8a1b-0fb14d0c0d58)
+![SQL 56 Pages_page-0011](https://github.com/hadicse/My-Collection/assets/110928130/c583247d-b236-45c7-b82c-c757752b8d2d)
+![SQL 56 Pages_page-0012](https://github.com/hadicse/My-Collection/assets/110928130/38ec5ead-3ceb-4aac-83cd-15e968a079da)
+![SQL 56 Pages_page-0013](https://github.com/hadicse/My-Collection/assets/110928130/c61ee141-e8e4-498f-9f8b-cf96cfb0133b)
+![SQL 56 Pages_page-0014](https://github.com/hadicse/My-Collection/assets/110928130/5f18c721-2720-4e6a-926f-6250cbcc4986)
+![SQL 56 Pages_page-0015](https://github.com/hadicse/My-Collection/assets/110928130/1ac935f4-c612-46dc-a3f3-a5ad6eba7418)
+![SQL 56 Pages_page-0016](https://github.com/hadicse/My-Collection/assets/110928130/2a624710-8b07-422c-8d74-9ec3f87547e0)
+![SQL 56 Pages_page-0017](https://github.com/hadicse/My-Collection/assets/110928130/b6c8b5b5-dcbf-446a-b728-14f262bd164c)
+![SQL 56 Pages_page-0018](https://github.com/hadicse/My-Collection/assets/110928130/efe6b48d-d5f1-4d85-bb1f-7817d6acc607)
+ ![SQL 56 Pages_page-0019](https://github.com/hadicse/My-Collection/assets/110928130/fafd14a6-f1ed-48d2-8045-596d495ad3b9)
+![SQL 56 Pages_page-0020](https://github.com/hadicse/My-Collection/assets/110928130/54ecd139-2bd5-46ac-9848-430bc9c669d6)
+![SQL 56 Pages_page-0021](https://github.com/hadicse/My-Collection/assets/110928130/ee9eb1e1-cc1a-4715-b5f6-e79660a64f66)
+![SQL 56 Pages_page-0022](https://github.com/hadicse/My-Collection/assets/110928130/296f0242-4056-4905-b13a-9557f63da48d)
+![SQL 56 Pages_page-0023](https://github.com/hadicse/My-Collection/assets/110928130/9f38be98-bfbf-4129-a35f-6d7f8eae490b)
+![SQL 56 Pages_page-0024](https://github.com/hadicse/My-Collection/assets/110928130/cbc8c0a4-d2d2-4655-8fb8-b5320f67e337)
+![SQL 56 Pages_page-0025](https://github.com/hadicse/My-Collection/assets/110928130/008fa748-8fab-450b-b448-a55c207916ce)
+![SQL 56 Pages_page-0026](https://github.com/hadicse/My-Collection/assets/110928130/ea84ca56-4374-4680-8a10-3f9c87e47ab3)
+![SQL 56 Pages_page-0027](https://github.com/hadicse/My-Collection/assets/110928130/1e6b4560-e2ce-4a70-9e76-4959ba614dec)
+![SQL 56 Pages_page-0028](https://github.com/hadicse/My-Collection/assets/110928130/f1af0eaa-0dff-4928-a2ea-5f1162a83aa6)
+![SQL 56 Pages_page-0029](https://github.com/hadicse/My-Collection/assets/110928130/9e77ec4f-d01d-4010-ba5f-c744dcdaeb93)
+![SQL 56 Pages_page-0030](https://github.com/hadicse/My-Collection/assets/110928130/0918dc99-bd12-4b19-93ec-848cbe3b1991)
+![SQL 56 Pages_page-0031](https://github.com/hadicse/My-Collection/assets/110928130/a3be3950-9c28-4fc2-8bb6-bec5d6184c7c)
+![SQL 56 Pages_page-0032](https://github.com/hadicse/My-Collection/assets/110928130/23fd4627-fc13-48ff-88f2-9626e3d8a91d)
+![SQL 56 Pages_page-0033](https://github.com/hadicse/My-Collection/assets/110928130/a114b127-7fcf-46ed-b6fa-27fbcb8ec537)
+![SQL 56 Pages_page-0034](https://github.com/hadicse/My-Collection/assets/110928130/be389e07-10f4-41d9-b2be-2e4000ee2780)
+![SQL 56 Pages_page-0035](https://github.com/hadicse/My-Collection/assets/110928130/fb8c1307-843f-4f11-8585-965226fbcc23)
+![SQL 56 Pages_page-0036](https://github.com/hadicse/My-Collection/assets/110928130/021f302a-89f5-4536-97b0-7d7040f1f0eb)
+![SQL 56 Pages_page-0037](https://github.com/hadicse/My-Collection/assets/110928130/7d208d0a-5c9f-4c23-912f-484631b90734)
+![SQL 56 Pages_page-0038](https://github.com/hadicse/My-Collection/assets/110928130/4837f125-bf6a-437a-ae36-1035503ee25b)
+![SQL 56 Pages_page-0039](https://github.com/hadicse/My-Collection/assets/110928130/2440259c-0acc-4ca3-bcfa-2d402b6bbee2)
+![SQL 56 Pages_page-0040](https://github.com/hadicse/My-Collection/assets/110928130/3a56e1cb-725d-44b9-bcec-8b533c599518)
+![SQL 56 Pages_page-0041](https://github.com/hadicse/My-Collection/assets/110928130/7a3187e3-ea77-447a-8d11-a50d42791f6e)
+![SQL 56 Pages_page-0042](https://github.com/hadicse/My-Collection/assets/110928130/31fd0b10-25f1-472b-8eb0-fbce0d1001d9)
+![SQL 56 Pages_page-0043](https://github.com/hadicse/My-Collection/assets/110928130/eccf70b8-bb61-4ce3-9666-e8a2b7dacb98)
+![SQL 56 Pages_page-0044](https://github.com/hadicse/My-Collection/assets/110928130/c4b7cdec-7c41-429f-a433-f027cdad865a)
+![SQL 56 Pages_page-0045](https://github.com/hadicse/My-Collection/assets/110928130/64fac476-5f89-4d39-ab1c-8d337bab470f)
+![SQL 56 Pages_page-0046](https://github.com/hadicse/My-Collection/assets/110928130/03267b48-daf6-4799-acd3-eb87f55a4594)
+![SQL 56 Pages_page-0047](https://github.com/hadicse/My-Collection/assets/110928130/98007e56-275c-4d62-9916-64a2b6846062)
+![SQL 56 Pages_page-0048](https://github.com/hadicse/My-Collection/assets/110928130/1add279c-ac7f-4a3f-9a19-80e98ea87361)
+![SQL 56 Pages_page-0049](https://github.com/hadicse/My-Collection/assets/110928130/cd4463c0-e113-4c84-a832-0e24a764cb52)
+![SQL 56 Pages_page-0050](https://github.com/hadicse/My-Collection/assets/110928130/fc7c2623-1ebe-4128-bafd-a0b492ab60b7)
+![SQL 56 Pages_page-0051](https://github.com/hadicse/My-Collection/assets/110928130/dd241726-140b-4305-aa78-acd5568f62a1)
+![SQL 56 Pages_page-0052](https://github.com/hadicse/My-Collection/assets/110928130/fe24d55b-781e-4dea-ad17-b1f7050ffa79)
+![SQL 56 Pages_page-0053](https://github.com/hadicse/My-Collection/assets/110928130/be94cd02-8964-4203-95f5-43aa89f73f68)
+![SQL 56 Pages_page-0054](https://github.com/hadicse/My-Collection/assets/110928130/723815d8-df33-4679-ba19-3ae7270681f3)
+![SQL 56 Pages_page-0055](https://github.com/hadicse/My-Collection/assets/110928130/0f4a3e51-f9ed-4a3a-87bf-d38567db43c7)
+![SQL 56 Pages_page-0056](https://github.com/hadicse/My-Collection/assets/110928130/1247cf25-39de-4547-bc54-85cd8ff1379a)
+	
+	
+</details>
+------------------------------------------------------------
+------------------------------------------------------------
 
 
 # Many people do not understand which topics of SQL they need to learn. This topic is for them.
