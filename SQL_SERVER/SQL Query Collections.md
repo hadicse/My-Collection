@@ -130,7 +130,8 @@ ORDER BY numBasePrice, RANK
 ![#f03cd15](https://via.placeholder.com/15/f03c15/000000?text=+)
 `Topic No: 05`
 
-
+# All SQL Query With Example please click below: 
+[SQL 56 Pages.pdf](https://github.com/hadicse/My-Collection/files/11514963/SQL.56.Pages.pdf)
 
 
 # Copy or delete files from directory/local computer in SQL Server
