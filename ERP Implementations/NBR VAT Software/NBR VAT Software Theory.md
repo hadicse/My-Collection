@@ -805,10 +805,12 @@ Medicine, Farnichar, Laptop, Standard Rate Industry
 
 ```
 
+---------------------------
+# ভ্যাট প্রসেস ফ্লো ডায়াগ্রাম 
 ![VAT -1](https://github.com/hadicse/My-Collection/assets/110928130/9ae60e01-025a-47d2-9b1e-711304ae0518)
 [Vat Diagram.xlsx](https://github.com/hadicse/My-Collection/files/11599662/Vat.Diagram.xlsx)
-
-
+[VAT Effect.xlsx](https://github.com/hadicse/My-Collection/files/11748805/VAT.Effect.xlsx)
+---------------------------
 
 
 
