@@ -1595,7 +1595,7 @@ WHERE Names LIKE '% % % % %'
 
 
 # Use of REPLACE  in SQL
-```
+```sql
 Select * from tblTest
 SELECT REPLACE(ID, 'th', '') AS modified_column FROM tblTest
 ```
