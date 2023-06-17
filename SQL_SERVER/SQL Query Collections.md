@@ -1594,6 +1594,21 @@ WHERE Names LIKE '% % % % %'
 
 
 
+# Use of REPLACE  in SQL
+```
+Select * from tblTest
+SELECT REPLACE(ID, 'th', '') AS modified_column FROM tblTest
+```
+
+![image](https://github.com/hadicse/My-Collection/assets/110928130/b0afb177-0df0-4d70-9b26-e8debd2ee176)
+
+
+
+
+
+
+
+
 
 <!-- For Color Tex
 ```diff
