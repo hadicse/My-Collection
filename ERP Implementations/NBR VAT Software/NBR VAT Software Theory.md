@@ -138,25 +138,25 @@
 - AIT = Advance Income TAX
 - AV  = Assessable Value
 - TTI = CD+RD+SD+VAT+AIT+AT যোগ করে হয়।
-#### Vatable Value  = AV + CD + RD + SD
+## Vatable Value  = AV + CD + RD + SD
 
 # কাজ করার জন্য মূলত ১৬ ধরনের মুসক সম্পর্কে জানতে হয়ঃ 
-- Mushak-4.3    (Input/Output Co-Effeceint Declaration)
-- Mushak-4.4    Item Destroy
-- Mushak-4.5    Accident Destroy
-- Mushak-6.1    Purchase Register
-- Mushak-6.2    Sales Register
-- Mushak-6.2.1  Purchase Sales Book Register
-- Mushak-6.3    Vat Invoice/Sales Invoice
-- Mushak-6.4    Invoice of Contructual Output For Manufacturing (Contructual Manufacturing)
-- Mushak-6.5    Good Transer Information (Internal Transfer and Received)
-- Mushak-6.6    Certificate of VDS (VAT Deduction Source)  
-- Mushak-6.7    Credit Note (Sales Return)
-- Mushak-6.8    Debit Note  (Purchase Return)
-- Mushak-6.9    Turnover TAX Invoice
-- Mushak-6.10   TAX Invoice Info For Avobe 2 Lakh Taka of Purchase/Sales
-- Mushak-9.1    VAT Return Form. 
-- Mushak-9.2	Turnover Tax Return
+- 1. Mushak-4.3    (Input/Output Co-Effeceint Declaration)
+- 2. Mushak-4.4    Item Destroy
+- 3. Mushak-4.5    Accident Destroy
+- 4. Mushak-6.1    Purchase Register
+- 5. Mushak-6.2    Sales Register
+- 6. Mushak-6.2.1  Purchase Sales Book Register
+- 7. Mushak-6.3    Vat Invoice/Sales Invoice
+- 8. Mushak-6.4    Invoice of Contructual Output For Manufacturing (Contructual Manufacturing)
+- 9. Mushak-6.5    Good Transer Information (Internal Transfer and Received)
+- 10. Mushak-6.6    Certificate of VDS (VAT Deduction Source)  
+- 11. Mushak-6.7    Credit Note (Sales Return)
+- 12. Mushak-6.8    Debit Note  (Purchase Return)
+- 13. Mushak-6.9    Turnover TAX Invoice
+- 14. Mushak-6.10   TAX Invoice Info For Avobe 2 Lakh Taka of Purchase/Sales
+- 15. Mushak-9.1    VAT Return Form. 
+- 16. Mushak-9.2	Turnover Tax Return
 
 # সব মূসক নিয়ে নিচে সংক্ষেপে আলোচনা দেয়া হলঃ 
 
