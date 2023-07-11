@@ -1604,8 +1604,34 @@ SELECT REPLACE(ID, 'th', '') AS modified_column FROM tblTest
 
 
 
+# To generate a script for creating a table in SQL
+```sql
+-- Generate script for creating a table
+Declare @TableName varchar (50)
+SET @TableName ='tblDepartment'
+
+SELECT 'CREATE TABLE ' + @TableName + ' (' +
+STUFF((SELECT 
+', ' + COLUMN_NAME + ' ' + DATA_TYPE +
+CASE 
+WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL THEN '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS VARCHAR(10)) + ')'
+ELSE ''
+END +
+CASE 
+WHEN IS_NULLABLE = 'NO' THEN ' NOT NULL'
+ELSE ' NULL'
+END
+FROM 
+INFORMATION_SCHEMA.COLUMNS 
+WHERE 
+TABLE_NAME = @TableName -- Replace with the name of the existing table
+ORDER BY 
+ORDINAL_POSITION
+FOR XML PATH('')), 1, 2, '') + ');'
+AS 'CreateTableQuery'
 
 
+```
 
 
 
