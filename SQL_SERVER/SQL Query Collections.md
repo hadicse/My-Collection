@@ -1635,6 +1635,18 @@ AS 'CreateTableQuery'
 
 
 
+# How to round in SQL, so that if the number is greater than 0.50, it rounds to 1, and if it is less than 0.50, it rounds to 0?"
+```
+SELECT 
+  your_column,
+  CASE 
+    WHEN your_column - FLOOR(your_column) >= 0.50 THEN CEILING(your_column)  -- Round up to 1
+    ELSE FLOOR(your_column)                                                -- Round down to 0
+  END AS rounded_value
+FROM your_table;
+
+``
+
 
 <!-- For Color Tex
 ```diff
