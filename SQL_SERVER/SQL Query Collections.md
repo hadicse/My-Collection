@@ -1636,7 +1636,7 @@ AS 'CreateTableQuery'
 
 
 # How to round in SQL, so that if the number is greater than 0.50, it rounds to 1, and if it is less than 0.50, it rounds to 0?"
-```
+```sql
 SELECT 
   your_column,
   CASE 
@@ -1644,10 +1644,22 @@ SELECT
     ELSE FLOOR(your_column)                                                -- Round down to 0
   END AS rounded_value
 FROM your_table;
-
 ``
 
 
+# GO Using For Page Break
+```sql
+GO
+--Adding Extra Column
+ALTER TABLE ##Customer_Final ALTER COLUMN PartnerName VARCHAR(500)
+GO
+Update ##Customer_Final SET LastName=NULL  WHere LastName=''
+Update ##Customer_Final SET PartnerName = PartnerName + ' ' +  LastName COLLATE Latin1_General_CI_AS WHere LastName is not NULL
+
+GO
+
+
+```
 <!-- For Color Tex
 ```diff
 -dsglhfg
