@@ -1637,14 +1637,12 @@ AS 'CreateTableQuery'
 
 # How to round in SQL, so that if the number is greater than 0.50, it rounds to 1, and if it is less than 0.50, it rounds to 0?"
 ```sql
-SELECT 
-  your_column,
-  CASE 
-    WHEN your_column - FLOOR(your_column) >= 0.50 THEN CEILING(your_column)  -- Round up to 1
-    ELSE FLOOR(your_column)                                                -- Round down to 0
-  END AS rounded_value
+SELECT your_column,
+CASE WHEN your_column - FLOOR(your_column) >= 0.50 THEN CEILING(your_column)  -- Round up to 1
+ELSE FLOOR(your_column)                                                -- Round down to 0
+END AS rounded_value
 FROM your_table;
-``
+```
 
 
 # GO Using For Page Break
@@ -1657,19 +1655,9 @@ Update ##Customer_Final SET LastName=NULL  WHere LastName=''
 Update ##Customer_Final SET PartnerName = PartnerName + ' ' +  LastName COLLATE Latin1_General_CI_AS WHere LastName is not NULL
 
 GO
-
-
 ```
-<!-- For Color Tex
-```diff
--dsglhfg
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
 
---For Hyperlink
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
----->
-```
+
+
+
 
