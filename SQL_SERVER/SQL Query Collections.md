@@ -1604,51 +1604,28 @@ SELECT REPLACE(ID, 'th', '') AS modified_column FROM tblTest
 
 
 
-# To generate a script for creating a table in SQL
+# To generate a script for creating multiple tables in SQL
 ```sql
 -- Generate script for creating for Multiple table
+
 DECLARE @TableNames TABLE (Name VARCHAR(50))
-INSERT INTO @TableNames VALUES ('tblDepartment'), ('tblEmployee'), ('tblProduct')
+INSERT INTO @TableNames VALUES ('tblDepartment'), ('tblProduct'), ('tblCustomer'),  ('tblProducer')
 
-DECLARE @TableName VARCHAR(50)
-DECLARE @CreateTableQuery NVARCHAR(MAX)
-
-DECLARE TableCursor CURSOR FOR
-SELECT Name FROM @TableNames
-
-OPEN TableCursor
-FETCH NEXT FROM TableCursor INTO @TableName
-
+DECLARE @TableName VARCHAR(50), @CreateTableQuery NVARCHAR(MAX)
+DECLARE TableCursor CURSOR FOR SELECT Name FROM @TableNames OPEN TableCursor FETCH NEXT FROM TableCursor INTO @TableName
 WHILE @@FETCH_STATUS = 0
-BEGIN
-    SET @CreateTableQuery = 
-        'CREATE TABLE ' + @TableName + ' (' +
-        STUFF((SELECT 
-            ', ' + COLUMN_NAME + ' ' + DATA_TYPE +
-            CASE 
-                WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL THEN '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS VARCHAR(10)) + ')'
-                ELSE ''
-            END +
-            CASE 
-                WHEN IS_NULLABLE = 'NO' THEN ' NOT NULL'
-                ELSE ' NULL'
-            END
-            FROM 
-            INFORMATION_SCHEMA.COLUMNS 
-            WHERE 
-            TABLE_NAME = @TableName
-            ORDER BY 
-            ORDINAL_POSITION
-            FOR XML PATH('')), 1, 2, '') + ');'
 
-    PRINT @CreateTableQuery -- You can execute the query instead of printing it
-    
-    FETCH NEXT FROM TableCursor INTO @TableName
+BEGIN		
+	SET		@CreateTableQuery = 'CREATE TABLE ' + @TableName + ' (' + STUFF((SELECT ', ' + COLUMN_NAME + ' ' + DATA_TYPE +
+	CASE	WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL THEN '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS VARCHAR(10)) + ')'
+	ELSE	'' END +
+	CASE	WHEN IS_NULLABLE = 'NO' THEN ' NOT NULL' ELSE ' NULL' END
+	FROM	INFORMATION_SCHEMA.COLUMNS 
+	WHERE	TABLE_NAME = @TableName ORDER BY ORDINAL_POSITION FOR XML PATH('')), 1, 2, '') + ');'
+	PRINT	@CreateTableQuery -- You can execute the query instead of printing it
+	FETCH	NEXT FROM TableCursor INTO @TableName 
 END
-
-CLOSE TableCursor
-DEALLOCATE TableCursor
-
+CLOSE TableCursor DEALLOCATE TableCursor
 
 ```
 
