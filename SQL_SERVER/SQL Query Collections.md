@@ -1655,10 +1655,9 @@ GO
 
 
 # To split a single row of data into multiple rows in SQL
-####### This query will split the data in the your_column column by commas and return each split value as a separate row.
-```
+###### This query will split the data in the your_column column by commas and return each split value as a separate row.
+```sql
 Select * from tblLine
-
 SELECT value AS SplitData FROM tblLine CROSS APPLY STRING_SPLIT(OneRow, ',')
 ```
 ![image](https://github.com/hadicse/My-Collection/assets/110928130/02ec29c1-f3df-4711-9ea5-e992358c4f77)
