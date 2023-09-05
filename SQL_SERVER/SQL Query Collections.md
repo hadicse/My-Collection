@@ -1665,8 +1665,12 @@ SELECT value AS SplitData FROM tblLine CROSS APPLY STRING_SPLIT(OneRow, ',')
 # How to make custome serial number in SQL
 
 ```sql
-SELECT One, CONCAT('05092023_', RIGHT('000' + CAST(One AS NVARCHAR(3)), 3)) AS Serialaaa FROM tblOne
+Select * from tblOne
+
+SELECT One, CONCAT('05092023_', RIGHT('000' + CAST(RowNum AS NVARCHAR(3)), 3)) AS NewColumn
+FROM ( SELECT One, ROW_NUMBER() OVER (ORDER BY One) AS RowNum FROM tblOne) AS NumberedData;
 ```
-![image](https://github.com/hadicse/My-Collection/assets/110928130/fcef4096-39e9-4fff-b683-27f3e61ff386)
+![image](https://github.com/hadicse/My-Collection/assets/110928130/8a4a573a-6f3b-4fd9-863c-5d6af59e3dbe)
+
 
 
