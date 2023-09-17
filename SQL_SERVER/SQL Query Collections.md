@@ -1672,5 +1672,45 @@ FROM ( SELECT One, ROW_NUMBER() OVER (ORDER BY One) AS RowNum FROM tblOne) AS Nu
 ```
 ![image](https://github.com/hadicse/My-Collection/assets/110928130/8a4a573a-6f3b-4fd9-863c-5d6af59e3dbe)
 
+# Ping to Server or Target IP Address using SQL Server
+```sql
+DECLARE @ServerIP VARCHAR(255)
+SET @ServerIP = '192.168.1.100'
 
+DECLARE @Cmd VARCHAR(255)
+SET @Cmd = 'ping ' + @ServerIP
+
+DECLARE @PingOutput TABLE (OutputText VARCHAR(MAX))
+
+-- Execute ping command and capture output
+INSERT INTO @PingOutput
+EXEC xp_cmdshell @Cmd
+
+-- Insert ping results into the database
+INSERT INTO PingResults (Hostname, ResultText, Timestamp)
+SELECT @ServerIP, OutputText, GETDATE()
+FROM @PingOutput
+WHERE OutputText IS NOT NULL
+
+-- Clean up any NULL rows
+DELETE FROM PingResults WHERE ResultText IS NULL
+GO 100
+
+CREATE TABLE PingResults (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Hostname VARCHAR(255),
+    ResultText VARCHAR(MAX),
+    Timestamp DATETIME
+);
+
+
+
+-- Enable 'xp_cmdshell'
+EXEC sp_configure 'show advanced options', 1;
+RECONFIGURE;
+EXEC sp_configure 'xp_cmdshell', 1;
+RECONFIGURE;
+
+
+```
 
