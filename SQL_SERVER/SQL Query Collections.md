@@ -1672,6 +1672,8 @@ FROM ( SELECT One, ROW_NUMBER() OVER (ORDER BY One) AS RowNum FROM tblOne) AS Nu
 ```
 ![image](https://github.com/hadicse/My-Collection/assets/110928130/8a4a573a-6f3b-4fd9-863c-5d6af59e3dbe)
 
+
+
 # Ping to Server or Target IP Address using SQL Server
 ```sql
 DECLARE @ServerIP VARCHAR(255)
@@ -1710,7 +1712,5 @@ EXEC sp_configure 'show advanced options', 1;
 RECONFIGURE;
 EXEC sp_configure 'xp_cmdshell', 1;
 RECONFIGURE;
-
-
 ```
 
