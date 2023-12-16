@@ -1653,3 +1653,20 @@ EXEC sp_configure 'xp_cmdshell', 1;
 RECONFIGURE;
 ```
 
+
+
+# SQL Table Name to Select All Column With Comma 
+
+
+```sql
+DECLARE @TableName NVARCHAR(255) = 'tblDepartment';
+DECLARE @Columns NVARCHAR(MAX) = '';
+
+SELECT @Columns += COLUMN_NAME + ', ' FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @TableName;
+
+SET @Columns = LEFT(@Columns, LEN(@Columns) - 1); DECLARE @SqlQuery NVARCHAR(MAX); SET @SqlQuery = 'SELECT ' + @Columns + ' FROM ' + @TableName;
+
+
+PRINT @SqlQuery;
+
+```
