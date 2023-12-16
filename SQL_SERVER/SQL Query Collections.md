@@ -1325,6 +1325,7 @@ FROM  tblTest
                 	ROLLBACK;
             		SELECT ERROR_NUMBER() AS ErrorNumber;
             		SELECT ERROR_MESSAGE() AS ErrorMessage;
+			SELECT Error_Line () AS ErrorLine_Of_Query
         	END CATCH
     END
 
