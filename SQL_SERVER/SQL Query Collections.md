@@ -1670,3 +1670,94 @@ SET @Columns = LEFT(@Columns, LEN(@Columns) - 1); DECLARE @SqlQuery NVARCHAR(MAX
 PRINT @SqlQuery;
 
 ```
+
+
+
+# How to generate Script with Data (*Database>Task>generate Script>With Schima and Data*)
+```sql
+
+DECLARE @NewDatabaseName NVARCHAR(255) = 'YourDatabaseName'; -- Replace with your desired database name
+DECLARE @SourceDatabase NVARCHAR(255) = 'PB_Managerium'; -- Replace with the name of your original database
+
+-- Use dynamic SQL to create the new database
+DECLARE @CreateDatabaseQuery NVARCHAR(MAX);
+SET @CreateDatabaseQuery = 'CREATE DATABASE ' + QUOTENAME(@NewDatabaseName);
+
+-- Execute the CREATE DATABASE statement
+EXEC sp_executesql @CreateDatabaseQuery;
+
+-- Generate the USE statement to switch to the newly created database
+DECLARE @UseDatabaseQuery NVARCHAR(MAX);
+SET @UseDatabaseQuery = 'USE ' + @NewDatabaseName;
+
+-- Execute the USE statement
+EXEC sp_executesql @UseDatabaseQuery;
+
+-- Define a table variable to store table names
+DECLARE @Tables TABLE (TableName NVARCHAR(255));
+
+-- Insert the names of the tables you want to copy
+INSERT INTO @Tables (TableName)
+VALUES ('ItemCategory'), ('ItemSubCategory'), ('Partner');
+
+-- Declare variables for cursor
+DECLARE @TableName NVARCHAR(255);
+
+-- Declare the cursor
+DECLARE TableCursor CURSOR FOR
+SELECT TableName FROM @Tables;
+
+-- Open the cursor
+OPEN TableCursor;
+
+-- Fetch the first table name
+FETCH NEXT FROM TableCursor INTO @TableName;
+
+-- Loop through the tables
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    -- Get column names and data types
+    DECLARE @Columns NVARCHAR(MAX) = '';
+    SELECT @Columns += COLUMN_NAME + ' ' + DATA_TYPE + 
+                      CASE 
+                         WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL THEN '(' + CAST(CHARACTER_MAXIMUM_LENGTH AS NVARCHAR) + ')' 
+                         ELSE '' 
+                      END + ', '
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE TABLE_NAME = @TableName;
+
+    -- Remove the trailing comma and space
+    SET @Columns = LEFT(@Columns, LEN(@Columns) - 1);
+
+    -- Generate the CREATE TABLE statement
+    DECLARE @CreateTableQuery NVARCHAR(MAX);
+    SET @CreateTableQuery = 'CREATE TABLE ' + @NewDatabaseName + '.dbo.' + @TableName + ' (' + @Columns + ')';
+
+    -- Execute the CREATE TABLE statement
+    EXEC sp_executesql @CreateTableQuery;
+
+    -- Generate the INSERT INTO statement to copy data
+    DECLARE @InsertDataQuery NVARCHAR(MAX);
+    SET @InsertDataQuery = 'INSERT INTO ' + @NewDatabaseName + '.dbo.' + @TableName + ' SELECT * FROM ' + @SourceDatabase + '.dbo.' + @TableName;
+
+    -- Execute the INSERT INTO statement
+    EXEC sp_executesql @InsertDataQuery;
+
+    -- Fetch the next table name
+    FETCH NEXT FROM TableCursor INTO @TableName;
+END
+
+-- Close and deallocate the cursor
+CLOSE TableCursor;
+DEALLOCATE TableCursor;
+
+
+```
+
+
+
+
+
+
+
+
