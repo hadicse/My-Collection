@@ -1756,7 +1756,7 @@ DEALLOCATE TableCursor;
 
 
 # How to copy file Source to Destination
-```
+```sql
 -- Enable xp_cmdshell (requires sysadmin role or appropriate permissions)
 EXEC sp_configure 'show advanced options', 1;
 RECONFIGURE;
