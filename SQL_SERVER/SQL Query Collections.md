@@ -1755,8 +1755,24 @@ DEALLOCATE TableCursor;
 ```
 
 
+# How to copy file Source to Destination
+```
+-- Enable xp_cmdshell (requires sysadmin role or appropriate permissions)
+EXEC sp_configure 'show advanced options', 1;
+RECONFIGURE;
+EXEC sp_configure 'xp_cmdshell', 1;
+RECONFIGURE;
 
+-- Run xp_cmdshell to copy the file
+DECLARE @cmd NVARCHAR(1000);
+SET @cmd = 'COPY "H:\iBOS\backup\MIRPUR-01\PrinceBazar\FULL\MIRPUR-01_PrinceBazar_FULL_20231231_182747.bak" "\\192.168.100.103\PrinceMirpur01_DBBackUP\"';
+EXEC xp_cmdshell @cmd;
 
+-- Disable xp_cmdshell for security reasons
+EXEC sp_configure 'xp_cmdshell', 0;
+RECONFIGURE;
+
+```
 
 
 
