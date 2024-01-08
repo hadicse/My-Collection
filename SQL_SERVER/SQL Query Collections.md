@@ -1776,4 +1776,18 @@ RECONFIGURE;
 
 
 
+# How remove 1st 3 Letter 
+# How to Remove 0 From the string to an integer, Remove leading zeros when converting the string to an integer.
+```sql
+SELECT SUBSTRING(PartnerCode, 5, LEN(PartnerCode)) AS ModifiedColumnName into #A FROM Partner  Where PartnerTypeId=1 and PartnerCode like '%S%'
+Select  CAST(ModifiedColumnName AS INT) AS ResultUsingCast From #A where ModifiedColumnName!='MIR0006'
+
+
+```
+
+
+
+
+
+
 
