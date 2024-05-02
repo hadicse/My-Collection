@@ -649,11 +649,16 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ## 2. সেলসবুক/রেজিস্টার
 ## 3. ট্রেডিং রেজিস্টার
  
-###### 1. পার্সেসবুক/রেজিস্টার কি Purchase Book Item
+### 1. পার্সেসবুক/রেজিস্টার কি Purchase Book Item
 ```
 যদি কোন প্রতিষ্ঠান র মেটেরিয়ালস ক্রয় করে, সেই র মেটেরিয়ালস দিয়ে প্রোডাকশন করে পণ্য তৈরি করে থাকে
 তখন এই র মেটেরিয়াল বা কাঁচামাল এর ক্রয় করার হিসেব পারচেসবুক রেজিস্টারে, লিখতে হয় বা রেকর্ড করে রাখতে হয়
 মনে রাখতে হবে শুধুমাত্র র মেটেরিয়ালস ক্রয় হিসেবে পার্সেসবুক রেজিস্টারে লিখতে হয় অন্য কোন হিসেব পারসেজ বুক রেজিস্টারে আসবে না
+
+যেমন কোন প্রতিষ্ঠান যদি আটা, চিনি, তেল ইত্যাদি কাঁচামাল কিনে বার্গার তৈরি করে
+তখন শুধুমাত্র আটা, চিনি ও তেলের হিসাব এই রেজিস্টারে রাখতে হবে
+
+(বার্গার এর হিসাব নয়)
 
 - Raw Materials Item or Product
 - Semi Finished Goods/ Item or Product
@@ -662,7 +667,7 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 ```
 
 
-###### 2. Sales Book Item (Mushak-4.3)
+### 2. Sales Book Item (Mushak-4.3)
 ```
 যে সকল প্রতিষ্ঠান র মেটেরিয়ালস বা কাঁচামাল ক্রয় করে প্রোডাকশন করে এবং প্রোডাকশন করে যে পণ্য প্রস্তুত হয়
 সে পণ্য বিক্রি করে তখন সেই পণ্যের হিসেব সেলসবুক রেজিস্টারে লিখতে হয়
@@ -670,13 +675,18 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 বা বিক্রি করা হয় শুধুমাত্র সেই সকল পণ্যই বা পণ্যের হিসাব এই  সেলসবুক রেজিস্টারে লিখতে হয় বা রেকর্ড করে রাখতে হয়
 অন্য কোন হিসেব পারসেজ বুক রেজিস্টারে আসবে না
 
+যেমন কোন প্রতিষ্ঠান যদি আটা, চিনি, তেল ইত্যাদি কাঁচামাল কিনে বার্গার তৈরি করে
+তখন শুধুমাত্র বার্গার এর হিসাব এই রেজিস্টারে রাখতে হবে
+
+(আটা, চিনি, তেল এর হিসাব নয়)
+
 - Only Process Item or Product, Which Item or Product Process for Sale.
 - Finished Good's, Which Item or Product Process for Sale.
 - Not Buy and Sale (Example: Buy Pen and sale Pen)
 ```
 
 
-###### 3. Trading Item (Mushak-6.1 & 6.2)
+#### 3. Trading Item (Mushak-6.1 & 6.2)
 ```
 - No Production, No Process, No Semi Finished Good's
 - Buy and Sale Same as Buy (Example: Buy Pen and sale Pen)
