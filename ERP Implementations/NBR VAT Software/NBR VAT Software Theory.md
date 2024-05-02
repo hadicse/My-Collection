@@ -711,7 +711,8 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 # Supply Type
 ![image](https://user-images.githubusercontent.com/110928130/198891580-45fd4354-aad3-46a4-9512-559bd6b1b15a.png)
-
+এই সাপ্লাই টাইপের উপর ভিত্তিকরে ৯.১ বা  রিটার্ন দাখিল মূসক এ বিভিন্ন নোটে ইফেক্ট পরে 
+সাপ্লাই টাইপ  ১, ২, ৩, ৪.....  এরকম নাম্বার ৯.১ বা  রিটার্ন দাখিল মূসক এ  বিভিন্ন ধরনের নোট আছে সাপ্লাই টাইপের নাম্বার হল ৯.১ বা  রিটার্ন দাখিল মূসক এর  নোট নাম্বার
 
 
 ###### 1,2 Zero Rated Goods/Service
