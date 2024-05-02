@@ -651,8 +651,18 @@ H S.Code abbreviation পূর্ণরুপ (Hermonized Commodity Description
 
 ![image](https://user-images.githubusercontent.com/110928130/197752077-ca36a24c-7cf1-4534-b462-3754b0e720cb.png)
 
-###### 1. Purchase Book Item
+# ভ্যাটে সাধারণত 3 ধরনের বুক থাকে 
+- 1. পার্সেসবুক/রেজিস্টার
+  2. সেলসবুক/রেজিস্টার
+  3. ট্রেডিং রেজিস্টার
+ 
+  4. 
+###### 1. পার্সেসবুক/রেজিস্টার কি Purchase Book Item
 ```
+যদি কোন প্রতিষ্ঠান র মেটেরিয়ালস ক্রয় করে, সেই র মেটেরিয়ালস দিয়ে প্রোডাকশন করে পণ্য তৈরি করে থাকে
+তখন এই র মেটেরিয়াল বা কাঁচামাল এর ক্রয় করার হিসেব পারচেসবুক রেজিস্টারে, লিখতে হয় বা রেকর্ড করে রাখতে হয়
+মনে রাখতে হবে শুধুমাত্র র মেটেরিয়ালস ক্রয় হিসেবে পার্সেসবুক রেজিস্টারে লিখতে হয় অন্য কোন হিসেব পারসেজ বুক রেজিস্টারে আসবে না
+
 - Raw Materials Item or Product
 - Semi Finished Goods/ Item or Product
 - Only Production / Process Item or Product
