@@ -1787,7 +1787,7 @@ Select  CAST(ModifiedColumnName AS INT) AS ResultUsingCast From #A where Modifie
 
 # Exporting data from SQL Server to an Excel sheet using a query
 ### Method: Using bcp Utility
-```
+```sql
 sp_configure 'show advanced options', 1;
 GO
 RECONFIGURE;
@@ -1800,7 +1800,7 @@ GO
 
 ```
 Open Command Prompt on your computer.
-```
+```sql
 bcp "SELECT * FROM your_table" queryout "C:\path\to\your\file.csv" -c -t, -S servername -d databasename -U username -P password
 
 -- If Windows authentication
