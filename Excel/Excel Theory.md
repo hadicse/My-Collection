@@ -21,7 +21,6 @@
 ## Module 3: Data Entry and Formatting
 #### 3.1 Entering Data
 - Typing text, numbers, and dates
-- Autofill and Flash Fill
 - Basic cell editing
 #### 3.2 Cell Formatting
 - Font styles and sizes
@@ -39,8 +38,6 @@
 - SUM, AVERAGE, MIN, MAX
 - COUNT and COUNTA
 - Basic text functions (LEFT, RIGHT, MID, CONCATENATE)
-#### 4.3 Cell References
-- Relative, absolute, and mixed references
 ## Module 5: Data Manipulation
 #### 5.1 Sorting Data
 - Sorting by one column
@@ -51,6 +48,9 @@
 #### 5.3 Data Validation
 - Setting up data validation rules
 - Creating drop-down lists
+- Drop Down
+- List
+- Duplicate
 ## Module 6: Charts and Graphs
 #### 6.1 Creating Charts
 - Selecting data for charts
@@ -59,6 +59,7 @@
 - Adding titles and labels
 - Changing chart styles and colors
 - Modifying axes and legends
+- Shapes
 ## Module 7: Working with Tables
 #### 7.1 Creating and Formatting Tables
 - Converting a range to a table
@@ -75,14 +76,5 @@
 - Printing worksheets and workbooks
 #### 8.3 Sharing Workbooks
 - Saving as PDF
-## Module 9: Introduction to Advanced Topics
-#### 9.1 Introduction to PivotTables
-- Creating a simple PivotTable
-- Using PivotTable fields
-#### 9.2 Introduction to Macros
-- Recording and running a macro
-- Basic understanding of VBA
-## Module 10: Review and Practice
-#### 10.1 Course Recap
-- Summary of key concepts
+
 
