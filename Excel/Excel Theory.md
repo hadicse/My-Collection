@@ -78,4 +78,45 @@
 #### 8.3 Sharing Workbooks
 - Saving as PDF
 
+------------------------------------------------------------------------------
+# Here is a simplified list of basic Excel formulas:
+
+1	SUM
+2	AVERAGE
+3	MIN
+4	MAX
+5	COUNT
+6	COUNTA
+7	IF
+8	SUMIF
+9	AVERAGEIF
+10	VLOOKUP
+11	HLOOKUP
+12	CONCATENATE / CONCAT
+13	LEFT
+14	RIGHT
+15	MID
+16	LEN
+17	TRIM
+18	UPPER
+19	LOWER
+20	NOW
+21	TODAY
+22	DATE
+23	TIME
+24	YEAR
+25	MONTH
+26	DAY
+27	HOUR
+28	MINUTE
+29	SECOND
+30	ABS
+31	ROUND
+32	ROUNDUP
+33	ROUNDDOWN
+34	INT
+35	MOD
+![image](https://github.com/hadicse/My-Collection/assets/110928130/97033606-4a13-43c1-a9bf-09221cadda11)
+
+
 
