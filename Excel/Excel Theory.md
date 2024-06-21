@@ -3,7 +3,7 @@
 #### 1.1 Overview of Excel
 - What is Excel?
 - Uses of Excel in various fields
-#### 1.2 Excel Interface
+### 1.2 Excel Interface
 - Understanding the Ribbon
 - Quick Access Toolbar
 - Workbook and Worksheet
