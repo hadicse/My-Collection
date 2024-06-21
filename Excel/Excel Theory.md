@@ -1,4 +1,4 @@
-# Excel for Beginners Course Outline
+# Excel for Beginners Theory Outline:
 ## Module 1: Introduction to Excel
 #### 1.1 Overview of Excel
 - What is Excel?
