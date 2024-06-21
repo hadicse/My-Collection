@@ -30,6 +30,7 @@
 #### 3.3 Aligning and Merging Cells
 - Text alignment (left, center, right)
 - Merging and unmerging cells
+- Copy, Pest, Auto Fill, Replace, Text Box, Wrap Text
 ## Module 4: Basic Formulas and Functions
 #### 4.1 Introduction to Formulas
 - Basic arithmetic operations (addition, subtraction, multiplication, division)
