@@ -1,15 +1,15 @@
 # Excel for Beginners Course Outline
 ## Module 1: Introduction to Excel
-## 1.1 Overview of Excel
+#### 1.1 Overview of Excel
 - What is Excel?
 - Uses of Excel in various fields
-### 1.2 Excel Interface
+#### 1.2 Excel Interface
 - Understanding the Ribbon
 - Quick Access Toolbar
 - Workbook and Worksheet
 - Cells, Rows, Columns, and Ranges
 ## Module 2: Basic Excel Operations
-### 2.1 Workbook Management
+#### 2.1 Workbook Management
 - Creating a new workbook
 - Saving a workbook
 - Opening an existing workbook
