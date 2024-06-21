@@ -60,32 +60,29 @@
 - Changing chart styles and colors
 - Modifying axes and legends
 ## Module 7: Working with Tables
-7.1 Creating and Formatting Tables
-Converting a range to a table
-Table styles and formatting
-7.2 Table Tools
-Adding and removing table rows/columns
-Using table formulas
-Module 8: Printing and Sharing
-8.1 Page Setup
-Adjusting margins and orientation
-Setting up print area
-8.2 Printing Options
-Print preview
-Printing worksheets and workbooks
-8.3 Sharing Workbooks
-Saving as PDF
-Emailing workbooks
-Module 9: Introduction to Advanced Topics
-9.1 Introduction to PivotTables
-Creating a simple PivotTable
-Using PivotTable fields
-9.2 Introduction to Macros
-Recording and running a macro
-Basic understanding of VBA
-Module 10: Review and Practice
-10.1 Course Recap
-Summary of key concepts
-10.2 Practical Exercises
-Hands-on exercises to reinforce learning
-Sample projects
+#### 7.1 Creating and Formatting Tables
+- Converting a range to a table
+- Table styles and formatting
+#### 7.2 Table Tools
+- Adding and removing table rows/columns
+- Using table formulas
+## Module 8: Printing and Sharing
+#### 8.1 Page Setup
+- Adjusting margins and orientation
+- Setting up print area
+#### 8.2 Printing Options
+- Print preview
+- Printing worksheets and workbooks
+#### 8.3 Sharing Workbooks
+- Saving as PDF
+## Module 9: Introduction to Advanced Topics
+#### 9.1 Introduction to PivotTables
+- Creating a simple PivotTable
+- Using PivotTable fields
+#### 9.2 Introduction to Macros
+- Recording and running a macro
+- Basic understanding of VBA
+## Module 10: Review and Practice
+#### 10.1 Course Recap
+- Summary of key concepts
+
