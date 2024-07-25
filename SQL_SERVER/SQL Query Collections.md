@@ -1808,7 +1808,22 @@ bcp "SELECT * FROM tblAsset" queryout "C:\Users\Administrator\Desktop\HTML Messa
 
 ```
 
+# Debit	Credit Data Insert
+![image](https://github.com/user-attachments/assets/d1fcb75e-a132-46db-8820-b947d8297027)
+```sql
+
+INSERT INTO tblResultData (ID, RollNO, Name, Debit, Credit)
+SELECT     ID,     RollNO,     Name, 
+    CASE WHEN Sequence = 1 THEN Salary ELSE 0 END AS Debit,
+    CASE WHEN Sequence = 2 THEN Salary ELSE 0 END AS Credit
+FROM     tblSourceData
+CROSS APPLY (   VALUES (1), (2)) AS Seq(Sequence)
+ORDER BY ID, Sequence;
+
+
+```
 
 
 
 
+----END----
