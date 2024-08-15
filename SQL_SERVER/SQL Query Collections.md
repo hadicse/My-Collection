@@ -1823,6 +1823,25 @@ ORDER BY ID, Sequence;
 
 ```
 
+# How to identify Duplicate entries in the table 
+```sql
+-- For Duplicate Data
+
+Select P.ReceiveDate, P.PurchaseReceiveId, PL.ItemID,  Quantity, Price, ChallanId
+Into ##A from PurchaseReceive P
+JOIN PurchaseReceiveLine PL ON PL.PurchaseReceiveId=P.PurchaseReceiveId
+WHere isActive=1 and Quantity>0 
+Order by ItemID desc
+
+SELECT ReceiveDate, ItemID, Quantity, Price, ChallanId, COUNT(*) as cnt FROM ##A
+GROUP BY ReceiveDate, ItemID, Quantity, Price, ChallanId
+HAVING COUNT(*) > 1
+order by ReceiveDate 
+
+DROP Table ##A
+
+
+```
 
 
 
