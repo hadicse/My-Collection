@@ -1843,6 +1843,161 @@ DROP Table ##A
 
 ```
 
+# Category /  Layer Management in Database
+```sql
+CREATE TABLE Categories (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    CategoryName VARCHAR(100),
+    ParentID INT NULL,
+    FOREIGN KEY (ParentID) REFERENCES Categories(ID))
+----------------------------------------------------------------------------------------
+INSERT INTO Categories (CategoryName, ParentID)
+VALUES ('Food', NULL)
+
+INSERT INTO Categories (CategoryName, ParentID)
+VALUES ('Baby Food', 1),  -- Assuming 'Food' has ID 1
+       ('Animal Food', 1),
+       ('Senior Citizen Food', 1)
+
+INSERT INTO Categories (CategoryName, ParentID)
+VALUES ('Baby Chocolate', 2);  -- Assuming 'Baby Food' has ID 2
+
+INSERT INTO Categories (CategoryName, ParentID)
+VALUES ('Indian Chocolate', 3),  -- Assuming 'Baby Chocolate' has ID 3
+       ('Thailand Chocolate', 3);
+
+
+INSERT INTO Categories (CategoryName, ParentID)
+VALUES ('Tasty Chocolate', 4),  -- Assuming 'Indian Chocolate' has ID 4
+       ('Orange Chocolate', 4);
+
+-------------Fixed Layer
+WITH CategoryHierarchy AS (
+    SELECT 
+        ID, 
+        CategoryName, 
+        ParentID,
+        CAST(CategoryName AS VARCHAR(MAX)) AS FullPath,
+        1 AS Level
+    FROM Categories
+    WHERE ParentID IS NULL
+
+    UNION ALL
+
+    SELECT 
+        c.ID, 
+        c.CategoryName, 
+        c.ParentID,
+        CAST(ch.FullPath + ' > ' + c.CategoryName AS VARCHAR(MAX)) AS FullPath,
+        ch.Level + 1
+    FROM Categories c
+    INNER JOIN CategoryHierarchy ch ON c.ParentID = ch.ID
+)
+SELECT 
+    FullPath,
+    CASE WHEN Level = 1 THEN CategoryName ELSE NULL END AS Layer1,
+    CASE WHEN Level = 2 THEN CategoryName ELSE NULL END AS Layer2,
+    CASE WHEN Level = 3 THEN CategoryName ELSE NULL END AS Layer3,
+    CASE WHEN Level = 4 THEN CategoryName ELSE NULL END AS Layer4
+FROM CategoryHierarchy
+ORDER BY FullPath;
+---------Daynamic Layer
+---------------------
+CREATE PROCEDURE GetCategoryHierarchy
+AS
+BEGIN
+    DECLARE @sql NVARCHAR(MAX);
+    DECLARE @maxLevel INT;
+    DECLARE @level INT;
+    DECLARE @caseStatements NVARCHAR(MAX);
+
+    -- Determine the maximum level of hierarchy
+    ;WITH CategoryHierarchy AS (
+        SELECT 
+            ID, 
+            CategoryName, 
+            ParentID,
+            CAST(CategoryName AS VARCHAR(MAX)) AS FullPath,
+            1 AS Level
+        FROM Categories
+        WHERE ParentID IS NULL
+
+        UNION ALL
+
+        SELECT 
+            c.ID, 
+            c.CategoryName, 
+            c.ParentID,
+            CAST(ch.FullPath + ' > ' + c.CategoryName AS VARCHAR(MAX)) AS FullPath,
+            ch.Level + 1 AS Level
+        FROM Categories c
+        INNER JOIN CategoryHierarchy ch ON c.ParentID = ch.ID
+    )
+    SELECT @maxLevel = MAX(Level)
+    FROM CategoryHierarchy;
+
+    -- Initialize the SQL query
+    SET @sql = '
+    WITH CategoryHierarchy AS (
+        SELECT 
+            ID, 
+            CategoryName, 
+            ParentID,
+            CAST(CategoryName AS VARCHAR(MAX)) AS FullPath,
+            1 AS Level
+        FROM Categories
+        WHERE ParentID IS NULL
+
+        UNION ALL
+
+        SELECT 
+            c.ID, 
+            c.CategoryName, 
+            c.ParentID,
+            CAST(ch.FullPath + '' > '' + c.CategoryName AS VARCHAR(MAX)) AS FullPath,
+            ch.Level + 1 AS Level
+        FROM Categories c
+        INNER JOIN CategoryHierarchy ch ON c.ParentID = ch.ID
+    )
+    SELECT 
+        FullPath,';
+
+    -- Construct the CASE statements for each level
+    SET @caseStatements = '';
+
+    -- Loop through levels to build CASE statements
+    SET @level = 1;
+    WHILE @level <= @maxLevel
+    BEGIN
+        SET @caseStatements = @caseStatements + 
+            'CASE WHEN Level = ' + CAST(@level AS NVARCHAR) + ' THEN CategoryName ELSE NULL END AS Layer' + CAST(@level AS NVARCHAR);
+
+        IF @level < @maxLevel
+        BEGIN
+            SET @caseStatements = @caseStatements + ', ';
+        END
+
+        SET @level = @level + 1;
+    END
+
+    -- Append the CASE statements and finalize the SQL
+    SET @sql = @sql + @caseStatements + '
+    FROM CategoryHierarchy
+    ORDER BY FullPath;';
+
+    -- Execute the dynamic SQL query
+    EXEC sp_executesql @sql;
+END;
+
+-----------------------------
+EXEC GetCategoryHierarchy;
+----------------------------------------------------------------------------------------
+
+
+
+
+
+```
 
 
 
