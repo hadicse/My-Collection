@@ -1871,7 +1871,7 @@ INSERT INTO Categories (CategoryName, ParentID)
 VALUES ('Tasty Chocolate', 4),  -- Assuming 'Indian Chocolate' has ID 4
        ('Orange Chocolate', 4);
 
--------------Fixed Layer
+--**=================== Fixed Layer
 WITH CategoryHierarchy AS (
     SELECT 
         ID, 
@@ -1901,7 +1901,9 @@ SELECT
     CASE WHEN Level = 4 THEN CategoryName ELSE NULL END AS Layer4
 FROM CategoryHierarchy
 ORDER BY FullPath;
----------Daynamic Layer
+
+
+--**===================Daynamic Layer
 ---------------------
 CREATE PROCEDURE GetCategoryHierarchy
 AS
@@ -1989,7 +1991,8 @@ BEGIN
     EXEC sp_executesql @sql;
 END;
 
------------------------------
+--**=================== Daynamic SP END
+--**=================== NOW RUN
 EXEC GetCategoryHierarchy;
 ----------------------------------------------------------------------------------------
 
