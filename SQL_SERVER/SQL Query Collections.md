@@ -1845,12 +1845,14 @@ DROP Table ##A
 
 # Category /  Layer Management in Database
 ```sql
+--========1st Step Create Table===************************
 CREATE TABLE Categories (
     ID INT PRIMARY KEY IDENTITY(1,1),
     CategoryName VARCHAR(100),
     ParentID INT NULL,
     FOREIGN KEY (ParentID) REFERENCES Categories(ID))
 ----------------------------------------------------------------------------------------
+--========2nd Step Insert Data Into Table===************************
 INSERT INTO Categories (CategoryName, ParentID)
 VALUES ('Food', NULL)
 
@@ -1871,7 +1873,8 @@ INSERT INTO Categories (CategoryName, ParentID)
 VALUES ('Tasty Chocolate', 4),  -- Assuming 'Indian Chocolate' has ID 4
        ('Orange Chocolate', 4);
 
---**=================== Fixed Layer
+-------------------------------------------------------------------------------------
+--========3rd Run If Fixed Layer===************************
 WITH CategoryHierarchy AS (
     SELECT 
         ID, 
@@ -1903,8 +1906,8 @@ FROM CategoryHierarchy
 ORDER BY FullPath;
 
 
---**===================Daynamic Layer
----------------------
+-------------------------------------------------------------------------------------
+--========Start >> Run If Daynamic Layer View You Need===************************
 CREATE PROCEDURE GetCategoryHierarchy
 AS
 BEGIN
@@ -1991,9 +1994,54 @@ BEGIN
     EXEC sp_executesql @sql;
 END;
 
---**=================== Daynamic SP END
---**=================== NOW RUN
+--========END Run If Daynamic Layer View You Need===************************
 EXEC GetCategoryHierarchy;
+--========END Run If Daynamic Layer View You Need===************************
+
+
+--********************************************************************************************************
+--========If As POS32 View Start ===************************
+-- With Fixed Layer View
+WITH CTE AS (
+    -- Anchor query: start with the root nodes (where ParentID is NULL)
+    SELECT ID,   CategoryName,        ParentID,        CategoryName AS Department,
+        CAST(NULL AS VARCHAR(255)) AS Layer2,
+        CAST(NULL AS VARCHAR(255)) AS Layer3,
+        CAST(NULL AS VARCHAR(255)) AS Layer4,
+		CAST(NULL AS VARCHAR(255)) AS Layer5,
+		1 AS Level
+    FROM Categories
+    WHERE ParentID IS NULL
+
+    UNION ALL
+
+    -- Recursive query: join the CTE with the table to build the hierarchy
+    SELECT 
+        h.ID,
+        h.CategoryName,
+        h.ParentID,
+        c.Department,
+        CASE WHEN c.Level = 1 THEN h.CategoryName ELSE c.Layer2 END AS Layer2,
+        CASE WHEN c.Level = 2 THEN h.CategoryName ELSE c.Layer3 END AS Layer3,
+        CASE WHEN c.Level = 3 THEN h.CategoryName ELSE c.Layer4 END AS Layer4,
+		CASE WHEN c.Level = 4 THEN h.CategoryName ELSE c.Layer5 END AS Layer5,
+        c.Level + 1
+    FROM Categories h
+    INNER JOIN CTE c ON h.ParentID = c.ID
+)
+
+-- Final select to show the hierarchical structure
+SELECT 
+    ROW_NUMBER() OVER (ORDER BY Department, Layer2, Layer3, Layer4, Layer5) AS SL,
+    Department, Layer2, Layer3, Layer4, Layer5
+FROM CTE
+WHERE Level = 5 
+   OR (Level = 4 AND Layer5 IS NULL) 
+   OR (Level = 3 AND Layer4 IS NULL) 
+   OR (Level = 2 AND Layer3 IS NULL)
+ORDER BY SL;
+
+--========If As POS32 View END ===************************
 ----------------------------------------------------------------------------------------
 
 
