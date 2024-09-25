@@ -2064,13 +2064,8 @@ SELECT intPerviousIncrementTransactionId, * FROM saas.tblIncrementTransactionHea
 
 DROP Table ##CTE
 --ROLLBACK
-
-
-![image](https://github.com/user-attachments/assets/b2659f42-a665-4353-bd6f-e9b5c6381c07)
-
-
-
 ```
+![image](https://github.com/user-attachments/assets/b2659f42-a665-4353-bd6f-e9b5c6381c07)
 
 
 
