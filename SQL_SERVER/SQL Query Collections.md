@@ -2044,7 +2044,33 @@ ORDER BY SL;
 --========If As POS32 View END ===************************
 ----------------------------------------------------------------------------------------
 
+# Next Next Update
+```sql
+--BEGIN TRAN
 
+WITH CTE AS (SELECT intIncrementTransactionId,  intEmployeeId,
+LAG(intIncrementTransactionId, 1, 0) OVER (PARTITION BY intEmployeeId ORDER BY intIncrementTransactionId) AS intPerviousIncrementTransactionId
+FROM saas.tblIncrementTransactionHeader WHERE intEmployeeId = 264)
+
+Select * Into ##CTE from CTE
+SELECT intPerviousIncrementTransactionId, * FROM saas.tblIncrementTransactionHeader WHERE intEmployeeId = 264
+
+UPDATE T SET T.intPerviousIncrementTransactionId = CTE.intPerviousIncrementTransactionId
+FROM saas.tblIncrementTransactionHeader T
+JOIN ##CTE CTE ON T.intIncrementTransactionId = CTE.intIncrementTransactionId
+WHERE T.intEmployeeId = 264
+
+SELECT intPerviousIncrementTransactionId, * FROM saas.tblIncrementTransactionHeader WHERE intEmployeeId = 264
+
+DROP Table ##CTE
+--ROLLBACK
+
+
+![image](https://github.com/user-attachments/assets/b2659f42-a665-4353-bd6f-e9b5c6381c07)
+
+
+
+```
 
 
 
