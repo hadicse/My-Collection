@@ -2069,7 +2069,9 @@ DROP Table ##CTE
 ![image](https://github.com/user-attachments/assets/b2659f42-a665-4353-bd6f-e9b5c6381c07)
 
 
+# Record Change History of Table SQL VIP Tips
 
+[SQL VIP tips.docx](https://github.com/user-attachments/files/17184337/SQL.VIP.tips.docx)
 
 
 
