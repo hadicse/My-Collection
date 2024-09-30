@@ -2072,7 +2072,9 @@ DROP Table ##CTE
 # Record Change History of Table SQLor  VIP Tips
 
 [SQL VIP tips.docx](https://github.com/user-attachments/files/17184337/SQL.VIP.tips.docx)
-
+https://www.brentozar.com/sql-constantcare/
+https://sqlspreads.com/blog/temporal-tables-in-sql-server/
+https://www.geeksforgeeks.org/kdd-process-in-data-mining/
 
 
 
