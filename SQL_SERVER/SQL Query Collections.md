@@ -2078,7 +2078,10 @@ https://www.geeksforgeeks.org/kdd-process-in-data-mining/
 
 
 
+# LOG Scalation Query
+# Report on SQL Server Lock Escalation Settings for Optimized Concurrency Management
 
+![image](https://github.com/user-attachments/assets/6ef6017b-02cc-4271-9cee-7549dddfd20f)
 
 
 # ----END----
