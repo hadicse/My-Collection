@@ -117,3 +117,22 @@
 34.	COUNTIF
 35.	COUNTIFS
 
+# Remove Blank Rows in Microsoft Excel 
+Press> Select Rang / ALL/ Hit F5, Special, Blank > Ctrl - > Entire Row > OK
+
+# WRAPROWS(B2:B55,6)
+![WhatsApp Image 2024-11-21 at 17 06 40_91cf9ae0](https://github.com/user-attachments/assets/f16d0e6d-4379-4f1a-9631-0afa48b199bb)
+![image](https://github.com/user-attachments/assets/b0ff6cb7-1f59-435d-932c-8960a6d9aa76)
+
+-- =wrapcols(B2:B13,3)
+![image](https://github.com/user-attachments/assets/e3d19692-13ba-4f62-96f3-8d3b2779cc5d)
+
+
+
+
+
+
+
+
+
+---END---
